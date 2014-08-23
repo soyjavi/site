@@ -1,0 +1,71 @@
+body
+  overflow: auto
+
+  > header
+    position: fixed
+    left: 0
+    right: 0
+    height: UNIT
+    padding: 0 SPACE
+    line-height: UNIT
+    background-color: rgba(255,255,255,0.25)
+    box-shadow 0 0 1px rgba(0,0,0,0.25)
+    color: WHITE
+    > *
+      display: inline-block
+    > img
+      height: FONT_SIZE_BIG
+    > nav
+      float: right
+      > *
+        color: WHITE
+        margin-left: (2.5 * SPACE)
+        font-size: FONT_SIZE_SMALL
+
+        &:not(button)
+          font-weight: FONT_WEIGHT_NORMAL
+          opacity: 0.5
+          &:hover
+            opacity: 1
+      > button
+        line-height: SPACE
+
+  > section
+    padding: (3 * SPACE) 0
+
+    &.landing
+      background-color: DARK
+      color: white
+      padding: (8 * UNIT) 0 (2 * UNIT) 0
+      .wrapper
+        h1
+          font-size: HEIGHT = (1.25 * UNIT)
+          line-height: (1.25 * HEIGHT)
+        small
+          display: block
+          color: WHITE
+          font-size: (UNIT / 3)
+          margin: (UNIT / 2) 0
+
+  > footer
+    padding: (.5 * UNIT) 0
+    background: BACKGROUND
+
+  .wrapper
+    position: relative
+    width: 980px
+    margin: 0 auto
+    h2
+      font-weight: FONT_WEIGHT_BOLD
+    p
+      font-size: .95rem
+      opacity: 0.5
+    .col
+      display: inline-block
+      width: 45%
+      &:nth-child(even)
+        margin-right: 5%
+      &:nth-child(odd)
+        text-align: right
+
+

@@ -1,0 +1,19 @@
+doctype html
+html(lang="en-US")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title soyjavi
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel="icon", href="/img/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/css/soyjavi.dependencies.css")
+    link(rel="stylesheet", href="/css/soyjavi.css")
+    block CSS
+
+  body(data-page=(page || "404"))
+    block HTML
+
+    script(src="/js/soyjavi.dependencies.js")
+    script(src="/js/soyjavi.js")
+    block JS

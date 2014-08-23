@@ -1,0 +1,23 @@
+server:
+  host     : localhost
+  port     : 1337
+  type     : development
+  timezone : Europe/Madrid
+
+log:
+  request: true
+  response: true
+
+assets:
+  - folder: css
+    maxage: 3600
+  - folder: img
+    maxage: 86400
+  - folder: js
+    maxage: 3600
+  - folder: scaffold
+    maxage: 3600
+  - file:   humans.txt
+    maxage: 86400
+  - file:   robots.txt
+    maxage: 86400

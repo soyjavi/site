@@ -1,0 +1,38 @@
+extends /base
+
+block CSS
+
+block HTML
+  header
+    img(src="/img/logo.png")
+    nav.float.right
+      a(href="/") @soyjavi
+      a(href="/") ···
+
+  section.landing
+    .wrapper.align.center
+      h1 JAVI JIMENEZ
+      small
+        | MAKE STUFF FOR OTHERS •
+        a(href="/")@soyjavi
+      nav
+        a.icon.twitter(href="#") t
+        a.icon.dribble(href="#") d
+        a.icon.tapquo(href="#") t
+
+  section
+    .wrapper
+      h2.align.center
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+      .colhalf
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      .colhalf
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+  footer.copyright
+    .wrapper
+      img
+      span t d 2  © Javi Jiménez (@soyjavi) 1980-2014
+      //- span crafted with love © 2014 Copyright
+
+block JS
