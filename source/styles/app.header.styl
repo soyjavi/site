@@ -1,5 +1,6 @@
 body
   > header
+    z-index: 1980
     position: fixed
     left: 0
     right: 0
@@ -7,8 +8,11 @@ body
     padding: 0 SPACE
     line-height: UNIT
     background-color: rgba(0,0,0,0.5)
-    // box-shadow 0 0 1px rgba(0,0,0,0.25)
     color: WHITE
+    transform: translateY(-100%)
+    transition: all ANIMATION_DURATION ANIMATION_EASE
+    &.active
+      transform: translateY(0%)
     > *
       display: inline-block
       vertical-align: MIDDLE

@@ -58,12 +58,17 @@ body
       background: linear-gradient(GREEN,lighten(GREEN, 30%)),GREEN;
     &.dark
       background: linear-gradient(DARK,darken(DARK, 25%)),DARK;
+    &.grey
+      background: linear-gradient(BACKGROUND,lighten(BACKGROUND, 50%)),BACKGROUND;
+      &, & a
+        color: COLOR
     &.pink
       background: linear-gradient(lighten(PINK, 25%),PINK),PINK;
     &.black
       background: linear-gradient(#000000,#1a232c),#000;
 
-  nav
-    &.list
-      a
-        display: block
+  .color
+    &.white
+      color: WHITE
+    &.green
+      color: GREEN
