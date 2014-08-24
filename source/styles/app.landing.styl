@@ -3,6 +3,7 @@ body
     &.landing
       background-image: url("/img/background.jpg")
       background-size: cover !important
+      background-opacity: 0.5
       color: WHITE
       padding: (8 * UNIT) 0 (2 * UNIT) 0
       .wrapper
@@ -11,7 +12,8 @@ body
         small
           display: block
           font-size: FONT_SIZE_BIG
-          margin: (UNIT / 2) 0
+          font-weight: FONT_WEIGHT_BOLD
+          margin-bottom: UNIT
           a
             margin-left: (SPACE / 2)
         .icon
@@ -19,16 +21,24 @@ body
           font-size: 2rem
           color: WHITE
 
-    nav.list > a
-      display: block
-      span
-        vertical-align: middle
-        margin: 0 (SPACE / 2) (SPACE / 2) (SPACE / 2)
-        padding: (SPACE / 8) (SPACE / 4)
-        font-size: (FONT_SIZE_TINY / 1.4)
-        font-weight: FONT_WEIGHT_BOLD
-        border: solid .15rem rgba(255,255,255,0.75)
-        border-radius: .25rem
+    &.bck.green
+      h3
+        font-weight: FONT_WEIGHT_NORMAL
+        color: rgba(0,0,0,0.2) !important
+
+    nav.list
+      > a
+        display: block
+        margin: (SPACE) 0
+        opacity: 0.85
+        span
+          vertical-align: middle
+          margin: 0 (SPACE / 2) (SPACE / 2) (SPACE / 2)
+          padding: (SPACE / 8) (SPACE / 4)
+          font-size: (FONT_SIZE_TINY / 1.4)
+          font-weight: FONT_WEIGHT_BOLD
+          border: solid .15rem rgba(255,255,255,0.75)
+          border-radius: .25rem
 
 
 

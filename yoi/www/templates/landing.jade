@@ -6,7 +6,7 @@ block HTML
   header
     h1
       | JAVI JIMENEZ
-    small
+    small.color.green
       | MAKE STUFF FOR OTHERS
     nav.float.right
       a(href="/") @soyjavi
@@ -15,9 +15,9 @@ block HTML
   section.landing(data-stellar-background-ratio="0.6")
     .wrapper.align.center
       h1.font.weight.bold JAVI JIMENEZ
-      small
+      small.color.green
         | MAKE STUFF FOR OTHERS •
-        a(href="/")@soyjavi
+        a.color.green(href="/") @soyjavi
       nav
         a.icon.github(href="#")
         a.icon.twitter(href="#")
@@ -45,25 +45,35 @@ block HTML
       h2.align.center.margin.bottom
         | I'm currently building:
       .col.third
-        h3 Tools
+        h3 Tools & Libraries
         nav.list
-          a Atoms
+          a(href="http://atoms.tapquo.com/") Atoms
             span COMING SOON
-          a QuoJS
-          a Tuktuk
-          a Lungo
+          a(href="http://quojs.tapquo.com/") QuoJS
+          a(href="http://tuktuk.tapquo.com/") TukTuk
+          a(href="http://lungo.tapquo.com/") Lungo
+          a(href="http://monocle.tapquo.com/") Monocle
 
       .col.third
         h3 Web Products
         nav.list
-          a
+          a(href="http://atoms.tapquo.com/") Nomadcode
+            span COMING SOON
+          a(href="http://atoms.tapquo.com/") Mentorcode
+            span COMING SOON
+          a(href="http://atoms.tapquo.com/") Atoms.Editor
+          a(href="http://devcast.co") Devcast
+          a(href="http://slid.us") Slid.us
+
       .col.third
         h3 Books
         nav.list
           a(href="https://leanpub.com/ecmascript6")
-            | Ecmascript6
+            | EcmaScript 6
             span COMING SOON
-
+          a(href="https://leanpub.com/nomadasdigitales")
+            | Nómadas digitales
+            span COMING SOON
           a(href="https://leanpub.com/coffeescript") Little Book of CoffeeScript
 
 
