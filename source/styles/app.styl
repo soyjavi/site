@@ -2,20 +2,68 @@ body
   font-family: FONT_FAMILY
   font-size: FONT_SIZE
   font-weight: FONT_WEIGHT_THIN
-  font-size: 100%
-  line-height: 1.5
+  line-height: 1.75
   background-color: WHITE
+
+  .wrapper
+    position: relative
+    width: 980px
+    margin: 0 auto
+
+
+  > section
+    padding: (1.5 * UNIT) 0
 
   .align
     &.center
       text-align: center
-  .colhalf
-    display: inline-block
-    width: 47.5%
-    font-size: FONT_SIZE_BIG
-    &:nth-child(2)
-      margin-right: 5%
 
+  .col
+    display: inline-block
+    vertical-align: top
+    &.half
+      width: 45%
+      &:nth-child(2)
+        margin-right: 5%
+    &.third
+      width: 30%
+      &:nth-child(2), &:nth-child(3)
+        margin-right: 5%
+
+  h1
+    font-size: HEIGHT = (1.25 * UNIT)
   h2
+    font-size: (UNIT)
+  h3
     font-size: 1.75rem
-    font-weight: 400 !important
+  p
+    font-size: FONT_SIZE_BIG
+
+  .margin
+    &.top
+      margin-top: (SPACE * 2)
+    &.right
+      margin-right: (SPACE * 2)
+    &.bottom
+      margin-bottom: (SPACE * 2)
+    &.left
+      margin-left: (SPACE * 2)
+
+  .bck
+    &, & a
+      color: WHITE
+    p
+      opacity: 0.5
+    &.green
+      background: linear-gradient(GREEN,lighten(GREEN, 30%)),GREEN;
+    &.dark
+      background: linear-gradient(DARK,darken(DARK, 25%)),DARK;
+    &.pink
+      background: linear-gradient(lighten(PINK, 25%),PINK),PINK;
+    &.black
+      background: linear-gradient(#000000,#1a232c),#000;
+
+  nav
+    &.list
+      a
+        display: block

@@ -1,0 +1,34 @@
+body
+  > header
+    position: fixed
+    left: 0
+    right: 0
+    height: UNIT
+    padding: 0 SPACE
+    line-height: UNIT
+    background-color: rgba(0,0,0,0.5)
+    // box-shadow 0 0 1px rgba(0,0,0,0.25)
+    color: WHITE
+    > *
+      display: inline-block
+      vertical-align: MIDDLE
+    > h1
+      margin-right: (SPACE / 2)
+      font-size: FONT_SIZE_BIG
+      font-weight: FONT_WEIGHT_BOLD
+    > small
+      opacity: 0.75
+    > nav
+      float: right
+      > *
+        color: WHITE
+        margin-left: (2.5 * SPACE)
+        font-size: FONT_SIZE_SMALL
+
+        &:not(button)
+          font-weight: FONT_WEIGHT_NORMAL
+          opacity: 0.5
+          &:hover
+            opacity: 1
+      > button
+        line-height: SPACE

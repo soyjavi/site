@@ -4,35 +4,102 @@ block CSS
 
 block HTML
   header
-    img(src="/img/logo.png")
+    h1
+      | JAVI JIMENEZ
+    small
+      | MAKE STUFF FOR OTHERS
     nav.float.right
       a(href="/") @soyjavi
       a(href="/") ···
 
   section.landing
     .wrapper.align.center
-      h1 JAVI JIMENEZ
+      h1.font.weight.bold JAVI JIMENEZ
       small
         | MAKE STUFF FOR OTHERS •
         a(href="/")@soyjavi
       nav
-        a.icon.twitter(href="#") t
-        a.icon.dribble(href="#") d
-        a.icon.tapquo(href="#") t
+        a.icon.github(href="#")
+        a.icon.twitter(href="#")
+        a.icon.bitbucket(href="#")
+        a.icon.tapquo(href="#")
+
+      div.more
+        scroll down to learn more
+
+  section.bck.dark
+    .wrapper
+      h3.align.center.margin.bottom
+        | This site is my personal design playground. I created it to encourage myself to keep having fun with design – to experiment and explore the craft outside of my comfort zone.
+      p.col.half
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      p.col.half
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+  section.bck.green
+    .wrapper
+      h2.align.center.margin.bottom
+        | I'm currently building:
+      .col.third
+        h3 Tools
+        nav.list
+          a Atoms
+            span COMING SOON
+          a QuoJS
+          a Tuktuk
+          a Lungo
+
+      .col.third
+        h3 Web Products
+        nav.list
+          a
+      .col.third
+        h3 Books
+        nav.list
+          a(href="https://leanpub.com/ecmascript6")
+            | Ecmascript6
+            span COMING SOON
+
+          a(href="https://leanpub.com/coffeescript") Little Book of CoffeeScript
+
 
   section
     .wrapper
-      h2.align.center
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-      .colhalf
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      .colhalf
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      h3.align.center.margin.bottom
+        | Shows, interviews, talks and writings from me.
+      .col.third
+        h2 Listen
+        nav.list
+          a
+
+      .col.third
+        h2 Read
+        nav.list
+          a(href="http://www.genbetadev.com/entrevistas/entrevista-a-javier-jimenez-villar-autor-de-lungojs") GenbetaDev Interview
+      .col.third
+        h2 Watch
+        nav.list
+          a(href="https://www.youtube.com/watch?v=tTTLqMw0dys") DevUp12 Mesa redonda: El futuro de la Web
+          a(href="https://www.youtube.com/watch?v=9-QTm_PKboQ") HTML5 Responsive Developer
+          a(href="https://www.youtube.com/watch?v=a1KN1xwmg1c") BilboStack
+
+  nav.bck.green.align.center
+    a(href="")
+      | < Contact for
+      span Project Inquiries
+    a(href="")
+      | Contact for
+      span Speaking Engagements >
 
   footer.copyright
     .wrapper
-      img
-      span t d 2  © Javi Jiménez (@soyjavi) 1980-2014
-      //- span crafted with love © 2014 Copyright
+      img(src="/img/avatar_soyjavi.jpg")
+      a.icon.twitter()
+      a.icon.github()
+      a.icon.bitbucket()
+      a.icon.instagram()
+      a.icon.linkedin()
+      a.icon.pen()
+      span © Javi Jiménez (@soyjavi) 1980-2014
 
 block JS
