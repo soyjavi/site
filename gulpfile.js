@@ -23,7 +23,8 @@ var source = {
             'source/styles/app.*.styl']};
 
 var dependencies = {
-    js   :[ 'bower_components/jquery/dist/jquery.min.js'],
+    js   :[ 'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/jquery.stellar/jquery.stellar.min.js'],
     css  :[ ''],
     fonts:[ 'dependencies/atoms.icons/fonts/*',
             'dependencies/icomoon/fonts/*'] };
