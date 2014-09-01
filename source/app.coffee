@@ -1,8 +1,8 @@
+window.Soyjavi = Soyjavi = version: "1.09.01"
+
 $ ->
+  do Soyjavi.effect.resize
+  $(window).on "resize", Soyjavi.effect.resize
+  $(document).on "scroll", Soyjavi.effect.scroll
+  # Thirds
   $(window).stellar()
-  header = $("header")
-  $(document).on "scroll", (event) ->
-    if $(event.target).scrollTop() > 512
-      header.addClass "active"
-    else
-      header.removeClass "active"

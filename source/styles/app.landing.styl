@@ -4,22 +4,50 @@ body
       background-image: url("/img/background.jpg")
       background-size: cover !important
       background-opacity: 0.5
+      background-position: 0 100%
       color: WHITE
-      padding: (8 * UNIT) 0 (2 * UNIT) 0
       .wrapper
+        padding: 0
+        display: flex
+        flex-direction column
+        justify-content center
+        align-content center
+        align-items center
         h1
           font-weight: FONT_WEIGHT_BOLD !important
+          text-shadow: 0 .25rem rgba(0,0,0,0.1)
         small
           display: block
           font-size: FONT_SIZE_BIG
           font-weight: FONT_WEIGHT_BOLD
-          margin-bottom: UNIT
+          // margin-bottom: UNIT
           a
             margin-left: (SPACE / 2)
         .icon
+          display: inline-block
           margin: 0 SPACE
-          font-size: 2rem
-          color: WHITE
+          width: SIZE = 2.25rem
+          height: SIZE
+          font-size: SIZE
+          color: rgba(255,255,255,0.85)
+          opacity: 0.9
+          transition all ANIMATION_DURATION ANIMATION_EASE
+          &:hover
+            transform: scale(1.25)
+            opacity: 1
+          &.tapquo
+            background-image: url("/img/logo_tapquo.png")
+            background-size: cover
+
+        .more
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          font-weight: FONT_WEIGHT_NORMAL
+          transition all (2 * ANIMATION_DURATION) ANIMATION_EASE
+          &.hide
+            opacity: 0
 
     &.bck.green
       h3
