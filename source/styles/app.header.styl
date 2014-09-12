@@ -28,11 +28,20 @@ body
         color: WHITE
         margin-left: (2.5 * SPACE)
         font-size: FONT_SIZE_SMALL
-
         &:not(button)
-          font-weight: FONT_WEIGHT_NORMAL
-          opacity: 0.5
+          display: inline-block
+          margin: 0 0 0 SIZE = 1.45rem
+          vertical-align: middle
+          width: SIZE
+          height: SIZE
+          font-size: SIZE
+          opacity: 0.75
+          transition all ANIMATION_DURATION ANIMATION_EASE
+          &.tapquo
+            background-image: url("/img/logo_tapquo.png")
+            background-size: cover
           &:hover
             opacity: 1
+            transform: scale(1.25)
       > button
         line-height: SPACE

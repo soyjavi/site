@@ -9,10 +9,12 @@ block HTML
     small.color.green
       | MAKE STUFF FOR OTHERS
     nav.float.right
-      a(href="/") @soyjavi
-      a(href="/") ···
+      a.icon.github(href="https://github.com/soyjavi", target="_blank")
+      a.icon.twitter(href="https://twitter.com/soyjavi", target="_blank")
+      a.icon.tapquo(href="http://tapquo.com", target="_blank")
 
   section.landing(data-stellar-background-ratio="0.6")
+    figure.glass
     .wrapper.align.center
       h1.font.weight.bold JAVI JIMENEZ
       small.color.green
@@ -45,34 +47,39 @@ block HTML
       .col.third
         h3 Tools & Libraries
         nav.list
-          a(href="http://atoms.tapquo.com/") Atoms
-            span COMING SOON
-          a(href="http://quojs.tapquo.com/") QuoJS
-          a(href="http://tuktuk.tapquo.com/") TukTuk
-          a(href="http://lungo.tapquo.com/") Lungo
-          a(href="http://monocle.tapquo.com/") Monocle
+          a(href="http://atoms.tapquo.com/" target="_blank") Atoms
+          a(href="http://quojs.tapquo.com/" target="_blank") QuoJS
+          a(href="http://tuktuk.tapquo.com/" target="_blank") TukTuk
+          a(href="http://lungo.tapquo.com/" target="_blank") Lungo
+          a(href="http://monocle.tapquo.com/" target="_blank") Monocle
 
       .col.third
         h3 Web Products
         nav.list
-          a(href="http://atoms.tapquo.com/") Nomadcode
+          a(href="http://nomada.io" target="_blank")
+            | Nomada
             span COMING SOON
-          a(href="http://atoms.tapquo.com/") Mentorcode
+          a(href="http://mentorco.de" target="_blank")
+            | Mentorcode
             span COMING SOON
-          a(href="http://atoms.tapquo.com/") Atoms.Editor
-          a(href="http://devcast.co") Devcast
-          a(href="http://slid.us") Slid.us
+          a(href="http://atoms.tapquo.com" target="_blank")
+            | Atoms.Editor
+          a(href="http://nomadco.de" target="_blank")
+            | Nomadcode
+          a(href="http://devcast.co" target="_blank")
+            | Devcast
 
       .col.third
         h3 Books
         nav.list
-          a(href="https://leanpub.com/ecmascript6")
-            | EcmaScript 6
-            span COMING SOON
-          a(href="https://leanpub.com/nomadasdigitales")
+          a(href="https://leanpub.com/nomadasdigitales" target="_blank")
             | Nómadas digitales
             span COMING SOON
-          a(href="https://leanpub.com/coffeescript") Little Book of CoffeeScript
+          a(href="https://leanpub.com/ecmascript6" target="_blank")
+            | EcmaScript 6
+            span COMING SOON
+          a(href="https://leanpub.com/coffeescript" target="_blank")
+            | Little Book of CoffeeScript
 
 
   section.bck.grey
@@ -80,9 +87,13 @@ block HTML
       h3.align.center.margin.bottom
         | Shows, interviews, talks and writings from me.
       .col.third
-        h2 Listen
+        h2 Teaching
         nav.list
-          a
+          a(href="")
+            | IronHack
+          a(href="")
+            | Developer Master of Deusto
+
 
       .col.third
         h2 Read
@@ -106,12 +117,12 @@ block HTML
   footer.copyright
     .wrapper
       img(src="/img/avatar_soyjavi.jpg")
-      a.icon.twitter()
-      a.icon.github()
-      a.icon.bitbucket()
-      a.icon.instagram()
-      a.icon.linkedin()
-      a.icon.pen()
+      a.icon.twitter(href="https://twitter.com/soyjavi" target="_blank")
+      a.icon.github(href="https://github.com/soyjavi" target="_blank")
+      a.icon.bitbucket(href="https://bitbucket.com/soyjavi" target="_blank")
+      a.icon.instagram(href="http://instagram.com/soyjavi" target="_blank")
+      a.icon.linkedin(href="https://www.linkedin.com/in/soyjavi" target="_blank")
+      a.icon.pen(href="https://medium.com/@soyjavi" target="_blank")
       span © Javi Jiménez (@soyjavi) 1980-2014
 
 block JS
