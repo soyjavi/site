@@ -1,7 +1,7 @@
 body
   > section
     &.landing
-      background-image: url("/img/background_color.jpg")
+      background-image: url("/img/background.jpg")
       background-size: cover !important
       background-opacity: 0.5
       background-position: 0 100%
@@ -82,14 +82,31 @@ body
         opacity: 0.85
         span
           vertical-align: middle
-          margin: 0 (SPACE / 2) (SPACE / 2) (SPACE / 2)
-          padding: (SPACE / 8) (SPACE / 4)
+          margin-left: (SPACE / 2)
+          padding: (SPACE / 4) (SPACE / 4) (SPACE / 10) (SPACE / 4)
           font-size: (FONT_SIZE_TINY / 1.4)
+          line-height: (FONT_SIZE_TINY / 1.4)
           font-weight: FONT_WEIGHT_BOLD
-          border: solid .15rem rgba(255,255,255,0.75)
           border-radius: .25rem
+          opacity: 0.75
+        &:hover
+          &, & span
+            opacity: 1
 
 
+    &.bck.green nav.list > a
+      span
+        border: solid .1rem WHITE
+      &:hover span
+        background-color: WHITE
+        color: GREEN
+
+    &.bck.grey nav.list > a
+      span
+        border: solid .1rem COLOR
+      &:hover span
+        background-color: COLOR
+        color: WHITE
 
   > nav
     padding: (UNIT / 1.5) 0
