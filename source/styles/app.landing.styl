@@ -57,6 +57,7 @@ body
             transform: scale(1.25)
           &.tapquo
             background-image: url("/img/logo_tapquo.png")
+
             background-size: cover
 
         .more
@@ -81,14 +82,16 @@ body
         margin: (SPACE) 0
         opacity: 0.85
         span
-          vertical-align: middle
           margin-left: (SPACE / 2)
-          padding: (SPACE / 4) (SPACE / 4) (SPACE / 10) (SPACE / 4)
+          padding: (SPACE / 4) (SPACE / 3) (SPACE / 10) (SPACE / 3)
           font-size: (FONT_SIZE_TINY / 1.4)
-          line-height: (FONT_SIZE_TINY / 1.4)
           font-weight: FONT_WEIGHT_BOLD
+          line-height: (FONT_SIZE_TINY / 1.4)
+          text-transform: uppercase
+          vertical-align: middle
           border-radius: .25rem
           opacity: 0.75
+          border: solid .15rem
         &:hover
           &, & span
             opacity: 1
@@ -96,24 +99,31 @@ body
 
     &.bck.green nav.list > a
       span
-        border: solid .1rem WHITE
+        border-color: WHITE
       &:hover span
         background-color: WHITE
         color: GREEN
 
     &.bck.grey nav.list > a
       span
-        border: solid .1rem COLOR
+        border-color: COLOR
       &:hover span
         background-color: COLOR
         color: WHITE
 
   > nav
-    padding: (UNIT / 1.5) 0
+    background-image: url("/img/background.jpg")
+    background-size: cover
+    background-position: 0 75%
     > a
       display: inline-block
+      padding: (UNIT / 1.5) 0
       width: 50%
-      font-size: FONT_SIZE_BIG
+      font-size: 1.75rem
+      color: rgba(255,255,255,0.75) !important
+      background-color: rgba(0,0,0,0.5)
       span
         margin: 0 (SPACE / 2.5)
         font-style: italic
+        color: WHITE
+
