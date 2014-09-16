@@ -1,0 +1,10 @@
+# -- RESTful services ----------------------------------------------------------
+type    : development
+host    : localhost
+port    : 1337
+timezone: Europe/Madrid
+
+# -- General Info --------------------------------------------------------------
+log:
+  request: true
+  response: true

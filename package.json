@@ -1,14 +1,12 @@
 {
   "name"            : "soyjavi",
-  "version"         : "0.08.23",
+  "version"         : "0.09.16",
   "description"     : "",
-  "homepage"        : "http://nomadco.de",
+  "homepage"        : "http://soyjavi.com",
   "author"          : "Javi Jimenez Villar",
   "dependencies": {
     "coffee-script" : "*",
-    "yoi"           : "1.7.27",
-    "moment"        : "2.5.1",
-    "socket.io"     : "1.0.6"
+    "zenserver"     : "*"
   },
   "devDependencies" : {
     "gulp"        : "*",
@@ -22,8 +20,7 @@
     "gulp-yml"    : "*"
   },
   "scripts"         : {
-    "start": "nodemon yoi.js yoi development",
-    "test": "node yoitest.js yoi development"
+    "start": "node index.js zen development"
   },
   "engines"         : { "node": "*"}
 }

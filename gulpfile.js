@@ -13,7 +13,7 @@ var yml     = require('gulp-yml');
 var pkg     = require('./package.json');
 
 // -- FILES --------------------------------------------------------------------
-var assets = 'yoi/assets/';
+var assets = 'static/';
 var source = {
   coffee: [ 'source/app.coffee',
             'source/app.*.coffee'],

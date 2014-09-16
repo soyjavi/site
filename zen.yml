@@ -1,0 +1,17 @@
+# -- General Info --------------------------------------------------------------
+host    : localhost
+port    : 8000
+timezone: Europe/Madrid
+
+# -- Environment ---------------------------------------------------------------
+environment: development
+
+# -- HTML pages ----------------------------------------------------------------
+www:
+  - index
+
+# -- Static resources ----------------------------------------------------------
+statics:
+  - url     : /assets/:folder
+    folder  : /static
+    maxage  : 3600

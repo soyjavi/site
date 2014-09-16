@@ -9,7 +9,6 @@ Soyjavi.effect = do(s = Soyjavi) ->
     landing : $ ".landing > .wrapper"
     more    : $ ".landing .more"
 
-
   resize =->
     _el.landing.height $(window).height()
 

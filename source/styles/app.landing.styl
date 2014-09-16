@@ -1,12 +1,11 @@
 body
   > section
     &.landing
-      background-image: url("/img/background.jpg")
+      background-image: url("/assets/img/background.jpg")
       background-size: cover !important
       background-opacity: 0.5
       background-position: 0 100%
       color: WHITE
-
       &:not(.scroll)
         -webkit-filter: grayscale(100%)
         -moz-filter: grayscale(100%)
@@ -37,12 +36,10 @@ body
           margin-top: SPACE
           font-weight: FONT_WEIGHT_BOLD !important
         small
-          display: block
-          font-size: FONT_SIZE_BIG
-          font-weight: FONT_WEIGHT_BOLD
           margin-bottom: SPACE
-          a
-            margin-left: (SPACE / 2)
+          display: block
+          font-weight: FONT_WEIGHT_BOLD
+          font-size: FONT_SIZE_BIG
         .icon
           display: inline-block
           margin: 0 SPACE
@@ -56,8 +53,7 @@ body
             opacity: 1
             transform: scale(1.25)
           &.tapquo
-            background-image: url("/img/logo_tapquo.png")
-
+            background-image: url("/assets/img/logo_tapquo.png")
             background-size: cover
 
         .more
@@ -112,13 +108,13 @@ body
         color: WHITE
 
   > nav
-    background-image: url("/img/background.jpg")
+    background-image: url("/assets/img/background.jpg")
     background-size: cover
     background-position: 0 75%
     > a
       display: inline-block
       padding: (UNIT / 1.5) 0
-      width: 50%
+      width: 100%
       font-size: 1.75rem
       color: rgba(255,255,255,0.75) !important
       background-color: rgba(0,0,0,0.5)
@@ -126,4 +122,3 @@ body
         margin: 0 (SPACE / 2.5)
         font-style: italic
         color: WHITE
-
