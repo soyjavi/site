@@ -1,5 +1,5 @@
 # -- RESTful services ----------------------------------------------------------
-type    : development
-host    : localhost
+type    : production
+host    : soyjavi.com
 port    : 1337
-timezone: Europe/Madrid
+timezone: Europe/Amsterdam
