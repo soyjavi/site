@@ -4,6 +4,6 @@ www:
 
 # -- Static resources ----------------------------------------------------------
 statics:
-  - url     : /assets/:folder
+  - url     : /assets
     folder  : /static
     maxage  : 3600
