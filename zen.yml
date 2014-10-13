@@ -1,3 +1,5 @@
+environment: development
+
 # -- HTML pages ----------------------------------------------------------------
 www:
   - index

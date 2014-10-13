@@ -1,5 +1,8 @@
 # -- RESTful services ----------------------------------------------------------
-type    : production
+protocol: http
 host    : soyjavi.com
 port    : 1341
 timezone: Europe/Amsterdam
+
+audit:
+  interval: 60000
