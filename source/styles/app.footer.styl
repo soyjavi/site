@@ -1,24 +1,9 @@
 body
   > footer
-    padding: (.5 * UNIT) 0
+    position: relative
+    height: UNIT
+    line-height: UNIT
+    margin-top: -(UNIT)
+    font-size: FONT_SIZE_NORMAL
     color: COLOR
-    .wrapper
-      > *
-        vertical-align: middle
-    img
-      height: SIZE = (UNIT / 1.5)
-      width: SIZE
-      margin-right: (2 * SPACE)
-      border-radius: 50%
-      box-shadow: 0 0 0 .15rem WHITE, 0 0 0 .3rem GREEN
-
-    .icon
-      font-size: (1.25 * FONT_SIZE_BIG)
-      margin-right: SPACE
-      color: COLOR
-      &:hover
-        color: GREEN
-
-    span
-      font-size: FONT_SIZE_SMALL
-      text-transform: italic
+    background-color: rgba(0,0,0,0.1) !important
