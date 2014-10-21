@@ -18,6 +18,7 @@ var source = {
   coffee: [ 'source/app.coffee',
             'source/app.*.coffee'],
   styl  : [ 'source/styles/__init.styl',
+            'source/styles/vendor.styl',
             'source/styles/reset.styl',
             'source/styles/app.styl',
             'source/styles/app.*.styl']};
