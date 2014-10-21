@@ -12,6 +12,7 @@
     ],
     "dependencies": {
         "jquery"           : "*",
-        "jquery.stellar"   : "*"
+        "jquery.stellar"   : "*",
+        "STYLmethods"      : "*"
     }
 }
