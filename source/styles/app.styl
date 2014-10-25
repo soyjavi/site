@@ -5,6 +5,13 @@ body
   line-height: 1.75
   background-color: WHITE
 
+  h1, h2, h3, h4, h5, h6, span, p, div, strong, label
+    -webkit-font-smoothing: subpixel-antialiased
+    font-smoothing: subpixel-antialiased
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    text-size-adjust: 100%
+
   .wrapper
     position: relative
     margin: 0 auto
@@ -36,15 +43,13 @@ body
     p
       opacity: 0.5
     &.green
-      background: linear-gradient(GREEN,lighten(GREEN, 30%)),GREEN;
+      background: linear-gradient(THEME,lighten(THEME, 30%)),THEME;
     &.dark
       background: linear-gradient(DARK,darken(DARK, 25%)),DARK;
     &.grey
       background: linear-gradient(BACKGROUND,lighten(BACKGROUND, 50%)),BACKGROUND;
       &, & a
         color: COLOR
-    &.pink
-      background: linear-gradient(lighten(PINK, 25%),PINK),PINK;
     &.black
       background: linear-gradient(#000000,#1a232c),#000;
 
@@ -52,4 +57,4 @@ body
     &.white
       color: WHITE
     &.green
-      color: GREEN
+      color: THEME

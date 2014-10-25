@@ -21,11 +21,10 @@ Soyjavi.effect = do(s = Soyjavi) ->
 
     if percent > 25
       _el.header.addClass "active"
-      _el.landing.css "opacity", "0"
+      _el.landing.addClass "hide"
       _el.landing.parent().removeClass "scroll"
-
     else
-      _el.landing.css "opacity", 1
+      _el.landing.removeClass "hide"
       _el.header.removeClass "active"
       _el.landing.parent().addClass "scroll"
 
