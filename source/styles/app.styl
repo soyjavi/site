@@ -42,7 +42,7 @@ body
       color: WHITE
     p
       opacity: 0.5
-    &.green
+    &.theme
       background: linear-gradient(THEME,lighten(THEME, 30%)),THEME;
     &.dark
       background: linear-gradient(DARK,darken(DARK, 25%)),DARK;
@@ -56,5 +56,8 @@ body
   .color
     &.white
       color: WHITE
-    &.green
+    &.theme
       color: THEME
+
+  strong
+    font-weight: FONT_WEIGHT_BOLD

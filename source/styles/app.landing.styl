@@ -74,12 +74,9 @@ body
         &.hide
           h1, small, nav
             opacity: 0
-          h1, nav
-            transform translateX(-50%)
-          small
-            transform translateX(50%)
+            transform scale(0.9)
 
-    &.bck.green
+    &.bck.theme
       h3
         font-weight: FONT_WEIGHT_NORMAL
         color: rgba(0,0,0,0.2) !important
@@ -91,30 +88,27 @@ body
         opacity: 0.85
         span
           margin-left: (SPACE / 2)
-          padding: (SPACE / 4) (SPACE / 3) (SPACE / 10) (SPACE / 3)
-          font-size: (FONT_SIZE_TINY / 1.4)
+          padding: (SPACE / 6) (SPACE / 4) 0 (SPACE / 4)
+          font-size: SIZE = (FONT_SIZE_TINY / 1.25)
           font-weight: FONT_WEIGHT_BOLD
-          line-height: (FONT_SIZE_TINY / 1.4)
           text-transform: uppercase
           vertical-align: middle
           border-radius: .25rem
-          opacity: 0.75
-          border: solid .15rem
+          opacity: 0.9
         &:hover
-          &, & span
-            opacity: 1
+          opacity: 1
 
 
-    &.bck.green nav.list > a
+    &.bck.theme nav.list > a
       span
-        border-color: WHITE
+        background-color: rgba(255,255,255,0.5)
+        color: THEME
       &:hover span
         background-color: WHITE
-        color: THEME
 
-    &.bck.grey nav.list > a
+    &.bck.dark nav.list > a
       span
-        border-color: COLOR
-      &:hover span
-        background-color: COLOR
+        background-color: rgba(0,0,0,0.25)
         color: WHITE
+      &:hover span
+        background-color: THEME
