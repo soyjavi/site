@@ -1,5 +1,7 @@
+zen.yml
+
 bower_components
-node_modules
 logs
-yoi/assets/css/soyjavi*
-yoi/assets/js/soyjavi*
+node_modules
+static/css/soyjavi*
+static/js/soyjavi*

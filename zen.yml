@@ -4,6 +4,12 @@ environment: development
 www:
   - index
 
+# -- Monitor -------------------------------------------------------------------
+monitor:
+  password: ThewebistheplatforM
+  process : 500000
+  request : 60000
+
 # -- Static resources ----------------------------------------------------------
 statics:
   - url     : /assets
