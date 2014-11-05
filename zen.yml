@@ -7,8 +7,8 @@ www:
 # -- Monitor -------------------------------------------------------------------
 monitor:
   password: ThewebistheplatforM
-  process : 500000
-  request : 60000
+  process : 300000 # 5 minutes
+  request : 60000  # 1 minute
 
 # -- Static resources ----------------------------------------------------------
 statics:
