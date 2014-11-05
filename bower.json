@@ -13,6 +13,6 @@
     "dependencies": {
         "jquery"           : "*",
         "jquery.stellar"   : "*",
-        "STYLmethods"      : "*"
+        "stylmethods"      : "*"
     }
 }
