@@ -10,12 +10,7 @@ monitor:
   process : 300000 # 5 minutes
   request : 60000  # 1 minute
 
-# -- Static resources ----------------------------------------------------------
-statics:
-  - url     : /assets
-    folder  : /static
-    maxage  : 3600
-
+# -- CORS Properties -----------------------------------------------------------
 headers:
   Access-Control-Allow-Origin: "*"
   Access-Control-Allow-Methods: GET
