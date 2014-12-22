@@ -4,6 +4,17 @@ environment: production
 www:
   - index
 
+# -- Static resources ----------------------------------------------------------
+statics:
+  - url     : /assets
+    folder  : /static
+    maxage  : 60 #secods
+  - file    : humans.txt
+    folder  : /static
+    maxage  : 3600
+  - file    : robots.txt
+    folder  : /static
+
 # -- Monitor -------------------------------------------------------------------
 monitor:
   password: ThewebistheplatforM
