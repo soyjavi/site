@@ -17,16 +17,14 @@ var assets = 'static/';
 var source = {
   coffee: [ 'source/app.coffee',
             'source/app.*.coffee'],
-  styl  : [ 'source/styles/__init.styl',
-            'source/styles/vendor.styl',
-            'source/styles/reset.styl',
-            'source/styles/app.styl',
+  styl  : [ 'bower_components/STYLmethods/vendor.styl',
+            'source/styles/flexo.theme.styl',
             'source/styles/app.*.styl']};
 
 var dependencies = {
     js   :[ 'bower_components/jquery/dist/jquery.min.js',
             'bower_components/jquery.stellar/jquery.stellar.min.js'],
-    css  :[ ''],
+    css  :[ 'bower_components/flexo/dist/flexo.css'],
     fonts:[ 'dependencies/atoms.icons/fonts/*',
             'dependencies/icomoon/fonts/*'] };
 

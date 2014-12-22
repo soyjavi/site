@@ -1,0 +1,105 @@
+@import url("http://fonts.googleapis.com/css?family=  Raleway:100,300,700")
+
+// -- CONSTANTS ----------------------------------------------------------------
+/* COLORS */
+COLOR                       = #FFF
+DARK                        = #3d3e41
+BACKGROUND                  = #edeff0
+THEME                       = #19BFB8
+WHITE                       = #fff
+BORDER-RADIUS               = 4px
+
+/* FONT */
+FONT_FAMILY                 = "Raleway", "Helvetica Neue", "Helvetica", "sans-serif"
+FONT_SIZE                   = 1.75em
+FONT_SIZE_TINY              = 0.8rem
+FONT_SIZE_SMALL             = 0.9rem
+FONT_SIZE_NORMAL            = 1.0rem
+FONT_SIZE_BIG               = 1.2rem
+FONT_WEIGHT_THIN            = 100
+FONT_WEIGHT_NORMAL          = 300
+FONT_WEIGHT_BOLD            = 700
+
+/* DIMENSIONS */
+UNIT                        = 4rem
+SPACE                       = (UNIT / 4)
+/* ANIMATIONS */
+ANIMATION_DURATION          = 200ms
+ANIMATION_STEPS             = 15
+ANIMATION_EASE              = cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+// -- BASE ---------------------------------------------------------------------
+body
+  color                     : COLOR
+  font-size                 : FONT_SIZE
+  font-family               : FONT_FAMILY
+  a
+    color                   : COLOR
+    text-decoration         : none
+
+.bck
+  // &, & a
+  //   color: WHITE
+  p
+    opacity: 0.5
+
+  // background-color          : BACKGROUND
+  // &.theme
+  //   background-color        : THEME
+  //   color                   : WHITE
+  // &.color
+  //   background-color        : COLOR
+
+
+  &.theme
+    background: linear-gradient(THEME,lighten(THEME, 30%)),THEME;
+  &.dark
+    background: linear-gradient(DARK,darken(DARK, 25%)),DARK;
+  &.grey
+    background: linear-gradient(BACKGROUND,lighten(BACKGROUND, 50%)),BACKGROUND;
+    &, & a
+      color: COLOR
+  &.black
+    background: linear-gradient(#000000,#1a232c),#000;
+
+.color
+  &.white
+    color                   : WHITE
+  &.theme
+    color                   : THEME
+
+// -- BUTTON -------------------------------------------------------------------
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]
+  border                    : 1px solid #bbb
+  border-radius             : BORDER-RADIUS
+  &:hover, &:focus
+    color                   : #333
+    border-color            : #888
+  &.primary
+    color                   : WHITE
+    background-color        : THEME
+    border-color            : darken(THEME, 5%)
+    &:hover, &:focus
+      color                 : WHITE
+      background-color      : darken(THEME, 10%)
+      border-color          : darken(THEME, 15%)
+
+// -- FORM ---------------------------------------------------------------------
+input[type="email"], input[type="search"], input[type="text"], input[type="tel"],
+input[type="url"], input[type="password"], textarea, select
+  background-color          : WHITE
+  border                    : 1px solid #D1D1D1
+  border-radius             : BORDER-RADIUS
+  & :focus
+    border                  : 1px solid #33C3F0
+
+// -- TABLE ---------------------------------------------------------------------
+table
+  th, td
+    border-bottom           : 1px solid #E1E1E1
+
+// -- CODE ---------------------------------------------------------------------
+code
+  background                : darken(BACKGROUND, 5%)
+  border                    : 1px solid darken(BACKGROUND, 10%)
+  border-radius             : BORDER-RADIUS

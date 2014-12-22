@@ -1,61 +1,18 @@
-DESKTOP = 980px
-TABLET = 768px
-MOBILE = 640px
-
-@media only screen and (min-width: DESKTOP)
-  .wrapper
-    width: DESKTOP
-
-@media only screen and (min-width: TABLET) and (max-width:DESKTOP)
-  .wrapper
-    width: TABLET
-
-@media only screen and (min-width: MOBILE) and (max-width:TABLET)
-  .wrapper
-    width: MOBILE
-
-@media only screen and (min-width: MOBILE)
+@media (max-width: 400px)
   body
-    h1
-      font-size: (1.25 * UNIT)
-      line-height: 100%
-    h2
-      font-size: (UNIT)
-    > section
-      &:not(.landing)
-        padding: (1.5 * UNIT) 0
-
-    .col
-      display: inline-block
-      vertical-align: top
-      &.half
-        width: 47.5%
-        &:nth-child(2)
-          margin-right: 4%
-      &.third
-        width: 30%
-        &:nth-child(2), &:nth-child(3)
-          margin-right: 4%
-
-
-@media only screen and (max-width: MOBILE)
-  body
-    h1
-      font-size: (UNIT / 1.1)
-    h2
-      font-size: (UNIT / 2)
-    nav, h2, h3
-      text-align: center
-
     > header
-      display: none !important
+      > nav
+        display                 : none
     > section
-      &:not(.landing)
-        padding: SPACE 0
-      .wrapper
-        margin:SPACE
-
-    > footer
-      text-align: center
-      img, span
-        display: none
+      &.landing
+        h1
+          font-size             : (1.5 * UNIT) !important
+        nav > a
+          &.tapquo
+            display             : none !important
+      &.map
+        text-align              : center
+      &:not(.landing):not(.map)
+        h5
+          margin-top            : SPACE
+          font-weight           : bold

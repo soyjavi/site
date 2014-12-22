@@ -6,7 +6,7 @@ Soyjavi.effect = do(s = Soyjavi) ->
     page    : $ window
     document: $ document
     header  : $ "header"
-    landing : $ ".landing > .wrapper"
+    landing : $ ".landing > .row"
     more    : $ ".landing .more"
 
   resize =->
