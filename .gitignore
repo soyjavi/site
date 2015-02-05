@@ -1,5 +1,4 @@
 bower_components
-logs
 node_modules
-static/css/soyjavi*
-static/js/soyjavi*
+assets/css/soyjavi*
+assets/js/soyjavi*

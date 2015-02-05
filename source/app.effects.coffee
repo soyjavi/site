@@ -9,9 +9,6 @@ Soyjavi.effect = do(s = Soyjavi) ->
     landing : $ ".landing > .row"
     more    : $ ".landing .more"
 
-  resize =->
-    _el.landing.height $(window).height()
-
   scroll = (event) ->
     percent = (_el.document.scrollTop() * 100) / _el.landing.height()
     if percent > 10
@@ -28,5 +25,4 @@ Soyjavi.effect = do(s = Soyjavi) ->
       _el.header.removeClass "active"
       _el.landing.parent().addClass "scroll"
 
-  resize: resize
   scroll: scroll

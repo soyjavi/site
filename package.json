@@ -1,26 +1,22 @@
 {
   "name"            : "soyjavi",
-  "version"         : "0.11.05",
-  "description"     : "",
+  "version"         : "1.02.05",
+  "description"     : "...creating stuff for others",
   "homepage"        : "http://soyjavi.com",
   "author"          : "Javi Jimenez Villar",
   "dependencies": {
-    "coffee-script" : "*",
-    "zenserver"     : "*"
+    "coffee-script" : "*"
   },
   "devDependencies" : {
     "gulp"        : "*",
     "gulp-coffee" : "*",
     "gulp-concat" : "*",
+    "gulp-connect": "*",
     "gulp-flatten": "*",
     "gulp-header" : "*",
     "gulp-stylus" : "*",
     "gulp-uglify" : "*",
     "gulp-util"   : "*",
     "gulp-yml"    : "*"
-  },
-  "scripts"         : {
-    "start": "node index.js zen development"
-  },
-  "engines"         : { "node": "*"}
+  }
 }

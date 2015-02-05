@@ -53,8 +53,8 @@ body
 
   // -- CONTENT ----------------------------------------------------------------
   > section
-    .row
-      margin-bottom: 0
+    &, > .row
+      height: 100vh
     &:not(.landing)
       padding                   : (2 * UNIT) 0
       nav > a
@@ -99,7 +99,6 @@ body
       position                  : relative
       padding                   : 0 !important
       background-color          : DARK
-      height                    : (14 * UNIT)
       > *
         position                : absolute
         left                      : 0
