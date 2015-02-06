@@ -1,18 +1,48 @@
 @media (max-width: 400px)
   body
-    > header
-      > nav
-        display                 : none
+    .hide-phone
+      display                       : none
     > section
+      &:not(.landing)
+        height                      : auto
+      & [data-column="6"]
+        width                       : 100%
+        &[data-flex="vertical center"]
+          padding                   : (UNIT / 1.5) (UNIT / 2)
+          > p
+            text-align              : justify
+        &.bck.photo
+          height                    : 100vw
       &.landing
         h1
-          font-size             : (1.5 * UNIT) !important
-        nav > a
-          &.tapquo
-            display             : none !important
-      &.map
-        text-align              : center
-      &:not(.landing):not(.map)
-        h5
-          margin-top            : SPACE
-          font-weight           : bold
+          font-size                 : (1.5 * UNIT) !important
+
+    // -- Products -------------------------------------------------------------
+    .products
+      > * > strong
+        font-size                   : (UNIT / 3) !important
+      &:not(.books) > *
+        height                      : 25vw !important
+      &.books > *
+        height                      : 100vw !important
+    // -- Map ------------------------------------------------------------------
+    .map
+      height                        : 100vw !important
+
+@media (max-width: 1024px)
+  body
+    > section
+      &:not(.landing)
+        height                      : 50vw !important
+        h1
+          font-size                 : (1.5 * UNIT) !important
+        p
+          font-size                 : 15px
+    // -- Products -------------------------------------------------------------
+    .products
+      > * > strong
+        font-size                   : (UNIT / 2) !important
+      &:not(.books) > *
+        height                      : 12.5vw !important
+      &.books > *
+        height                      : 50vw !important

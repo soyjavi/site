@@ -3,7 +3,6 @@ body
   > section
     position                              : relative
     height                                : 100vh
-
     h1
       font-size                           : (2.5 * UNIT)
     h1, h2
@@ -27,6 +26,7 @@ body
         width                             : 100%
         height                            : 100%
 
+    // -- Products -------------------------------------------------------------
     .products
       > *
         margin                            : 0 !important
@@ -35,17 +35,21 @@ body
         text-align                        : center
         list-style                        : none
         overflow                          : hidden
+        transition                          background ANIMATION_DURATION
+        &:nth-child(odd)
+          background-color                : rgba(0,0,0,0.05)
         > *
           transition                        all ANIMATION_DURATION
+          padding                         : 0 SPACE
           &:not(strong)
-            visibility                    : hidden
+            display                       : none
             opacity                       : 0
         > strong
           display                         : block
           margin-bottom                   : 0
-          font-size                       : (UNIT / 1.5)
-          line-height                     : 25vh
-        > span
+          font-size                       : HEIGHT = (UNIT / 1.5)
+          line-height                     : (1.2 * HEIGHT)
+        span
           display                         : inline-block
           margin                          : 0 (SPACE / 4)
           padding                         : 0 (SPACE / 2)
@@ -55,25 +59,17 @@ body
           background-color                : rgba(0,0,0,0.25)
           opacity                         : 0.9
         > small
-          display                         : block
           margin-top                      : (SPACE / 4)
-          padding                         : 0 SPACE
         &:hover
           background-color                : alpha(THEME, 0.5)
           > *:not(strong)
-            visibility                    : visible
+            display                       : block
             opacity                       : 1
           > strong
-            margin-top                    : UNIT
-            line-height                   : 150% !important
-            font-size                     : (UNIT / 2)
+            font-size                     : HEIGHT = (UNIT / 2)
+            line-height                   : (1.2 * HEIGHT)
       &.books > *
         height                            : 100vh
-        > strong
-          line-height                     : 100vh
-        &:hover
-          > strong
-            margin-top                    : 30vh
 
     &.landing
       > *
@@ -109,4 +105,10 @@ body
       bottom                                : SPACE
       left                                  : 50%
       width                                 : 50%
-      font-size                             : 14px
+      font-size                             : 12px
+      &, > a
+        color                               : rgba(255,255,255,0.4)
+      > a
+        font-size                           : 110%
+        &:hover
+          color                             : WHITE
