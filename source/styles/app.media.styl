@@ -32,17 +32,26 @@
 @media (max-width: 1024px)
   body
     > section
+      h2
+        font-size                   : (UNIT / 1.5) !important
+      p
+        font-size                   : 13px !important
       &:not(.landing)
         height                      : 50vw !important
-        h1
-          font-size                 : (1.5 * UNIT) !important
-        p
-          font-size                 : 15px
+        & [data-column="6"]
+          &[data-flex="vertical center"]
+            padding                 : (UNIT / 1.5) (UNIT / 2) !important
     // -- Products -------------------------------------------------------------
     .products
-      > * > strong
-        font-size                   : (UNIT / 2) !important
+      > *
+        > strong
+          font-size                 : HEIGHT = (UNIT / 3) !important
+          line-height               : HEIGHT
+        &:hover
+          > *:not(strong)
+              display               : none !important
       &:not(.books) > *
         height                      : 12.5vw !important
       &.books > *
         height                      : 50vw !important
+

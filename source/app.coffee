@@ -17,4 +17,3 @@ $ ->
       soyjavi.dom.text.addClass "hide"
     else
       soyjavi.dom.text.removeClass "hide"
-  $(window).stellar()

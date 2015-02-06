@@ -24,7 +24,7 @@ FONT_WEIGHT_BOLD            = 800
 UNIT                        = 4rem
 SPACE                       = (UNIT / 4)
 /* ANIMATIONS */
-ANIMATION_DURATION          = 200ms
+ANIMATION_DURATION          = 350ms
 ANIMATION_STEPS             = 15
 ANIMATION_EASE              = cubic-bezier(0.645, 0.045, 0.355, 1.000)
 
@@ -40,7 +40,6 @@ body
 
 .bck
   margin                    : 0
-  transition                all ANIMATION_DURATION
   &.dots
     background              : url("/assets/img/bck.dots.png") repeat top left
   &.dark
@@ -49,7 +48,6 @@ body
     background-size         : cover
     background-opacity      : 0.5
     background-position     : 0 100%
-    background-size         : 110%
     -webkit-filter          : VALUE = opacity(0.75) grayscale(0.75)
     -moz-filter             : VALUE
     -o-filter               : VALUE
