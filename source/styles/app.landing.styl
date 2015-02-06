@@ -1,187 +1,112 @@
 body
-  // -- HEADER -----------------------------------------------------------------
-  > header
-    z-index                   : 1980
-    position                  : fixed
-    top                       : 0
-    left                      : 0
-    right                     : 0
-    height                    : HEIGHT = (1.5 * UNIT)
-    padding                   : 0 SPACE
-    line-height               : HEIGHT
-    background-color          : rgba(0,0,0,0.5)
-    color                     : WHITE
-    transform                   translateY(-100%)
-    ANIMATION_DURATION = (2 * ANIMATION_DURATION)
-    transition              all ANIMATION_DURATION ANIMATION_EASE
-    > *
-      display                 : inline-block
-      vertical-align          : MIDDLE
-      opacity                 : 0
-    > strong, > nav
-      transition                all ANIMATION_DURATION ANIMATION_DURATION ANIMATION_EASE
-    > strong
-      margin-right            : (SPACE / 2)
-      transform                 translateX(-100%)
-    > small
-      transform                 translateX(-100%)
-      transition                all ANIMATION_DURATION (1.5 * ANIMATION_DURATION) ANIMATION_EASE
-    > nav
-      float                   : right
-      transform                 translateX(100%)
-      > *
-        color                 : WHITE
-        margin-left           : (2.5 * SPACE)
-        display               : inline-block
-        margin                : 0 0 0 SIZE = (UNIT / 2)
-        vertical-align        : middle
-        width                 : SIZE
-        height                : SIZE
-        font-size             : SIZE
-        opacity               : 0.45
-        transition              opacity ANIMATION_DURATION ANIMATION_EASE
-        &.tapquo
-          background-image    : url("/assets/img/logo_tapquo.png")
-          background-size     : cover
-        &:hover
-          opacity             : 1
-    &.active
-      transform                 translateY(0%)
-      > *
-        opacity               : 1
-        transform               translateX(0%)
-
-  // -- CONTENT ----------------------------------------------------------------
+  GHOST = 0.25
   > section
-    &, > .row
-      height: 100vh
-    &:not(.landing)
-      padding                   : (2 * UNIT) 0
-      nav > a
-        display: block
-        margin: (SPACE) 0
-        opacity: 0.85
-        img
-          width: 100%
-          margin-bottom: 0
-        span
-          margin-left: (SPACE / 2)
-          padding: (SPACE / 6) (SPACE / 4) 0 (SPACE / 4)
-          font-size: FONT_SIZE_SMALL
-          font-weight: FONT_WEIGHT_BOLD
-          text-transform: uppercase
-          vertical-align: middle
-          border-radius: .25rem
-          opacity: 0.9
-          &.soon
-            background-color: WHITE !important
-        small
-          display         : block
-          font-size       : 75%
-          opacity         : 0.5
+    position                              : relative
+    height                                : 100vh
 
-        &:hover
-          opacity: 1
+    h1
+      font-size                           : (2.5 * UNIT)
+    h1, h2
+      font-weight                         : FONT_WEIGHT_BOLD
+      &:before
+        content                           : "<"
+      &:after
+        content                           : ">"
+      &:before, &:after
+        opacity                           : GHOST
+    p
+      opacity                             : (3 * GHOST)
+    & [data-column="6"]
+      margin                              : 0 !important
+      height                              : 100%
+      width                               : 50%
+      &[data-flex="vertical center"]
+        padding                           : (2 * UNIT)
+        text-align                        : center
+      > .bck
+        width                             : 100%
+        height                            : 100%
 
-      &.bck.theme nav > a
-        span
-          background-color: rgba(255,255,255,0.5)
-          color: THEME
-        &:hover span
-          background-color: WHITE
-      &.bck.dark nav > a
-        span
-          background-color: rgba(0,0,0,0.25)
-          color: WHITE
-        &:hover span
-          background-color: THEME
-    &.map
-      position                  : relative
-      padding                   : 0 !important
-      background-color          : DARK
+    .products
       > *
-        position                : absolute
-        left                      : 0
-      > .row
-        width                   : 100%
-        height                  : 100%
-      > iframe
-        width: 100%
-        height: 100%
-        opacity: 0.5
+        margin                            : 0 !important
+        width                             : 33.33%
+        height                            : 25vh
+        text-align                        : center
+        list-style                        : none
+        overflow                          : hidden
+        > *
+          transition                        all ANIMATION_DURATION
+          &:not(strong)
+            visibility                    : hidden
+            opacity                       : 0
+        > strong
+          display                         : block
+          margin-bottom                   : 0
+          font-size                       : (UNIT / 1.5)
+          line-height                     : 25vh
+        > span
+          display                         : inline-block
+          margin                          : 0 (SPACE / 4)
+          padding                         : 0 (SPACE / 2)
+          font-size                       : 11px
+          font-weight                     : FONT_WEIGHT_NORMAL
+          border-radius                   : .25rem
+          background-color                : rgba(0,0,0,0.25)
+          opacity                         : 0.9
+        > small
+          display                         : block
+          margin-top                      : (SPACE / 4)
+          padding                         : 0 SPACE
+        &:hover
+          background-color                : alpha(THEME, 0.5)
+          > *:not(strong)
+            visibility                    : visible
+            opacity                       : 1
+          > strong
+            margin-top                    : UNIT
+            line-height                   : 150% !important
+            font-size                     : (UNIT / 2)
+      &.books > *
+        height                            : 100vh
+        > strong
+          line-height                     : 100vh
+        &:hover
+          > strong
+            margin-top                    : 30vh
 
     &.landing
-      background-image          : url("/assets/img/background.jpg")
-      background-size           : cover !important
-      background-opacity        : 0.5
-      background-position       : 0 100%
-      &:not(.scroll)
-        -webkit-filter          : grayscale(66%)
-        -moz-filter             : grayscale(66%)
-        -ms-filter              : grayscale(66%)
-        -o-filter               : grayscale(66%)
-        filter                  : grayscale(66%)
-
-      &.scroll
-        figure.glass
-          background-color      : rgba(0,0,0,0.5)
-
-      figure.glass
-        position                : absolute
-        left                    : 0
-        top                     : 0
-        width                   : 100%
-        height                  : 100%
-        margin                  : 0 !important
-        background-color        : rgba(0,0,0,0.0)
-        transition                background (3 * ANIMATION_DURATION) ANIMATION_EASE
-      .row
-        margin-bottom: 0
-        > *
-          z-index               : 1980
-          transition              all (1 * ANIMATION_DURATION) ANIMATION_EASE
-        > h1
-          margin-bottom         : (UNIT / 4)
-          font-size             : (2.5 * UNIT)
-          font-weight           : FONT_WEIGHT_BOLD
-          > span
-            opacity: 0.5
-        > h4
-          margin-bottom         : (UNIT / 3.5)
-        > nav > a
-          margin                : 0 (SPACE / 1.25)
-          width                 : SIZE = (UNIT / 1.5)
-          height                : SIZE
-          font-size             : SIZE
-          opacity               : 0.4
-          transition              opacity ANIMATION_DURATION ANIMATION_EASE
-          &:hover
-            opacity             : 1
-          &.tapquo
-            display             : inline-block
-            background-image    : url("/assets/img/logo_tapquo.png")
-            background-size     : cover
-        > .more
-          position              : absolute
-          bottom                : SPACE
-          left                  : 0
-          right                 : 0
-          font-weight           : FONT_WEIGHT_NORMAL
-          opacity               : 0.6
-          transition              all (2 * ANIMATION_DURATION) ANIMATION_EASE
-          &.hide
-            opacity             : 0
+      > *
+        transition                          all (1 * ANIMATION_DURATION) ANIMATION_EASE
         &.hide
-          *
-            opacity             : 0
-            transform             scale(0.9)
+          opacity                         : 0 !important
+          transform                         scale(0.9)
+      > h1
+        margin-bottom                     : (UNIT / 4)
+      > h4
+        margin-bottom                     : (UNIT / 3.5)
+      > nav > a
+        margin                            : 0 (SPACE / 1.25)
+        width                             : SIZE = (UNIT / 1.5)
+        height                            : SIZE
+        font-size                         : SIZE
+        opacity                           : (2 * GHOST)
+        transition                          opacity ANIMATION_DURATION ANIMATION_EASE
+        &:hover
+          opacity                         : 1
+      > .more
+        position                          : absolute
+        bottom                            : SPACE
+        left                              : 0
+        right                             : 0
+        font-weight                       : FONT_WEIGHT_NORMAL
+        opacity                           : GHOST
+        transition                          all (2 * ANIMATION_DURATION) ANIMATION_EASE
 
 
-  // -- FOOTER -----------------------------------------------------------------
-  > footer
-    position        : relative
-    height          : HEIGHT = (1.5 * UNIT)
-    line-height     : HEIGHT
-    margin-top      : -(HEIGHT)
-    background-color: rgba(0,0,0,0.25)
-    opacity         : 0.25
+    footer
+      position                              : absolute
+      bottom                                : SPACE
+      left                                  : 50%
+      width                                 : 50%
+      font-size                             : 14px
