@@ -7,6 +7,8 @@ nav.products
     list-style                        : none
     overflow                          : hidden
     padding                           : 0 !important
+    opacity                           : 0
+    transform                           translateY(50%)
     &:nth-child(odd)
       background-color                : rgba(0,0,0,0.25)
     > *
@@ -15,13 +17,13 @@ nav.products
     > strong
       display                         : block
       margin-bottom                   : 0
-      font-size                       : HEIGHT = (UNIT / 1.5)
+      font-size                       : HEIGHT = (UNIT / 2)
       line-height                     : (1.2 * HEIGHT)
     span
       display                         : inline-block
       margin                          : 0 (SPACE / 4)
       padding                         : 0 (SPACE / 2)
-      font-size                       : 11px
+      font-size                       : 12px
       font-weight                     : FONT_WEIGHT_NORMAL
       border-radius                   : .25rem
       background-color                : rgba(0,0,0,0.25)
@@ -35,5 +37,11 @@ nav.products
         display                       : block
       > div
         display: none
+
   &.books > a
-    height                            : 100vh
+    height                            : 50vw
+
+  .active &
+    > a
+      opacity                         : 1
+      transform                         translateY(0%)

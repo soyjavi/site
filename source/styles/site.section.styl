@@ -22,6 +22,9 @@ body
       &:last-child
         margin-bottom                     : 0
 
+    .map
+      border                              : none
+
     &:not(#intro)
       position                            : relative
       width                               : 100vw
@@ -48,6 +51,7 @@ body
           opacity                         : 1
 
     &#intro
+      z-index                             : 0
       position                            : fixed
       top                                 : 0
       left                                : 0
@@ -89,4 +93,5 @@ body
         color                             : alpha(WHITE, 50%)
 
     &#about
+      z-index                             : 1
       margin-top                          : 100vh
