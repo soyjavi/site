@@ -14,8 +14,10 @@ source =
   coffee: [ "source/app.coffee"
             "source/app.*.coffee"]
   styl  : [ "bower_components/STYLmethods/vendor.styl"
+            "source/styles/CONSTANTS.styl"
             "source/styles/flexo.theme.styl"
-            "source/styles/app.*.styl"]
+            "source/styles/site.*.styl"
+            ]
   html  : [ "./*.html" ]
   dest  : "assets/"
 

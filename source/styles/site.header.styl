@@ -1,0 +1,22 @@
+header
+  z-index                         : 1980
+  position                        : fixed
+  top                             : 0px
+  height                          : HEIGHT = (1.5 * UNIT)
+  width                           : 100vw
+  background-color                : alpha(THEME, 95%)
+  transform                         translateY(-100%)
+  transition                        all ANIMATION_DURATION ANIMATION_EASE
+  > img
+    height                        : HEIGHT
+    margin-right                  : SPACE
+  > nav
+    line-height                   : HEIGHT
+    > a
+      margin-left                 : SPACE
+      opacity                     : 0.75
+      &:hover
+        opacity                   : 1
+
+  &.active
+    transform                       translateY(0%)

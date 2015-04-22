@@ -1,34 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Raleway:300,800")
-
-// -- CONSTANTS ----------------------------------------------------------------
-/* COLORS */
-COLOR                       = #FFF
-DARK                        = #3d3e41
-BACKGROUND                  = #edeff0
-THEME                       = #19BFB8
-WHITE                       = #fff
-BORDER-RADIUS               = 4px
-
-/* FONT */
-FONT_FAMILY                 = "Raleway", "Helvetica Neue", "Helvetica", "sans-serif"
-FONT_SIZE                   = 1.75em
-FONT_SIZE_TINY              = 0.8rem
-FONT_SIZE_SMALL             = 0.9rem
-FONT_SIZE_NORMAL            = 1.0rem
-FONT_SIZE_BIG               = 1.2rem
-FONT_WEIGHT_THIN            = 300
-FONT_WEIGHT_NORMAL          = 300
-FONT_WEIGHT_BOLD            = 800
-
-/* DIMENSIONS */
-UNIT                        = 4rem
-SPACE                       = (UNIT / 4)
-/* ANIMATIONS */
-ANIMATION_DURATION          = 350ms
-ANIMATION_STEPS             = 15
-ANIMATION_EASE              = cubic-bezier(0.645, 0.045, 0.355, 1.000)
-
-// -- BASE ---------------------------------------------------------------------
 body
   color                     : COLOR
   font-size                 : FONT_SIZE
@@ -38,41 +7,7 @@ body
     color                   : COLOR
     text-decoration         : none
 
-.bck
-  margin                    : 0
-  &.dots
-    background              : url("/assets/img/bck.dots.png") repeat top left
-  &.dark
-    background-color        : DARK
-  &.photo
-    background-size         : cover
-    background-opacity      : 0.5
-    background-position     : 0 100%
-    -webkit-filter          : VALUE = opacity(0.75) grayscale(0.75)
-    -moz-filter             : VALUE
-    -o-filter               : VALUE
-    -ms-filter              : VALUE
-    filter                  : VALUE
-    transition                all ANIMATION_DURATION
-    &.pool
-      background-image    : url("/assets/img/soyjavi.pool.jpg")
-    &.walking
-      background-image    : url("/assets/img/soyjavi.walking.jpg")
-    &.mexico
-      background-image    : url("/assets/img/soyjavi.mexico.jpg")
-    &.trolley
-      background-image    : url("/assets/img/soyjavi.trolley.jpg")
-    &.teaching
-      background-image    : url("/assets/img/soyjavi.teaching.jpg")
-    &.bike
-      background-image    : url("/assets/img/soyjavi.bike.jpg")
-    &:hover
-      -webkit-filter          : VALUE = opacity(1) grayscale(0)
-      -moz-filter             : VALUE
-      -o-filter               : VALUE
-      -ms-filter              : VALUE
-      filter                  : VALUE
-
+// -- COLORS -------------------------------------------------------------------
 .color
   &.white
     color                   : WHITE
@@ -103,11 +38,6 @@ input[type="url"], input[type="password"], textarea, select
   border-radius             : BORDER-RADIUS
   & :focus
     border                  : 1px solid #33C3F0
-
-// -- TABLE ---------------------------------------------------------------------
-table
-  th, td
-    border-bottom           : 1px solid #E1E1E1
 
 // -- CODE ---------------------------------------------------------------------
 code

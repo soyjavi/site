@@ -12,23 +12,38 @@
   </head>
 
   <body>
-    <section class="landing bck dots" data-flex="vertical center">
+    <header data-flex="horizontal grow">
+      <img src="./assets/img/soyjavi.hat.jpg" alt="soyjavi" data-flex-grow="min"/>
+      <nav>
+        <a href="https://github.com/soyjavi" class="icon github" target="_github"></a>
+        <a href="https://twitter.com/soyjavi" class="icon twitter" target="_twitter"></a>
+        <a class="icon medium" href="https://medium.com/@soyjavi" target="_medium"></a>
+        <a class="icon instagram" href="http://instagram.com/soyjavi" target="_instagram"></a>
+        <a class="icon facebook" href="https://www.facebook.com/javi.jimenez.villar" target="_facebook"></a>
+        <a class="icon linkedin" href="https://th.linkedin.com/in/soyjavi" target="_linkedin"></a>
+        <a class="icon skype" href="skype:javi.jimenez.villar" target="_skype"></a>
+      </nav>
+    </header>
+
+    <section id="intro" data-flex="vertical center">
+      <div class="bck dots"></div>
       <h1>soyjavi</h1>
       <h4 class="color theme">...creating stuff for others</h4>
       <nav>
         <a href="https://github.com/soyjavi" class="icon github" target="_github"></a>
         <a href="https://twitter.com/soyjavi" class="icon twitter" target="_twitter"></a>
-        <a class="icon pen" href="https://medium.com/@soyjavi" target="_medium"></a>
+        <a class="icon medium" href="https://medium.com/@soyjavi" target="_medium"></a>
         <a class="icon instagram" href="http://instagram.com/soyjavi" target="_instagram"></a>
+        <a class="icon facebook" href="https://www.facebook.com/javi.jimenez.villar" target="_facebook"></a>
+        <a class="icon linkedin" href="https://th.linkedin.com/in/soyjavi" target="_linkedin"></a>
+        <a class="icon skype" href="skype:javi.jimenez.villar" target="_skype"></a>
       </nav>
-      <small class="more align center"><strong>scroll</strong> down to learn more</small>
+      <small><strong>scroll</strong> down to learn more</small>
     </section>
 
-    <section class="bck dark dots">
-      <div data-column="6" class="bck photo pool" data-stellar-background-ratio="0.9">
-        <div class="bck dots"></div>
-      </div>
-      <div data-column="6" data-flex="vertical center">
+    <section id="about" class="bck dots">
+      <div class="bck dots photo hat"></div>
+      <div data-flex="vertical center">
         <h2>hello <span class="color theme">world</span></h2>
         <p>
           This site is my <strong class="color theme">personal</strong> design
@@ -45,75 +60,66 @@
       </div>
     </section>
 
-    <section class="bck dark dots">
-      <div data-column="6" data-flex="vertical center">
+    <section id="stuff" class="bck dots">
+      <div data-flex="vertical center">
           <h2>thinking & <span class="color theme">creating</span></h2>
           <p>I improve my <strong class="color theme">knowledge</strong> for new ways to create <strong class="color theme">software</strong>.</p>
       </div>
-      <div data-column="6" class="bck photo bike" data-stellar-background-ratio="0.9">
-        <nav data-flex="horizontal wrap" class="products bck dots">
-          <a href="http://atoms.tapquo.com/" target="_blank" data-flex="vertical center">
-            <strong>tapquo</strong>
-            <div><span>founder</span><span>company</span><span>spain</span></div>
-            <small>
-              A smart company who thinks, designs and builds products for developers with a amazing UX.</small>
-          </a>
-          <a href="http://atoms.tapquo.com" target="_blank" data-flex="vertical center">
-            <strong>atoms</strong>
-            <div><span>coffeescript</span><span>css3</span></div>
-            <small>Build Reactive & Atomic Web Applications</small>
-          </a>
-          <a href="http://getflexo.com" target="_blank" data-flex="vertical center">
-            <strong>flexo</strong>
-            <div><span>css3</span></div>
-            <small>A dead simple, responsive & flexible boilerplate.</small>
-          </a>
-          <a href="http://quojs.tapquo.com/" target="_blank" data-flex="vertical center">
-            <strong>quoJS</strong>
-            <div><span>coffeescript</span></div>
-            <small>Manage any gesture in your mobile apps. reate Web Apps only with drag & drop</small>
-          </a>
-          <a href="http://github.com/soyjavi/zen" target="_blank" data-flex="vertical center">
-            <strong>zen</strong>
-            <div><span>nodejs</span></div>
-            <small>a lean and mean https server for node.js</small>
-          </a>
-          <a href="http://lungo.tapquo.com/" target="_blank" data-flex="vertical center">
-            <strong>lungoJS</strong>
-            <div><span>js</span><span>css3</span><span>html</span></div>
-            <small>HTML5 framework for your mobile apps</small>
-          </a>
-          <a href="http://monocle.tapquo.com/" target="_blank" data-flex="vertical center">
-            <strong>monocle</strong>
-            <div><span>coffeescript</span></div>
-            <small>MVC Framework for CoffeeScript Apps</small>
-          </a>
-          <a href="https://mistery.url" target="_blank" data-flex="vertical center">
-            <strong>oiz.io</strong>
-            <div><span>social</span><span>marketing</span><span>product</span></div>
-            <small>Create social & viral campaigns easily</small>
-          </a>
-          <a href="https://nomada.io" target="_blank" data-flex="vertical center">
-            <strong>nomada.io</strong>
-            <div><span>e-commerce</span><span>product</span></div>
-            <small>Best products to travel the world</small>
-          </a>
-          <a href="http://devcast.co" target="_blank" data-flex="vertical center">
-            <strong>devcast.co</strong>
-            <div><span>learning</span><span>videos</span></div>
-            <small>Top video for web developers</small>
-          </a>
-          <a href="http://zetapath.com" target="_blank" data-flex="vertical center">
-            <strong>zetapath</strong>
-            <div><span>founder</span><span>company</span><span>london</span></div>
-          </a>
-        </nav>
-      </div>
+      <nav data-flex="wrap" class="bck dots photo bike products">
+        <a href="http://atoms.tapquo.com/" target="_blank" data-flex="vertical center">
+          <strong>tapquo</strong>
+          <div><span>founder</span><span>company</span><span>spain</span></div>
+          <small>
+            A smart company who thinks, designs and builds products for developers with a amazing UX.</small>
+        </a>
+        <a href="http://zetapath.com" target="_blank" data-flex="vertical center">
+          <strong>zetapath</strong>
+          <div><span>founder</span><span>company</span><span>london</span></div>
+          <small>A Digital Product Design Agency</small>
+        </a>
+        <a href="http://quojs.tapquo.com/" target="_blank" data-flex="vertical center">
+          <strong>QuoJS</strong>
+          <div><span>coffeescript</span></div>
+          <small>Manage any gesture in your mobile apps. reate Web Apps only with drag & drop</small>
+        </a>
+        <a href="http://atoms.tapquo.com" target="_blank" data-flex="vertical center">
+          <strong>atoms</strong>
+          <div><span>coffeescript</span><span>css3</span></div>
+          <small>Build Reactive & Atomic Web Applications</small>
+        </a>
+        <a href="http://getflexo.com" target="_blank" data-flex="vertical center">
+          <strong>getflexo.com</strong>
+          <div><span>css3</span></div>
+          <small>A dead simple, responsive & flexible boilerplate.</small>
+        </a>
+
+        <a href="http://github.com/soyjavi/zen" target="_blank" data-flex="vertical center">
+          <strong>zen</strong>
+          <div><span>nodejs</span></div>
+          <small>a lean and mean https server for node.js</small>
+        </a>
+        <a href="http://lungo.tapquo.com/" target="_blank" data-flex="vertical center">
+          <strong>lungoJS</strong>
+          <div><span>js</span><span>css3</span><span>html</span></div>
+          <small>HTML5 framework for your mobile apps</small>
+        </a>
+        <a href="http://devcast.co" target="_blank" data-flex="vertical center">
+          <strong>devcast.co</strong>
+          <div><span>learning</span><span>videos</span></div>
+          <small>Top video for web developers</small>
+        </a>
+
+        <a href="https://github.com/soyjavi" target="_blank" data-flex="vertical center">
+          <strong>Opensource</strong>
+          <div><span>coffeescript</span></div>
+          <small>MVC Framework for CoffeeScript Apps</small>
+        </a>
+      </nav>
     </section>
 
-    <section class="bck dark dots">
-      <div data-column="6" class="bck photo walking" data-stellar-background-ratio="0.9">
-        <nav data-flex="horizontal wrap" class="products books bck dots">
+    <section id="books" class="bck dots">
+      <div class="bck photo walking">
+        <nav data-flex="wrap" class="products books bck dots">
            <a href="https://leanpub.com/coffeescript" target="_blank" data-flex="vertical center">
             <strong>Little book of CoffeeScript</strong>
             <div><span>free</span><span>coffeescript</span></div>
@@ -131,18 +137,18 @@
           </a>
         </nav>
       </div>
-      <div data-column="6" data-flex="vertical center">
+      <div data-flex="vertical center">
         <h2><strong class="color theme">writing</strong> some stuff</h2>
         <p>In 2013 I wrote my first book with more than <strong class="color theme">3000 readers</strong>. Now I'm writing 2 in &lt;multithreaded mode&gt;</p>
       </div>
     </section>
 
-    <section class="bck dark dots hide-phone">
-      <div data-column="6" data-flex="vertical center">
+    <section id="knowledge" class="bck dots hide-phone">
+      <div data-flex="vertical center">
         <h2>teaching & <span class="color theme">speaking</span></h2>
         <p>I am a <strong class="color theme">human</strong> with a purpose, I love sharing <strong class="color theme">knowledge</strong></p>
       </div>
-      <div data-column="6" class="bck photo teaching" data-stellar-background-ratio="0.9">
+      <div class="bck photo teaching">
         <nav data-flex="horizontal wrap" class="products bck dots">
             <a href="http://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa" target="_blank" data-flex="vertical center">
               <strong>College Teacher</strong>
@@ -203,9 +209,9 @@
       </div>
     </section>
 
-    <section class="bck dots">
-      <iframe data-column="6" class="map" frameBorder='0' src='https://a.tiles.mapbox.com/v4/soyjavi.jok2eike/attribution.html?access_token=pk.eyJ1Ijoic295amF2aSIsImEiOiJMVjUxV1hjIn0.Cmsx5TE3grlCl69EjIeAUA'></iframe>
-      <div data-column="6" data-flex="vertical center">
+    <section id="location" class="bck dots">
+      <iframe class="map" frameBorder='0' src='https://a.tiles.mapbox.com/v4/soyjavi.jok2eike/attribution.html?access_token=pk.eyJ1Ijoic295amF2aSIsImEiOiJMVjUxV1hjIn0.Cmsx5TE3grlCl69EjIeAUA'></iframe>
+      <div data-flex="vertical center">
         <h2><strong class="color theme">Chiang Mai</strong>, Thailand</h2>
         <p>
           I am currently researching new ways of working through the software.
@@ -214,7 +220,7 @@
         <p>
         <a href="mailto:javi.jimenez.villar@gmail.com">Feel free to contact me for <strong class="color theme">project inquiries</strong>.</a>
         </p>
-        <footer class="hide-phone">Hand-made by <a href="http://zetapath.com"><strong>zeta</strong>path</a> 2015</footer>
+        <footer class="hide-phone">Handcrafted with coffee and thai tea by <a href="http://zetapath.com"><strong>zeta</strong>path ltd.</a></footer>
       </div>
     </section>
 

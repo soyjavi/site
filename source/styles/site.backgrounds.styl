@@ -1,0 +1,54 @@
+// -- BACKGROUNDS --------------------------------------------------------------
+.bck
+  margin                    : 0
+  position                  : relative
+  background-size           : cover
+  background-position       : 50% 50%
+  &.dots
+    z-index                 : 0
+    color                   : WHITE
+    &:before
+      z-index               : -1
+      content               : ""
+      position              : absolute
+      top                   : 0
+      right                 : 0
+      left                  : 0
+      width                 : 100%
+      height                : 100%
+      transition              opacity ANIMATION_DURATION
+      background            : url("/assets/img/bck.dots.png") repeat top left
+    &.photo:hover:before
+      opacity               : 0.5
+  &.dark
+    background-color        : DARK
+  &.photo
+    background-size         : cover
+    background-opacity      : 0.5
+    background-position     : 0 100%
+    -webkit-filter          : VALUE = opacity(0.75) grayscale(0.75)
+    -moz-filter             : VALUE
+    -o-filter               : VALUE
+    -ms-filter              : VALUE
+    filter                  : VALUE
+    transition                all ANIMATION_DURATION
+    &.hat
+      background-image    : url("/assets/img/soyjavi.hat.jpg")
+    &.pool
+      background-image    : url("/assets/img/soyjavi.pool.jpg")
+    &.walking
+      background-image    : url("/assets/img/soyjavi.walking.jpg")
+    &.mexico
+      background-image    : url("/assets/img/soyjavi.mexico.jpg")
+    &.trolley
+      background-image    : url("/assets/img/soyjavi.trolley.jpg")
+    &.teaching
+      background-image    : url("/assets/img/soyjavi.teaching.jpg")
+    &.bike
+      background-image    : url("/assets/img/soyjavi.bike.jpg")
+    &:hover
+      -webkit-filter          : VALUE = opacity(1) grayscale(0)
+      -moz-filter             : VALUE
+      -o-filter               : VALUE
+      -ms-filter              : VALUE
+      filter                  : VALUE
