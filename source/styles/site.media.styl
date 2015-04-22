@@ -1,20 +1,19 @@
 @media (max-width: 400px)
   body
-
-    // .hide-phone
-    //   display                       : none
     > section
       h1
         font-size                       : (1.75 * UNIT) !important
       h4
         font-size                       : (UNIT / 1.5)
+      .map
+        display                         : none
 
       &:not(#intro)
         flex-direction                    column !important
         height                          : auto !important
         > *
           width                         : 100vw !important
-        > .photo:not(.products), > .map
+        > .photo:not(.products)
           height                        : 100vw !important
         > [data-flex="vertical center"]
           height                        : auto
@@ -32,6 +31,24 @@
           > *
             display                     : block !important
             opacity                     : 1 !important
+
+@media (min-width: 400px)
+  body
+    > section
+      &:not(#intro)
+        > *
+          &[data-flex="vertical center"]
+            opacity                         : 0
+            transform                         translateY(25%)
+            transition                        all ANIMATION_DURATION ANIMATION_EASE
+          &.photo
+            opacity                         : 0.25
+        &.active
+          > [data-flex="vertical center"]
+            transform                         translateY(0%)
+          > *
+            opacity                         : 1 
+
 
 @media (max-width: 1024px)
   body

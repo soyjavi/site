@@ -21,11 +21,11 @@ body
         margin-bottom                     : SPACE
       &:last-child
         margin-bottom                     : 0
-
     .map
       border                              : none
 
     &:not(#intro)
+      z-index                             : 2
       position                            : relative
       width                               : 100vw
       height                              : SIZE = 50vw
@@ -37,18 +37,8 @@ body
         height                            : SIZE
         &[data-flex="vertical center"]
           text-align                      : center
-          opacity                         : 0
-          transform                         translateY(25%)
-          transition                        all ANIMATION_DURATION ANIMATION_EASE
           > *
             padding                       : 0 (2 * UNIT)
-        &.photo
-          opacity                         : 0.25
-      &.active
-        > [data-flex="vertical center"]
-          transform                         translateY(0%)
-        > *
-          opacity                         : 1
 
     &#intro
       z-index                             : 0
@@ -93,5 +83,4 @@ body
         color                             : alpha(WHITE, 50%)
 
     &#about
-      z-index                             : 1
       margin-top                          : 100vh
