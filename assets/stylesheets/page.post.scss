@@ -1,0 +1,27 @@
+// [data-page='post'] {
+//   line-height: 1.5;
+//   letter-spacing: -.063px;
+//   > section {
+//     > header {
+//       height: 25vh;
+//       background-color: orange;
+//     }
+//     article {
+//       display: flex;
+//       max-width: 700px;
+//       align-content: center;
+//       align-items: center;
+//       justify-content: center;
+//       h2 {
+//         margin: $offset 0 0 0;
+//         & + p {
+//           margin: 0;
+//           background-color: green;
+//         }
+//       }
+//       p {
+//         font-weight: $font-weight-light;
+//       }
+//     }
+//   }
+// }

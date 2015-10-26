@@ -1,0 +1,16 @@
+---
+# This ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Settings
+@import "common";
+// Vendor
+@import "../../node_modules/normalize.css/normalize.css";
+// Styles
+@import "page";
+@import "page.landing";
+@import "page.post";
+// Commons
+@import "common.icons";
+@import "common.posts";

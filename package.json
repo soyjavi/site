@@ -1,22 +1,14 @@
 {
-  "name"            : "soyjavi",
-  "version"         : "1.02.05",
-  "description"     : "...creating stuff for others",
-  "homepage"        : "http://soyjavi.com",
-  "author"          : "Javi Jimenez Villar",
-  "dependencies": {
-    "coffee-script" : "*"
+  "name": "soyjavi",
+  "version": "1.02.05",
+  "description": "...creating stuff for others",
+  "homepage": "http://soyjavi.com",
+  "author": "Javi Jimenez Villar",
+  "devDependencies": {
+    "normalize.css": "*"
   },
-  "devDependencies" : {
-    "gulp"        : "*",
-    "gulp-coffee" : "*",
-    "gulp-concat" : "*",
-    "gulp-connect": "*",
-    "gulp-flatten": "*",
-    "gulp-header" : "*",
-    "gulp-stylus" : "*",
-    "gulp-uglify" : "*",
-    "gulp-util"   : "*",
-    "gulp-yml"    : "*"
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "install": "bundle install"
   }
 }

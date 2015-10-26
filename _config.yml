@@ -1,0 +1,16 @@
+title: Javi Jimenez
+email: javi.jimenez.villar6@gmail.com
+url:   "http://soyjavi.com"
+description: >
+  Hi, I’m Javi. I’m a software engineer who travels around the world. For as long as I can remember, I’ve always had a love for learning.
+
+# Build settings
+markdown: redcarpet
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+
+gems:
+  - jekyll-sitemap

@@ -1,0 +1,21 @@
+{% if page.previous or page.next %}
+  <ul class="post-footer">
+    {% if page.previous %}
+      <li class="post-footer__item">
+        <a href="{{ page.previous.url }}" class="post-footer__link">
+          <p class="post-footer__subtitle">Previous</p>
+          <p class="post-footer__title">{{ page.previous.title }}</p>
+        </a>
+      </li>
+    {% endif %}
+
+    {% if page.next %}
+      <li class="post-footer__item">
+        <a href="{{ page.next.url }}" class="post-footer__link">
+          <p class="post-footer__subtitle">Next</p>
+          <p class="post-footer__title">{{ page.next.title }}</p>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}

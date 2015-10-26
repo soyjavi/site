@@ -1,0 +1,22 @@
+ul.posts {
+  li {
+    margin-bottom: ($offset / 1.5);
+    > * {
+      display: block;
+    }
+    > small {
+      max-height: 7 * $unit;
+      margin: $unit 0;
+      overflow: hidden;
+      text-overflow: wrap;
+      opacity: .75;
+    }
+    > a, > span {
+      font-size: $font-size-tiny;
+    }
+    > a {
+      font-weight: $font-weight-bold;
+      color: $accent;
+    }
+  }
+}

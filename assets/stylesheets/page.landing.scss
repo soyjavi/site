@@ -1,0 +1,73 @@
+[data-page='landing'] {
+  display: flex;
+  flex-direction: row;
+  > section {
+    height: 100vh;
+    &[data-role='profile'] {
+      $min-width: 100vh;
+      position: relative;
+      min-width: $min-width;
+      max-width: $min-width;
+      text-align: center;
+      background-image: url('/assets/img/soyjavi.jpg');
+      background-position: 50% 50%;
+      background-size: cover;
+      > div {
+        position: absolute;
+        right: $offset;
+        bottom: 0;
+        left: $offset;
+        color: white;
+        text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,0.1);
+        > strong {
+          font-size: $font-size-small;
+        }
+        > nav {
+          margin: ($offset / 2) 0;
+          > a {
+            margin: 0 ($offset / 5);
+            font-size: 3.2 * $unit;
+            color: $white;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: color $animation-duration $animation-ease;
+            &.twitter:hover {
+              color: $twitter;
+            }
+            &.facebook:hover {
+              color: $facebook;
+            }
+            &.github:hover {
+              color: $github;
+            }
+            &.instagram:hover {
+              color: $instagram;
+            }
+            &.linkedin:hover {
+              color: $linkedin;
+            }
+            &.skype:hover {
+              color: $skype;
+            }
+            &.youtube:hover {
+              color: $youtube;
+            }
+            &.dribbble:hover {
+              color: $dribbble;
+            }
+          }
+        }
+      }
+    }
+    &[data-role='content'] {
+      flex-grow: 1;
+      overflow-y: scroll;
+      a {
+        color: $accent;
+      }
+      > * {
+        margin: $offset;
+      }
+    }
+  }
+}
