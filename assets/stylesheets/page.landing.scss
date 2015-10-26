@@ -1,6 +1,12 @@
 [data-page='landing'] {
   display: flex;
   flex-direction: row;
+
+  a {
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+  }
+
   > section {
     height: 100vh;
     &[data-role='profile'] {
@@ -18,7 +24,7 @@
         bottom: 0;
         left: $offset;
         color: white;
-        text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,0.1);
+        text-shadow: $font-text-shadow;
         > strong {
           font-size: $font-size-small;
         }

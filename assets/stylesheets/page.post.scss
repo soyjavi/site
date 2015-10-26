@@ -1,27 +1,89 @@
-// [data-page='post'] {
-//   line-height: 1.5;
-//   letter-spacing: -.063px;
-//   > section {
-//     > header {
-//       height: 25vh;
-//       background-color: orange;
-//     }
-//     article {
-//       display: flex;
-//       max-width: 700px;
-//       align-content: center;
-//       align-items: center;
-//       justify-content: center;
-//       h2 {
-//         margin: $offset 0 0 0;
-//         & + p {
-//           margin: 0;
-//           background-color: green;
-//         }
-//       }
-//       p {
-//         font-weight: $font-weight-light;
-//       }
-//     }
-//   }
-// }
+$post-width: 700px;
+
+[data-page='post'] {
+  line-height: 1.6;
+  letter-spacing: -.063px;
+  a {
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 50%);
+    background-repeat: repeat-x;
+    background-position: 0 22px;
+    background-size: 2px 2px;
+    color: $text;
+  }
+  p, ul {
+    font-weight: $font-weight-thin;
+  }
+  strong, a {
+    font-weight: $font-weight-bold;
+  }
+  > section {
+    > header {
+      display: flex;
+      height: 75vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: $offset;
+      color: $white;
+      text-shadow: $font-text-shadow;
+      background-color: $dark;
+      background-image: url('/assets/img/soyjavi.background.jpg');
+      background-position: center center;
+      background-size: cover;
+      > * {
+        min-width: $post-width;
+        max-width: $post-width;
+      }
+      > p {
+        margin: 0;
+      }
+    }
+    > article {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      margin: $offset 0;
+      > *:not(img) {
+        min-width: $post-width;
+        max-width: $post-width;
+      }
+      > blockquote {
+        margin: $unit 0 $offset 0;
+        font-style: italic;
+        > blockquote {
+          margin: 0 $offset;
+          font-size: 2.4 * $unit;
+          color: $text-secondary;
+        }
+        p {
+          margin: 0;
+        }
+        > p {
+          $border-width: 3px;
+          $border-offset: 20px;
+          padding-bottom: $border-width;
+          padding-left: $border-offset;
+          margin-left: -($border-offset + $border-width);
+          border-left: $border-width solid $text-secondary;
+        }
+      }
+      > h2 {
+        margin: ($offset / 2) 0 0 0;
+      }
+      > p {
+        margin: 0 0 ($offset / 2) 0;
+      }
+      > ul {
+        > li {
+          margin: 0 0 ($offset / 4) ($unit / 2);
+          &:before {
+            padding-top: 0.4 * $unit;
+          }
+        }
+      }
+    }
+  }
+}
