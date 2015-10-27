@@ -15,11 +15,39 @@ body {
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  > header {
+    position: fixed;
+    padding: $unit;
+    > a {
+      text-decoration: none;
+      > img {
+        $avatar-size: 3.6 * $unit;
+        width: $avatar-size;
+        height: $avatar-size;
+        border-radius: 50%;
+        box-shadow: 0 0 0 (0.2 * $unit) $white;
+        transition: box-shadow $animation-duration $animation-ease;
+      }
+      &:hover > img {
+        box-shadow: 0 0 0 (0.2 * $unit) $primary;
+      }
+    }
+  }
   > section > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: ($offset / 2) 0;
     font-size: $font-size-tiny;
+    color: $text-secondary;
     text-align: center;
     .heart {
       height: 1.6 * $unit;
+      margin: 0 ($unit / 2);
+    }
+    a {
+      margin-left: ($unit / 2);
+      color: $text;
     }
   }
 }

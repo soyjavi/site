@@ -3,8 +3,8 @@ layout:     post
 title:      Mi siguiente paso.
 date:       2015-4-26
 where:      Chiang Mai - Thailand
-tags:       reading-list
-cover:      reading2.jpg
+tag:        reading-list
+cover:      tattoo_and_coffee.jpg
 permalink:  /blog/mi-siguiente-paso
 published:  true
 ---

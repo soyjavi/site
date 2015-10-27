@@ -5,9 +5,9 @@ $offset: 6.4 * $unit;
 // Colors
 $background: #fff;
 $text: rgb(56, 61, 72);
-$text-secondary: rgba(0,0,0,.6);
-$primary: red;
-$accent: #5aa3e8;
+$text-secondary: #787D87;
+$primary: #54C7FC;
+$accent: #FCCA54;
 $dark: #3d3e41;
 $white: #fff;
 $black: #000;
@@ -20,7 +20,7 @@ $linkedin: #0077b5;
 $skype: #00aff0;
 $instagram: #3f729b;
 
-// FONT
+// Font
 $font-family: 'Roboto Slab', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
 $font-size: 2.0 * $unit;
 $font-size-small: 1.6 * $unit;
@@ -30,6 +30,6 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,.1);
 
-// ANIMATION
+// Animation
 $animation-duration: 350ms;
 $animation-ease: cubic-bezier(.55,0,.1,1);

@@ -1,22 +1,35 @@
 ul.posts {
+  padding: 0;
+  list-style: none;
   li {
-    margin-bottom: ($offset / 1.5);
+    margin: 0 0 ($offset / 1.25) 0;
     > * {
       display: block;
     }
     > small {
-      max-height: 7 * $unit;
+      max-height: 6.5 * $unit;
       margin: $unit 0;
       overflow: hidden;
+      color: $text-secondary;
       text-overflow: wrap;
-      opacity: .75;
+      * {
+        margin: 0;
+        font-weight: $font-weight-normal;
+      }
     }
     > a, > span {
       font-size: $font-size-tiny;
     }
     > a {
       font-weight: $font-weight-bold;
-      color: $accent;
+      color: $primary;
+      margin-bottom: $unit / 2;
+    }
+    > span {
+      color: $text-secondary;
+      > a {
+        color: $accent;
+      }
     }
   }
 }

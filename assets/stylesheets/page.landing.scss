@@ -2,11 +2,6 @@
   display: flex;
   flex-direction: row;
 
-  a {
-    font-weight: $font-weight-bold;
-    text-decoration: none;
-  }
-
   > section {
     height: 100vh;
     &[data-role='profile'] {
@@ -15,7 +10,7 @@
       min-width: $min-width;
       max-width: $min-width;
       text-align: center;
-      background-image: url('/assets/img/soyjavi.jpg');
+      background-image: url('/assets/images/soyjavi.jpg');
       background-position: 50% 50%;
       background-size: cover;
       > div {
@@ -33,6 +28,7 @@
           > a {
             margin: 0 ($offset / 5);
             font-size: 3.2 * $unit;
+            font-weight: normal;
             color: $white;
             text-decoration: none;
             border-radius: 50%;
@@ -65,11 +61,16 @@
         }
       }
     }
+
     &[data-role='content'] {
       flex-grow: 1;
       overflow-y: scroll;
+      > article a {
+        color: $text;
+      }
       a {
-        color: $accent;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
       }
       > * {
         margin: $offset;
