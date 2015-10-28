@@ -1,0 +1,80 @@
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight-normal;
+  line-height: 1.4;
+  color: $text;
+  background-color: $background;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  > header {
+    position: fixed;
+    padding: $unit;
+    > a {
+      text-decoration: none;
+      > img {
+        $avatar-size: 3.6 * $unit;
+        width: $avatar-size;
+        height: $avatar-size;
+        border-radius: 50%;
+        box-shadow: 0 0 0 (0.2 * $unit) $white;
+        transition: box-shadow $animation-duration $animation-ease;
+      }
+      &:hover > img {
+        box-shadow: 0 0 0 (0.2 * $unit) $primary;
+      }
+    }
+  }
+  > section > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: ($offset / 2) 0;
+    font-size: $font-size-tiny;
+    color: $text-secondary;
+    text-align: center;
+    .heart {
+      height: 1.6 * $unit;
+      margin: 0 ($unit / 2);
+    }
+    a {
+      margin-left: ($unit / 2);
+      color: $text;
+    }
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 8vh;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-size: 2.6 * $unit;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.0 * $unit;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+p {
+  margin: 0 0 $unit 0;
+}
+
+a {
+  text-decoration: none;
+}
