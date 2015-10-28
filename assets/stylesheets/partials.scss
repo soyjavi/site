@@ -87,6 +87,8 @@ $hr-divider: #eee;
     }
     > small {
       font-size: $font-size-tiny;
+      color: $text-secondary;
+      font-weight: $font-weight-normal;
     }
   }
 }

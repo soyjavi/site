@@ -1,12 +1,9 @@
 {
   "name": "soyjavi",
-  "version": "1.02.05",
+  "version": "1.10.28",
   "description": "...creating stuff for others",
   "homepage": "http://soyjavi.com",
   "author": "Javi Jimenez Villar",
-  "devDependencies": {
-    "normalize.css": "*"
-  },
   "scripts": {
     "start": "bundle exec jekyll serve",
     "install": "bundle install"

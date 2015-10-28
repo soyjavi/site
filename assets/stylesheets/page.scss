@@ -12,6 +12,8 @@ body {
   line-height: 1.4;
   color: $text;
   background-color: $background;
+  margin: 0;
+  padding: 0;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -37,7 +39,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: ($offset / 2) 0;
     font-size: $font-size-tiny;
     color: $text-secondary;
     text-align: center;

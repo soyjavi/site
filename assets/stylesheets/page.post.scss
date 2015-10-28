@@ -107,6 +107,7 @@ $post-margin-line: $offset / 2;
 
     > footer {
       background-color: $background-dark;
+      padding: ($offset / 2) 0;
     }
   }
 }

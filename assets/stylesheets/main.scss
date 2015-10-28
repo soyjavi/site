@@ -3,13 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
-// Vendor
-@import "https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css";
-
-// Settings
+// Size
 $unit: 1rem;
 $offset: 6.4 * $unit;
-// Colors
+// Color
 $background: #fff;
 $background-dark: #fafafa;
 $text: rgb(56, 61, 72);
@@ -40,10 +37,11 @@ $font-text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,.1);
 $animation-duration: 350ms;
 $animation-ease: cubic-bezier(.55,0,.1,1);
 
- // Styles
+ // Page
 @import "page";
 @import "page.landing";
 @import "page.post";
-// Commons
+
+// Common
 @import "icons";
 @import "partials";
