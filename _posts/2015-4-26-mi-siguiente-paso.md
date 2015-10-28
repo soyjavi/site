@@ -56,5 +56,3 @@ Me gustaría emplear mi tiempo en pequeños SaaS que estén en fase de crecimien
 
 ## ¿Cómo puedes ayudarme?
 Si crees que puedes hacer algo para ayudarme con **mi siguiente paso**, no dudes en ponerte en contacto conmigo en mi poco original [mail](mailto:javi.jimenez.villar@gmail.com) o bien visitando mi pagina personal para obtener más información de qué he hecho hasta ahora.
-
-*Javi*
