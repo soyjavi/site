@@ -54,6 +54,13 @@ $post-header-padding: $offset;
       align-items: center;
       justify-content: center;
       margin: $offset 0 0 0;
+      > * {
+        min-width: $post-width;
+        max-width: $post-width;
+      }
+      img {
+        width: 100%;
+      }
       a {
         color: $text;
         text-decoration: none;
@@ -64,10 +71,6 @@ $post-header-padding: $offset;
       }
       p, ul {
         font-weight: $font-weight-thin;
-      }
-      > *:not(img) {
-        min-width: $post-width;
-        max-width: $post-width;
       }
       > blockquote {
         margin: $unit 0 $offset 0;
