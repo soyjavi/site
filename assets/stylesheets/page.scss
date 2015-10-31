@@ -18,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   > header {
+    z-index: 2;
     position: fixed;
     padding: $unit;
     > a {

@@ -1,5 +1,7 @@
 $post-width: 700px;
 $post-margin-line: $offset / 2;
+$post-header-height: 75vh;
+$post-header-padding: $offset;
 
 [data-page='post'] {
   line-height: 1.6;
@@ -9,19 +11,31 @@ $post-margin-line: $offset / 2;
   }
   > section {
     > header {
+      position: relative;
       display: flex;
-      height: 75vh;
+      height: $post-header-height;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      padding-bottom: $offset;
+      padding-bottom: $post-header-padding;
       color: $white;
       text-shadow: $font-text-shadow;
       background-color: $dark;
       background-image: url('/assets/img/covers/soyjavi.jpg');
       background-position: center center;
       background-size: cover;
+      &:before {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: $post-header-height;
+        padding-bottom: $post-header-padding;
+        content: " ";
+        background-color: rgba(0,0,0,.5);
+      }
       > * {
+        z-index: 1;
         min-width: $post-width;
         max-width: $post-width;
       }
@@ -33,7 +47,6 @@ $post-margin-line: $offset / 2;
         line-height: 1.1;
       }
     }
-
     > article {
       display: flex;
       flex-direction: column;
@@ -104,10 +117,9 @@ $post-margin-line: $offset / 2;
         margin: 0 0 $post-margin-line 0;
       }
     }
-
     > footer {
-      background-color: $background-dark;
       padding: ($offset / 2) 0;
+      background-color: $background-dark;
     }
   }
 }
