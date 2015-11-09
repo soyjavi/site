@@ -1,14 +1,6 @@
 [data-page='landing'] {
-  display: flex;
-  flex-direction: row;
-
   > section {
-    height: 100vh;
     &[data-role='profile'] {
-      $min-width: 100vh;
-      position: relative;
-      min-width: $min-width;
-      max-width: $min-width;
       text-align: center;
       background-image: url('/assets/images/soyjavi.jpg');
       background-position: 50% 50%;
@@ -61,10 +53,7 @@
         }
       }
     }
-
     &[data-role='content'] {
-      flex-grow: 1;
-      overflow-y: scroll;
       > article a {
         color: $text;
       }
@@ -72,8 +61,46 @@
         font-weight: $font-weight-bold;
         text-decoration: none;
       }
-      > * {
-        margin: $offset;
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  [data-page='landing'] {
+    display: flex;
+    flex-direction: row;
+    > section {
+      height: 100vh;
+      &[data-role='profile'] {
+        $min-width: 100vh;
+        position: relative;
+        min-width: $min-width;
+        max-width: $min-width;
+      }
+      &[data-role='content'] {
+        flex-grow: 1;
+        overflow-y: scroll;
+        > * {
+          margin: $offset;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  $offset: $offset / 2;
+  [data-page='landing'] {
+    display: block;
+    > section {
+      width: 100vw;
+      &[data-role='profile'] {
+        height: 50vh;
+      }
+      &[data-role='content'] {
+        > * {
+          margin: $offset;
+        }
       }
     }
   }
