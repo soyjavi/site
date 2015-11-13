@@ -5,11 +5,17 @@
       background-image: url('/assets/images/soyjavi.jpg');
       background-position: 50% 50%;
       background-size: cover;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        content: " ";
+      }
       > div {
         position: absolute;
-        right: $offset;
-        bottom: 0;
-        left: $offset;
         color: white;
         text-shadow: $font-text-shadow;
         > strong {
@@ -18,7 +24,6 @@
         > nav {
           margin: ($offset / 2) 0;
           > a {
-            margin: 0 ($offset / 5);
             font-size: 3.2 * $unit;
             font-weight: normal;
             color: $white;
@@ -76,6 +81,20 @@
         position: relative;
         min-width: $min-width;
         max-width: $min-width;
+        &:before {
+          height: 100vh;
+          background-color: rgba(0,0,0,.2);
+        }
+        > div {
+          bottom: 0;
+          right: $offset;
+          left: $offset;
+          > nav {
+            > a {
+              margin: 0 ($offset / 5);
+            }
+          }
+        }
       }
       &[data-role='content'] {
         flex-grow: 1;
@@ -96,6 +115,20 @@
       width: 100vw;
       &[data-role='profile'] {
         height: 50vh;
+        &:before {
+          height: 50vh;
+          background-color: rgba(0,0,0,.4);
+        }
+        > div {
+          bottom: 50vh;
+          right: ($offset / 2);
+          left: ($offset / 2);
+          > nav {
+            > a {
+              margin: 0 ($offset / 10);
+            }
+          }
+        }
       }
       &[data-role='content'] {
         > * {

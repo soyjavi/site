@@ -1,4 +1,3 @@
-$post-width: 700px;
 $post-margin-line: $offset / 2;
 $post-header-height: 75vh;
 $post-header-padding: $offset;
@@ -13,11 +12,9 @@ $post-header-padding: $offset;
     > header {
       position: relative;
       display: flex;
-      height: $post-header-height;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      padding-bottom: $post-header-padding;
       color: $white;
       text-shadow: $font-text-shadow;
       background-color: $dark;
@@ -29,15 +26,12 @@ $post-header-padding: $offset;
         top: 0;
         z-index: 0;
         width: 100%;
-        height: $post-header-height;
-        padding-bottom: $post-header-padding;
+        height: 100%;
         content: " ";
         background-color: rgba(0,0,0,.5);
       }
       > * {
         z-index: 1;
-        min-width: $post-width;
-        max-width: $post-width;
       }
       > p {
         margin: 0;
@@ -53,11 +47,6 @@ $post-header-padding: $offset;
       align-content: center;
       align-items: center;
       justify-content: center;
-      margin: $offset 0 0 0;
-      > * {
-        min-width: $post-width;
-        max-width: $post-width;
-      }
       a {
         color: $text;
         text-decoration: none;
@@ -126,6 +115,59 @@ $post-header-padding: $offset;
     > footer {
       padding: ($offset / 2) 0;
       background-color: $background-dark;
+    }
+  }
+}
+
+$post-width: 700px;
+@media all and (min-width: 769px) {
+  [data-page='post'] {
+    > section {
+      > header {
+        height: $post-header-height;
+        padding-bottom: $post-header-padding;
+        > * {
+          min-width: $post-width;
+          max-width: $post-width;
+        }
+      }
+      > article {
+        margin-top: $post-header-padding;
+        > * {
+          min-width: $post-width;
+          max-width: $post-width;
+        }
+      }
+    }
+  }
+}
+
+$post-width: 90vw;
+@media all and (max-width: 768px) {
+  [data-page='post'] {
+    > section {
+      > header {
+        padding-top: $post-header-padding;
+        padding-bottom: 5vw;
+        height: auto;
+        > * {
+          min-width: $post-width;
+          max-width: $post-width;
+        }
+        > p {
+          font-size: 75%;
+        }
+      }
+      > article {
+        margin-top: 5vw;
+        > p {
+          text-align: justify;
+        }
+        > * {
+          min-width: $post-width;
+          max-width: $post-width;
+        }
+      }
     }
   }
 }

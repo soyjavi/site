@@ -77,7 +77,6 @@ $hr-divider: #eee;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: $offset;
     color: $text;
     text-align: center;
     &:hover {
@@ -90,6 +89,26 @@ $hr-divider: #eee;
       font-size: $font-size-tiny;
       color: $text-secondary;
       font-weight: $font-weight-normal;
+    }
+  }
+}
+
+
+@media all and (min-width: 769px) {
+  [data-partial='summary'] {
+    > a {
+      padding: $offset;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  [data-partial='summary'] {
+    > a {
+      padding: 5vw 2.5vw;
+      > strong {
+        font-size: 90%;
+      }
     }
   }
 }
