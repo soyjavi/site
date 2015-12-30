@@ -12,11 +12,14 @@ $hr-divider: #eee;
       max-height: 6.5 * $unit;
       margin: $unit 0;
       overflow: hidden;
-      color: $text-secondary;
       text-overflow: wrap;
       * {
         margin: 0;
         font-weight: $font-weight-normal;
+      }
+      &, a {
+        font-weight: normal;
+        color: $text-secondary;
       }
     }
     > a, > span {
@@ -73,9 +76,9 @@ $hr-divider: #eee;
   box-shadow: inset 0 1px $hr-divider, inset 0 -1px $hr-divider;
   > a {
     display: flex;
-    flex-grow: 1;
     width: 100%;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     color: $text;
     text-align: center;
@@ -87,8 +90,8 @@ $hr-divider: #eee;
     }
     > small {
       font-size: $font-size-tiny;
-      color: $text-secondary;
       font-weight: $font-weight-normal;
+      color: $text-secondary;
     }
   }
 }
