@@ -1,6 +1,15 @@
 [data-page='resume'] {
   > section {
-
+    > .items {
+      list-style: none;
+      margin: 0;
+      > li {
+        margin-bottom: ($offset / 4);
+        > span {
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
@@ -10,10 +19,13 @@
       display: flex;
       flex-direction: column;
       max-width: 960px;
-      padding: ($offset / 2) 0;
+      padding-top: ($offset / 2);
       margin: 0 auto;
-      > p {
+      > h3, > p, > .items {
         padding-left: $title-fixed-width;
+      }
+      > h3:nth-child(n+3) {
+        margin-top: ($offset / 2);
       }
     }
   }
@@ -23,7 +35,12 @@
   [data-page='resume'] {
     > section {
       > * {
-        padding: $offset-mobile $offset-mobile 0 $offset-mobile;
+        padding-left: $offset-mobile;
+        padding-right: $offset-mobile;
+      }
+      > .title, > h3 {
+        padding-top: $offset-mobile;
+        padding-bottom: 0;
       }
     }
   }

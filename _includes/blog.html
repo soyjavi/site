@@ -1,10 +1,10 @@
-<ul>
-  <strong class='text-secondary'>posts</strong>
+<h3>Blog</h3>
+<ul class='items'>
   {% for post in site.posts %}
     <li>
       <h2>{{ post.title }}</h2>
       <strong class='text-secondary'>
-        {{ post.date | date: "%b %-d, %Y" }} | <a href="/tag/{{post.tag}}" class='tag'>{{post.tag}}</a>
+        {{ post.date | date: "%b %-d, %Y" }} | {{post.tag}}
       </strong>
       <span>{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 48 }}</span>
       <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>

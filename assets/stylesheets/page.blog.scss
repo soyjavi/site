@@ -1,47 +1,10 @@
-[data-page='blog'] {
-  > section {
-    > ul {
-      margin: 0;
-      list-style: none;
-      > .text-secondary {
-        margin-bottom: $offset / 3;
-        color: $accent;
-      }
-      li {
-        margin: 0 0 ($offset / 1.25) 0;
-        > * {
-          display: block;
-        }
-        > .text-secondary {
-          text-decoration: none;
-          * {
-            font-style: inherit;
-            color: $text;
-          }
-        }
-        > span, > a {
-          font-size: $font-size-small;
-        }
-        > span {
-          color: $text-secondary;
-          padding: ($offset / 5) 0;
-          * {
-            margin: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media all and (min-width: 769px) {
   [data-page='blog'] {
     > section {
-      display: flex;
       max-width: 960px;
-      padding: ($offset / 2) 0;
+      padding-top: ($offset / 2);
       margin: 0 auto;
-      > ul {
+      > h3, > ul {
         padding: 0 $offset 0 $title-fixed-width;
       }
     }

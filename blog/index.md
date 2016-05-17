@@ -6,4 +6,4 @@ permalink   : /blog/
 ---
 
 {% include title.html %}
-{% include posts.html %}
+{% include blog.html %}
