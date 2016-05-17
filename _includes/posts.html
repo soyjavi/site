@@ -1,12 +1,13 @@
-<ul data-partial="posts">
+<ul>
+  <strong class='text-secondary'>posts</strong>
   {% for post in site.posts %}
     <li>
       <h3>{{ post.title }}</h3>
-      <small>{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 48 }}</small>
-      <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-      <span>
+      <strong class='text-secondary'>
         {{ post.date | date: "%b %-d, %Y" }} | <a href="/tag/{{post.tag}}" class='tag'>{{post.tag}}</a>
-      </span>
+      </strong>
+      <span>{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 48 }}</span>
+      <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
     </li>
   {% endfor %}
 </ul>

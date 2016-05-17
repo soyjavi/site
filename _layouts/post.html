@@ -2,7 +2,6 @@
 <html>
   {% include head.html %}
   <body data-page="{% if page.layout %}{{ page.layout }}{% else %}{{ site.layout }}{% endif %}">
-    {% include header.html %}
     {% include ga.html %}
 
     <section>
@@ -17,9 +16,9 @@
       <article>
         {{ content }}
 
-        <div data-partial="author">
+        <div class="author">
           <a href="/">
-            <img src="/assets/images/soyjavi.jpg" />
+            <img src="/assets/images/soyjavi.png" />
           </a>
           <div>
             <a href="/">@soyjavi</a>
@@ -30,7 +29,7 @@
         </div>
       </article>
 
-      <nav data-partial="summary">
+      <nav class="summary">
         {% if page.previous %}
           <a href="{{ page.previous.url }}">
             <small>Previous Post</small>
@@ -46,7 +45,7 @@
         {% endif %}
       </nav>
 
-      {% include footer.html %}
     </section>
+    {% include footer.html %}
   </body>
 </html>

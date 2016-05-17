@@ -2,7 +2,6 @@
   font-family: 'icomoon';
   font-style: normal;
   font-weight: normal;
-
   src: url('/assets/fonts/icomoon.eot');
   src: url('/assets/fonts/icomoon.eot') format('embedded-opentype'), url('/assets/fonts/icomoon.woff') format('woff'), url('/assets/fonts/icomoon.ttf') format('truetype'), url('/assets/fonts/icomoon.svg') format('svg');
 }
@@ -21,31 +20,16 @@
 }
 
 .icon {
-  &.skype:before {
-    content: "\e900";
-  }
-  &.dribbble:before {
-    content: "\e901";
-  }
-  &.facebook:before {
-    content: "\e902";
-  }
-  &.github:before {
-    content: "\e903";
-  }
-  &.google:before {
-    content: "\e904";
-  }
-  &.instagram:before {
-    content: "\e905";
-  }
   &.linkedin:before {
-    content: "\e906";
+      content: "\e903";
+  }
+  &.email:before {
+      content: "\e900";
   }
   &.twitter:before {
-    content: "\e907";
+      content: "\e901";
   }
-  &.youtube:before {
-    content: "\e908";
+  &.github:before {
+      content: "\e902";
   }
 }

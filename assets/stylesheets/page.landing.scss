@@ -1,124 +1,51 @@
 [data-page='landing'] {
   > section {
-    &[data-role='profile'] {
-      text-align: center;
-      background-image: url('/assets/images/soyjavi.jpg');
-      background-position: 50% 50%;
-      background-size: cover;
-      &:before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        content: " ";
-      }
-      > div {
-        position: absolute;
-        color: white;
-        text-shadow: $font-text-shadow;
-        > strong {
-          font-size: $font-size-small;
-        }
-        > nav {
-          margin: ($offset / 2) 0;
-          > a {
-            font-size: 3.2 * $unit;
-            font-weight: normal;
-            color: $white;
-            text-decoration: none;
-            border-radius: 50%;
-            transition: color $animation-duration $animation-ease;
-            &.twitter:hover {
-              color: $twitter;
-            }
-            &.github:hover {
-              color: $github;
-            }
-            &.linkedin:hover {
-              color: $linkedin;
-            }
-          }
-        }
-      }
+    position: absolute;
+    right: $offset;
+    bottom: $offset;
+    left: $offset;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0;
+
+    flex-wrap: wrap;
+    > * {
+      flex-grow: 1;
     }
-    &[data-role='content'] {
-      > article a {
-        color: $text;
-      }
-      a {
-        font-weight: $font-weight-bold;
-        text-decoration: none;
+    .title {
+      p {
+        font-size: $font-size-small;
+        color: $text-secondary;
       }
     }
   }
 }
 
 @media all and (min-width: 769px) {
+  $title-min-width: 300px;
+  $title-max-width: 360px;
   [data-page='landing'] {
-    display: flex;
-    flex-direction: row;
     > section {
-      height: 100vh;
-      &[data-role='profile'] {
-        $min-width: 100vh;
-        position: relative;
-        min-width: $min-width;
-        max-width: $min-width;
-        &:before {
-          height: 100vh;
-          background-color: rgba(0,0,0,.2);
-        }
-        > div {
-          bottom: 0;
-          right: $offset;
-          left: $offset;
-          > nav {
-            > a {
-              margin: 0 ($offset / 5);
-            }
-          }
-        }
+      > .title {
+        min-width: $title-min-width;
+        max-width: $title-max-width;
       }
-      &[data-role='content'] {
-        flex-grow: 1;
-        overflow-y: scroll;
-        > * {
-          margin: $offset;
-        }
+      > .navigation {
+        align-content: flex-end;
+        justify-content: flex-end;
       }
     }
   }
 }
 
 @media all and (max-width: 768px) {
-  $offset: $offset / 2;
   [data-page='landing'] {
-    display: block;
     > section {
-      width: 100vw;
-      &[data-role='profile'] {
-        height: 50vh;
-        &:before {
-          height: 50vh;
-          background-color: rgba(0,0,0,.4);
-        }
-        > div {
-          bottom: 50vh;
-          right: ($offset / 2);
-          left: ($offset / 2);
-          > nav {
-            > a {
-              margin: 0 ($offset / 10);
-            }
-          }
-        }
-      }
-      &[data-role='content'] {
-        > * {
-          margin: $offset;
-        }
+      right: $offset-mobile;
+      bottom: $offset-mobile;
+      left: $offset-mobile;
+      > .navigation {
+        margin-top: $offset-mobile;
       }
     }
   }

@@ -1,0 +1,30 @@
+[data-page='resume'] {
+  > section {
+
+  }
+}
+
+@media all and (min-width: 769px) {
+  [data-page='resume'] {
+    > section {
+      display: flex;
+      flex-direction: column;
+      max-width: 960px;
+      padding: ($offset / 2) 0;
+      margin: 0 auto;
+      > p {
+        padding-left: $title-fixed-width;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  [data-page='resume'] {
+    > section {
+      > * {
+        padding: $offset-mobile $offset-mobile 0 $offset-mobile;
+      }
+    }
+  }
+}

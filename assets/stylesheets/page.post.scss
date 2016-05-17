@@ -3,11 +3,7 @@ $post-header-height: 75vh;
 $post-header-padding: $offset;
 
 [data-page='post'] {
-  line-height: 1.6;
   letter-spacing: -.063px;
-  strong, a {
-    font-weight: $font-weight-bold;
-  }
   > section {
     > header {
       position: relative;
@@ -18,7 +14,6 @@ $post-header-padding: $offset;
       color: $white;
       text-shadow: $font-text-shadow;
       background-color: $dark;
-      background-image: url('/assets/img/covers/soyjavi.jpg');
       background-position: center center;
       background-size: cover;
       &:before {
@@ -55,11 +50,8 @@ $post-header-padding: $offset;
         background-position: 0 22px;
         background-size: 2px 2px;
       }
-      p, ul {
-        font-weight: $font-weight-thin;
-      }
       p {
-       a > img, > img {
+        a > img, > img {
           width: 95%;
           margin: 0 2.5%;
         }
@@ -112,9 +104,61 @@ $post-header-padding: $offset;
         margin: 0 0 $post-margin-line 0;
       }
     }
-    > footer {
-      padding: ($offset / 2) 0;
-      background-color: $background-dark;
+  }
+  > footer {
+    background-color: $background-dark;
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding: $offset 0;
+  margin-top: ($offset / 2) !important;
+  box-shadow: 0 -1px $divider;
+  a {
+    text-decoration: none;
+    background: none !important;
+  }
+  > a {
+    &, & > img {
+      width: $offset;
+      height: $offset;
+    }
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: $offset / 2;
+    > small {
+      font-size: $font-size-tiny;
+      color: $text-secondary;
+    }
+  }
+}
+
+.summary {
+  display: flex;
+  background-color: $background-dark;
+  box-shadow: inset 0 1px $divider, inset 0 -1px $divider;
+  > a {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    color: $text;
+    text-align: center;
+    &:hover {
+      background-color: $divider;
+    }
+    &:nth-child(2) {
+      box-shadow: -1px 0 $divider;
+    }
+    > small {
+      font-size: $font-size-tiny;
+      font-weight: $font-weight-normal;
+      color: $text-secondary;
     }
   }
 }
@@ -138,6 +182,11 @@ $post-width: 700px;
           max-width: $post-width;
         }
       }
+      .summary {
+        > a {
+          padding: $offset;
+        }
+      }
     }
   }
 }
@@ -147,9 +196,9 @@ $post-width: 90vw;
   [data-page='post'] {
     > section {
       > header {
+        height: auto;
         padding-top: $post-header-padding;
         padding-bottom: 5vw;
-        height: auto;
         > * {
           min-width: $post-width;
           max-width: $post-width;
@@ -166,6 +215,14 @@ $post-width: 90vw;
         > * {
           min-width: $post-width;
           max-width: $post-width;
+        }
+      }
+      .summary {
+        > a {
+          padding: 5vw 2.5vw;
+          > strong {
+            font-size: 90%;
+          }
         }
       }
     }

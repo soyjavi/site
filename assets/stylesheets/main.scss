@@ -6,37 +6,37 @@
 // Size
 $unit: 1rem;
 $offset: 6.4 * $unit;
+$offset-mobile: $offset / 2;
 // Color
 $background: #fff;
 $background-dark: #fafafa;
-$text: rgb(56, 61, 72);
-$text-secondary: #787D87;
-$primary: #54C7FC;
-$accent: #FCCA54;
+$text: #222;
+$text-secondary: #9ca3ad;
+$accent: #b69853;
+$divider: darken($background, 5%);
 $dark: #3d3e41;
 $white: #fff;
 $black: #000;
-$twitter: #55acee;
-$github: #666;
-$linkedin: #0077b5;
 // Font
-$font-family: 'Roboto Slab', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
-$font-size: 2.0 * $unit;
-$font-size-small: 1.6 * $unit;
-$font-size-tiny: 1.3 * $unit;
-$font-weight-thin: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+$font-family: 'Merriweather', serif;
+$font-family-secondary: 'Lato', sans-serif;
+$font-size-tiny: 1 * $unit;
+$font-size-small: 1.4 * $unit;
+$font-size: 1.6 * $unit;
+$font-size-post: 2.0 * $unit;
+$font-weight-normal: 300;
+$font-weight-bold: 900;
 $font-text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,.1);
-// Animation
-$animation-duration: 350ms;
-$animation-ease: cubic-bezier(.55,0,.1,1);
+// Layout
+$title-fixed-width: 220px;
+$footer-height: $offset;
 
  // Page
 @import "page";
 @import "page.landing";
+@import "page.blog";
 @import "page.post";
+@import "page.resume";
 
 // Common
 @import "icons";
-@import "partials";
