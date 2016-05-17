@@ -4,6 +4,10 @@ $post-header-padding: $offset;
 
 [data-page='post'] {
   letter-spacing: -.063px;
+  h1, h2 {
+    font-weight: $font-weight-bold;
+  }
+
   > section {
     > header {
       position: relative;

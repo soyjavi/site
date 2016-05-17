@@ -2,7 +2,7 @@
   <strong class='text-secondary'>posts</strong>
   {% for post in site.posts %}
     <li>
-      <h3>{{ post.title }}</h3>
+      <h2>{{ post.title }}</h2>
       <strong class='text-secondary'>
         {{ post.date | date: "%b %-d, %Y" }} | <a href="/tag/{{post.tag}}" class='tag'>{{post.tag}}</a>
       </strong>
