@@ -14,6 +14,9 @@ body {
   line-height: 1.6;
   color: $text;
   background-color: $background;
+  > img {
+    opacity: 0;
+  }
   > section {
     padding-bottom: $footer-height;
   }
