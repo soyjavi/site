@@ -9,7 +9,7 @@
     }
 
     &:last-child {
-      margin: ($unit * 1.5) 0;
+      margin: ($unit * 1.75) 0;
       font-size: $font-size-tiny;
       color: $text-secondary;
     }
@@ -18,13 +18,13 @@
   em {
     margin-left: -$unit / 2;
     font-size: $font-size-tiny;
-    color: $text-secondary;
     vertical-align: text-top;
-
+    &, > * {
+      color: $text-secondary;
+    }
     code {
       font-style: normal;
     }
-
     &:before {
       content: '* ';
     }
@@ -113,7 +113,7 @@
       }
 
       ul {
-        margin-left: $offset;
+        margin-left: $offset / 1.5;
       }
 
       form {
