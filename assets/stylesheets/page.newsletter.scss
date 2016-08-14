@@ -1,0 +1,168 @@
+[data-page='newsletter'] {
+  p {
+    > code {
+      background-color: $dark;
+      color: $background-dark;
+      padding: ($unit / 3) ($unit / 1.5);
+      font-size: 110%;
+      font-weight: $font-weight-bold;
+    }
+
+    &:last-child {
+      margin: ($unit * 1.5) 0;
+      font-size: $font-size-tiny;
+      color: $text-secondary;
+    }
+  }
+
+  em {
+    margin-left: -$unit / 2;
+    font-size: $font-size-tiny;
+    color: $text-secondary;
+    vertical-align: text-top;
+
+    code {
+      font-style: normal;
+    }
+
+    &:before {
+      content: '* ';
+    }
+  }
+
+  ul li {
+    margin: $unit 0;
+
+    strong {
+      color: $accent;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  form {
+    margin-top: $offset / 2;
+    font-family: $font-family;
+
+    label,
+    input {
+      font-family: $font-family;
+    }
+
+    label {
+      color: $text-secondary;
+      font-size: $font-size-tiny;
+    }
+
+    input {
+      border: none;
+      appearance: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      outline: none;
+    }
+
+    .mc-field-group {
+      display: inline-block;
+
+      > * {
+        display: block;
+      }
+
+      > input {
+        font-size: $font-size;
+        padding: ($unit / 2) 0;
+        flex-grow: 1;
+        width: 100%;
+        box-shadow: 0 1px lighten($text-secondary, 25%);
+
+        &:active,
+        &:focus {
+          box-shadow: 0 1px $accent;
+        }
+      }
+    }
+
+    input[type='submit'] {
+      background: $accent;
+      color: white;
+      font-family: $font-family-secondary;
+      font-weight: $font-weight-bold;
+      padding: $unit $unit * 1.5;
+      margin-top: $unit;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        background: darken($accent, 5%);
+      }
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  [data-page='newsletter'] {
+    > section {
+      max-width: 960px;
+      padding-top: ($offset / 2);
+      margin: 0 auto;
+
+      > h3,
+      > p,
+      > ul,
+      > form {
+        padding: 0 $offset 0 $title-fixed-width;
+      }
+
+      ul {
+        margin-left: $offset;
+      }
+
+      form {
+        .mc-field-group {
+          width: 49%;
+          margin: ($offset / 4) 0;
+        }
+        input[type='submit'] {
+          float: right;
+          margin-right: $unit;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  [data-page='newsletter'] {
+    > section {
+      > * {
+        padding-left: $offset-mobile;
+        padding-right: $offset-mobile;
+      }
+
+      > .title, > h3 {
+        padding-top: $offset-mobile;
+      }
+
+      p {
+        &:last-child {
+          text-align: center;
+        }
+      }
+
+      ul {
+        margin-left: $offset-mobile;
+      }
+
+      form {
+        .mc-field-group {
+          min-width: 100%;
+          margin: ($offset-mobile / 4) 0;
+        }
+
+        input[type='submit'] {
+          width: 100%;
+          // font-size: $font-size;
+        }
+      }
+    }
+  }
+}

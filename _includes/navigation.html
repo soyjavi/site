@@ -3,8 +3,12 @@
   <a href="https://twitter.com/soyjavi" class="icon twitter" target="_blank"></a>
   <a class="icon linkedin" href="https://linkedin.com/in/soyjavi" target="_blank"></a>
   <a class="icon email" href="mailto:soyjavi@protonmail.com" target="_blank"></a>
+  <a class="icon vcard" href="/assets/docs/Javi Jimenez.vcf"></a>
   {% if page.type != "landing" %}
     <a href='/'>Home</a>
+  {% endif %}
+  {% if page.type != "newsletter" %}
+    <a href="/newsletter/es">Newsletter</a>
   {% endif %}
   {% if page.type != "blog" %}
     <a href="/blog">Blog</a>
