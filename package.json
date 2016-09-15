@@ -1,11 +1,12 @@
 {
   "name": "soyjavi",
-  "version": "0.13.0",
+  "version": "1.0.0",
   "description": "A self-taught, in love with creating new stuff.",
   "homepage": "http://soyjavi.com",
   "author": {
     "name": "Javi Jimenez",
-    "url": "http://github.com/soyjavi"
+    "url": "http://github.com/soyjavi",
+    "mail": "hello@soyjavi.com"
   },
   "scripts": {
     "start": "bundle exec jekyll serve",
