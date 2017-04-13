@@ -5,7 +5,7 @@ description: >
   Hi, I’m Javi. I’m a software engineer who travels around the world. For as long as I can remember, I’ve always had a love for learning.
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 
 # Sass settings
 sass:

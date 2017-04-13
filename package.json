@@ -1,6 +1,6 @@
 {
   "name": "soyjavi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a software engineer who travels around the world, currently leading Frontend team at MediaSmart",
   "homepage": "http://soyjavi.com",
   "author": {
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "bundle exec jekyll serve",
+    "release": "bundle exec jekyll build",
     "install": "bundle install"
   }
 }
