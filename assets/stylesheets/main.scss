@@ -9,11 +9,13 @@ $offset: 6.4 * $unit;
 $offset-mobile: $offset / 2;
 // Color
 $background: #fff;
-$background-dark: #fafafa;
+$background-dark: darken($background, 5%);
+$background-contrast: #222;
+$background-contrast-dark: lighten($background-contrast, 5%);
 $text: #222;
+$text-contrast: #fafafa;
 $text-secondary: #9ca3ad;
 $accent: #b69853;
-$divider: darken($background, 5%);
 $dark: #3d3e41;
 $white: #fff;
 $black: #000;

@@ -12,11 +12,9 @@ body {
   font-size: $font-size;
   font-weight: $font-weight-normal;
   line-height: 1.6;
-  color: $text;
-  background-color: $background;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   > img {
     opacity: 0;
   }
@@ -30,11 +28,29 @@ body {
     width: 100%;
     height: $footer-height;
     line-height: $footer-height;
-    background: $background;
-    border-top: solid 1px $divider;
+    border-top: solid 1px;
+
     > .navigation {
       max-width: 960px;
       margin: 0 auto;
+    }
+  }
+
+  &:not(.night) {
+    color: $text;
+    background-color: $background;
+    > footer {
+      background-color: $background;
+      border-top-color: $background-dark;
+    }
+  }
+
+  &.night {
+    color: $text-contrast;
+    background-color: $background-contrast;
+    > footer {
+      background-color: $background-contrast;
+      border-top-color: $background-contrast-dark;
     }
   }
 }
@@ -175,7 +191,7 @@ h3, .text-secondary {
       font-size: 1.95 * $unit;
     }
     .title.fixed {
-      border-bottom: solid 1px $divider;
+      border-bottom: solid 1px $background-dark;
       > p {
         display: none;
       }
