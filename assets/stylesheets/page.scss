@@ -128,14 +128,14 @@ a {
     > * {
       display: block;
     }
-    > h2 {
+    h2 {
       > a {
         color: $text;
       }
     }
-    > .text-secondary {
+    .text-secondary {
       text-decoration: none;
-      opacity: 0.9;
+      opacity: 0.75;
       * {
         font-style: inherit;
         color: $text;

@@ -5,6 +5,17 @@
       margin: 0;
       > li {
         margin-bottom: ($offset / 4);
+
+        &.book {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: $unit * 9.6;
+            margin-right: $unit;
+          }
+        }
+
         > span {
           margin: 0;
         }
@@ -27,6 +38,15 @@
       > h3:nth-child(n+3) {
         margin-top: ($offset / 2);
       }
+      > .items.books {
+        display: flex;
+        flex-wrap: wrap;
+        .book {
+          max-width: 50%;
+          min-width: 45%;
+          &:nth-child(even) { margin-left: $unit; }
+        }
+      }
     }
   }
 }
@@ -42,6 +62,8 @@
         padding-top: $offset-mobile;
         padding-bottom: 0;
       }
+
+
     }
   }
 }
