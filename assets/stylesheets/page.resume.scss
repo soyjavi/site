@@ -51,6 +51,22 @@
   }
 }
 
+@media all and (min-width: 769px), print {
+  [data-page='resume'] {
+    > section {
+      > .items.books {
+        display: flex;
+        flex-wrap: wrap;
+        .book {
+          max-width: 50%;
+          min-width: 45%;
+          &:nth-child(even) { margin-left: $unit; }
+        }
+      }
+    }
+  }
+}
+
 @media all and (max-width: 768px) {
   [data-page='resume'] {
     > section {
@@ -62,8 +78,6 @@
         padding-top: $offset-mobile;
         padding-bottom: 0;
       }
-
-
     }
   }
 }

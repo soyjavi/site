@@ -201,3 +201,13 @@ h3, .text-secondary {
     }
   }
 }
+
+@media print {
+  html {
+    font-size: 50%;
+  }
+  body {
+    .title { padding-top: 0 !important; }
+    > footer { display: none !important; }
+  }
+}
