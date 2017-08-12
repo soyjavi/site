@@ -9,7 +9,9 @@ $post-header-padding: $offset;
     > section {
       > header { background-color: $background-dark; }
       > article {
-        a { color: $text; }
+        a {
+          color: $text;
+        }
         > blockquote > p { border-left-color: $text-secondary; }
 
         p > code {
@@ -96,10 +98,13 @@ $post-header-padding: $offset;
       justify-content: center;
       a {
         text-decoration: none;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 50%);
-        background-repeat: repeat-x;
-        background-position: 0 22px;
-        background-size: 2px 2px;
+      }
+      p, ul {
+        a {
+          font-style: normal;
+          border-bottom: solid 1px transparent;
+          box-shadow: 0 1px $text-secondary;
+        }
       }
       p {
         a > img, > img {
@@ -217,6 +222,9 @@ $post-width: 700px;
       }
       > article {
         margin-top: $post-header-padding;
+        > p, > ul {
+          font-size: $font-size-post;
+        }
         > * {
           min-width: $post-width;
           max-width: $post-width;
@@ -243,8 +251,8 @@ $post-width: 90vw;
           min-width: $post-width;
           max-width: $post-width;
         }
-        > p {
-          font-size: 75%;
+        > p, > ul {
+          font-size: $font-size-small;
         }
       }
       > article {
