@@ -10,23 +10,24 @@ permalink:  /blog/minimalismo-viajando-parte-uno
 published:  false
 ---
 
-Durante el 2015/2016 me propuse un nuevo proyecto personal: `100 cosas`. El cual, como puedes adivinar por su nombre, consistia en no poseer mas de 100 elementos en mi dia a dia. Reconozco que tal vez se me fue de las manos y me auto flagelaba llegando al punto de tener aserciones mentales como:
- 
->> "Necesito comprar 3 calzoncillos nuevos ...**🤔**... vaya voy a tener que desprenderme de estas memorias USB."
- 
-Lo que me descubrio `100 cosas` es que podia llegar a ser dueño de mi mismo y no esclavo de lo que tenia, y me poseia. Comence a perder menos tiempo eligiendo como vestirme, que leer, con que distraerme o simplemente que cocinar (porque deje de tener cocina)... y simplemente aprendi a disfrutar de lo *poco* que tenia. 
+Durante el 2015/2016 me propuse un nuevo proyecto personal: `100 cosas`. Y, como puedes adivinar por su nombre, consistía en no poseer mas de 100 elementos. Y aunque tal vez se me fue de las manos - me autoflagelaba llegando al punto de tener aserciones mentales como: "Necesito comprar 3 calzoncillos nuevos ...**🤔**... vaya, voy a tener que desprenderme de estas memorias USB."- me hizo descubrir que podía ser dueño de mi mismo y no esclavo de lo que tenía. Y que lo que tenía, me poseía.
 
-Hoy en dia ya no contabilizo cuantas cosas tengo porque estoy seguro que lo que tengo cerca de mi es lo que realmente necesito para el momento y el lugar en el que estoy viviendo. Si estas pensando comenzar tu aventura nomada, o simplemente quieres conocer otras formas de vida... aqui me descubro hacia ti. 
+Comencé a perder menos tiempo eligiendo cómo vestirme, qué leer, con qué distraerme o simplemente qué cocinar (porque dejé de tener cocina) y simplemente aprendí a disfrutar de lo *poco* que tenía.
+
+Hoy, ya no contabilizo cuántas cosas tengo: estoy seguro de que lo que tengo cerca de mí es lo que realmente necesito para el momento y el lugar en el que estoy viviendo. Si estas pensando comenzar tu aventura nómada, o simplemente quieres conocer otras formas de vida... aquí me descubro hacia ti. 
 
 ## Ropa y complementos
-Cuando llevas todas tus pertenencias contigo a lo largo del mundo debes ser consciente en todo momento de una unica cosa: el clima puede oscilar mucho. No es lo mismo disfrutar de tu *running* diario en 🇹🇭 Chiang Mai con 35°C que deambular por una calle en 🇯🇵 Osaka buscando un ramen bien calentito y con -10°C. Por tanto, **todo lo que lleves contigo debe dar soporte a cada momento** y puedo decir que no es facil. En el pasado cometi errores tan invisibles como es llevar conmigo unos simples *jeans*, y te voy a dar ciertos puntos para que lo veas como yo los veo ahora:
- - Ocupan mucho espacio en la mochila.
- - Son muy pesados.
- - Son frios en invierno y calurosos en verano.
- - Son incomodos volando durante 10 horas, en un bus 5 horas....
- - Hay que plancharlos.
 
-Cuando estaba de visita en 🇯🇵 Tokyo alla por el 2015, conoci la marca [Uniqlo](http://www.uniqlo.jp/) tras lo cual ha conseguido que no vuelva a comprar nada que no sea de esta tienda Japonesa. Reune 3 puntos fundamentales para mi: **buena calidad, precio razonable y facil de almacenar**. En cuestion de calzado confio muchisimo en la tecnologia *Boost* de Adidas, asi como en una marca que descubri el año pasado llamada **Lems que hace unas botas ligerisimas, plegables e impermeables** muy recomendables para cuando el terreno muta de asfalto a barro.
+Cuando llevas todas tus pertenencias contigo a lo largo del mundo debes ser consciente en todo momento de una única cosa: el clima puede oscilar mucho. No es lo mismo disfrutar de tu *running* diario en 🇹🇭 Chiang Mai con 35°C que deambular por una calle en 🇯🇵 Osaka buscando un ramen bien calentito y con -10°C. Por tanto, **todo lo que lleves contigo debe dar soporte a cada momento**. Eso no es fácil. En el pasado cometí errores tan invisibles como es llevar conmigo unos  *jeans*. Y te voy a decir porqué, para que lo veas como yo los veo ahora:
+ - Ocupan mucho espacio en la mochila
+ - Son muy pesados
+ - Son fríos en invierno y calurosos en verano
+ - Son incómodos para vuelos de 10 horas, viajes en bus de 5 horas...
+ - Hay que plancharlos
+
+Cuando estaba de visita en 🇯🇵 Tokyo alla por el 2015, conocí la marca [Uniqlo](http://www.uniqlo.jp/) y no he vuelto a comprar nada que no sea de esa tienda. Reúne tres puntos fundamentales para mí: **buena calidad, precio razonable y fácil de almacenar**.
+
+En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. Así como tambin en una marca que descubrí el año pasado llamada **Lems que hace unas botas ligerísimas, plegables e impermeables** muy recomendables para cuando el terreno muta de asfalto a barro.
 
 ![](http://via.placeholder.com/640x400)
 
@@ -41,12 +42,14 @@ Cuando estaba de visita en 🇯🇵 Tokyo alla por el 2015, conoci la marca [Uni
 + Botas [Lems Boulder](https://huckberry.com/store/lems-shoes/category/p/30557-boulder-boot?avad=177090_bf3c41f1&utm_term=www.vagabrothers.com)
 + Reloj [Timex Weekender Black Leather](https://www.amazon.es/gp/product/B00TE8LZ6M/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00TE8LZ6M&linkCode=as2&tag=soyjavi-21&linkId=6fe7eb0bb43bd7a829b3cf69bf3d6517)
 
-## Electronica
-Como sabes (espero) trabajo liderando el equipo frontend de [#mediasmart](http://mediasmart.io/about-us/) de manera remota. Por lo que el equipo que lleve conmigo debe tener una amplia garantia internacional, y en esto Apple sigue siendo el lider indiscutible.
+## Electrónica
+Como sabes -espero- trabajo liderando al equipo frontend de [#mediasmart](http://mediasmart.io/about-us/) de manera remota. Para poder garantizar la calidad de mi trabajo, el hardware que lleve conmigo debe tener una amplia garantía internacional y en esto Apple sigue siendo el líder indiscutible.
 
-Actualmente utilizo un Macbook 12 (2nd gen), el cual para algunos puede no ser suficiente, el cual se comporta de manera agil en todas mis tareas diarias. Anteriormente tuve la primera generacion de este mismo portatil, pero en el verano del 2015 cuando vivia en la 🏝 de Koh Samui el equipo literalmente se quemo. Desde entonces decidi tener un equipo de backup, totalmente sincronizado para que si desgraciadamente volviera a ocurrir simplemente tuviese que abrir el equipo y en 5 minutos continuar con mi trabajo. 
+Actualmente utilizo un Macbook 12 (2nd generation), y aunque para algunos pueda no ser suficiente, se comporta de manera ágil en todas mis tareas diarias. Anteriormente tuve la primera generación de este mismo portátil, pero en el verano de 2015, cuando vivía en la 🏝 de Koh Samui, el equipo literalmente se quemó. Desde entonces decidí tener un equipo de backup, totalmente sincronizado. Si desgraciadamente algo así vuelve a ocurrir, simplemente tengo que abrir el equipo y en 5 minutos continuar con mi trabajo. 
 
-El resto de elementos intento que sean de calidad para no tener que cambiarlos cada cierto tiempo, por ejemplo no uso memorias USB porque suelen dar bastante problemas o tambien decir que todos mis dispositivos se pueden cargar con USB type-c. Señalar, que en lo que llevo de 2017 ya he volado mas de 60 veces, y paradojicamente el avion se convierte en mi lugar de descanso por lo que decidi *invertir* en un buen sistema de cancelacion de ruido con los [Bose QC 35](https://www.amazon.es/gp/product/B01E3SNO1G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E3SNO1G&linkCode=as2&tag=soyjavi-21&linkId=b9267d2aa6a52442b60646442a618087), recomendables 100%.
+El resto de elementos intento que sean de calidad para no tener que cambiarlos con demasiada frecuencia. Por ejemplo, no uso memorias USB porque suelen dar bastante problemas, todos mis dispositivos se pueden cargar con USB type-c, y uso un buen sistema de cancelación de ruido con los [Bose QC 35](https://www.amazon.es/gp/product/B01E3SNO1G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E3SNO1G&linkCode=as2&tag=soyjavi-21&linkId=b9267d2aa6a52442b60646442a618087).
+
+Esta última inversión ha resultado sumamente útil. En lo que llevo de 2017 ya he volado más de 60 veces, y paradójicamente el avión se ha convertido en mi lugar de descanso. Mis *headphones* son una herramienta fundamental y estos son recomendables 100%.
 
 ![](http://via.placeholder.com/640x400)
 
@@ -64,7 +67,7 @@ El resto de elementos intento que sean de calidad para no tener que cambiarlos c
 
 
 ## Deporte
-Soy un amante del deporte y por lo tanto conmigo tambien llevo algo que me ayude
+Soy un amante del deporte y por lo tanto conmigo tambien llevo algo que me permita continuar ejercitándome donde esté:
 
 ![](http://via.placeholder.com/640x400)
 
