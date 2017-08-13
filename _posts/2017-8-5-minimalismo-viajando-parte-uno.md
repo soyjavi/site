@@ -10,24 +10,24 @@ permalink:  /blog/minimalismo-viajando-parte-uno
 published:  false
 ---
 
-Durante el 2015/2016 me propuse un nuevo proyecto personal: `100 cosas`. Y, como puedes adivinar por su nombre, consistía en no poseer mas de 100 elementos. Y aunque tal vez se me fue de las manos - me autoflagelaba llegando al punto de tener aserciones mentales como: "Necesito comprar 3 calzoncillos nuevos ...**🤔**... vaya, voy a tener que desprenderme de estas memorias USB."- me hizo descubrir que podía ser dueño de mi mismo y no esclavo de lo que tenía. Y que lo que tenía, me poseía.
+Durante el 2015 y 2016 me propuse un nuevo proyecto personal: `100 cosas`. Y, como puedes adivinar por su nombre, consistía en no poseer mas de 100 elementos en mi día a día. Y aunque tal vez se me fue de las manos - me autoflagelaba llegando al punto de tener aserciones mentales como: *"Necesito comprar 3 calzoncillos nuevos ...**🤔**... vaya, voy a tener que desprenderme de estas memorias USB."*- me hizo descubrir que podía ser dueño de mi mismo y no esclavo de lo que tenía. Y que lo que tenía, me poseía.
 
 Comencé a perder menos tiempo eligiendo cómo vestirme, qué leer, con qué distraerme o simplemente qué cocinar (porque dejé de tener cocina) y simplemente aprendí a disfrutar de lo *poco* que tenía.
 
-Hoy, ya no contabilizo cuántas cosas tengo: estoy seguro de que lo que tengo cerca de mí es lo que realmente necesito para el momento y el lugar en el que estoy viviendo. Si estas pensando comenzar tu aventura nómada, o simplemente quieres conocer otras formas de vida... aquí me descubro hacia ti. 
+Hoy, ya no contabilizo cuántas cosas tengo: **estoy seguro de que lo que tengo cerca de mí es lo que realmente necesito** para el momento y el lugar en el que estoy viviendo. Si estas pensando comenzar tu aventura nómada, o simplemente quieres conocer otras formas de vida... aquí y con este texto me descubro hacia ti. 
 
 ## Ropa y complementos
 
-Cuando llevas todas tus pertenencias contigo a lo largo del mundo debes ser consciente en todo momento de una única cosa: el clima puede oscilar mucho. No es lo mismo disfrutar de tu *running* diario en 🇹🇭 Chiang Mai con 35°C que deambular por una calle en 🇯🇵 Osaka buscando un ramen bien calentito y con -10°C. Por tanto, **todo lo que lleves contigo debe dar soporte a cada momento**. Eso no es fácil. En el pasado cometí errores tan invisibles como es llevar conmigo unos  *jeans*. Y te voy a decir porqué, para que lo veas como yo los veo ahora:
+Cuando llevas todas tus pertenencias contigo a lo largo del mundo debes ser consciente en todo momento de una única cosa: el clima va a oscilar mucho, muchísimo. No es lo mismo disfrutar de tu *running* diario en 🇹🇭 Chiang Mai con 35°C que deambular a -10°C por las calles de 🇯🇵 Osaka buscando un ramen bien calentito. Por tanto, **todo lo que lleves contigo debe dar soporte a cada momento**. Eso no es fácil. En el pasado cometí errores tan invisibles como es llevar conmigo unos  *jeans*. Me gustaría que vieses esa prenda como yo la veo ahora mismo:
  - Ocupan mucho espacio en la mochila
  - Son muy pesados
  - Son fríos en invierno y calurosos en verano
  - Son incómodos para vuelos de 10 horas, viajes en bus de 5 horas...
  - Hay que plancharlos
 
-Cuando estaba de visita en 🇯🇵 Tokyo alla por el 2015, conocí la marca [Uniqlo](http://www.uniqlo.jp/) y no he vuelto a comprar nada que no sea de esa tienda. Reúne tres puntos fundamentales para mí: **buena calidad, precio razonable y fácil de almacenar**.
+Cuando estaba de visita en 🇯🇵 Tokyo allá por el 2015, conocí la marca [Uniqlo](http://www.uniqlo.jp/) y no he vuelto a comprar ropa que no sea de esa tienda. Reúne tres puntos fundamentales para mí: **buena calidad, precio razonable y fácil de almacenar**.
 
-En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. Así como tambin en una marca que descubrí el año pasado llamada **Lems que hace unas botas ligerísimas, plegables e impermeables** muy recomendables para cuando el terreno muta de asfalto a barro.
+En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. Así como también en una marca que descubrí el año pasado llamada **[Lems](https://huckberry.com/store/lems-shoes/category/p/30557-boulder-boot?avad=177090_bf3c41f1&utm_term=www.vagabrothers.com) que hace unas botas ligerísimas, plegables e impermeables** muy recomendables para cuando el terreno mute de asfalto a barro. No uso *flip-flops*, *chanclas* o como se llamen en tu país, he vivido en varias islas con fantásticas playas y al final el patron es muy sencillo, toco area
 
 ![](http://via.placeholder.com/640x400)
 
@@ -43,31 +43,34 @@ En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. 
 + Reloj [Timex Weekender Black Leather](https://www.amazon.es/gp/product/B00TE8LZ6M/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00TE8LZ6M&linkCode=as2&tag=soyjavi-21&linkId=6fe7eb0bb43bd7a829b3cf69bf3d6517)
 
 ## Electrónica
-Como sabes -espero- trabajo liderando al equipo frontend de [#mediasmart](http://mediasmart.io/about-us/) de manera remota. Para poder garantizar la calidad de mi trabajo, el hardware que lleve conmigo debe tener una amplia garantía internacional y en esto Apple sigue siendo el líder indiscutible.
+Como sabes -espero- trabajo liderando al equipo *frontend* de [#mediasmart](http://mediasmart.io/about-us/) de manera remota. Para poder garantizar la calidad de mi trabajo, el hardware que lleve conmigo debe tener una amplia garantía internacional y en esto Apple sigue siendo el líder indiscutible.
 
-Actualmente utilizo un Macbook 12 (2nd generation), y aunque para algunos pueda no ser suficiente, se comporta de manera ágil en todas mis tareas diarias. Anteriormente tuve la primera generación de este mismo portátil, pero en el verano de 2015, cuando vivía en la 🏝 de Koh Samui, el equipo literalmente se quemó. Desde entonces decidí tener un equipo de backup, totalmente sincronizado. Si desgraciadamente algo así vuelve a ocurrir, simplemente tengo que abrir el equipo y en 5 minutos continuar con mi trabajo. 
+Actualmente utilizo un Macbook 12 (2nd generation), y aunque para algunos pueda no ser suficiente, en mi caso se comporta de manera ágil en todas mis tareas diarias. Anteriormente tuve la primera generación de este mismo *laptop*, pero en el verano de 2015, cuando vivía en la 🏝 de Koh Samui, la placa base literalmente se quemó. Desde entonces decidí tener un equipo de backup, totalmente sincronizado con mi equipo principal. Si desgraciadamente algo así vuelve a ocurrir, simplemente tengo que abrir el equipo y en 5 minutos continuar con mi trabajo. 
 
-El resto de elementos intento que sean de calidad para no tener que cambiarlos con demasiada frecuencia. Por ejemplo, no uso memorias USB porque suelen dar bastante problemas, todos mis dispositivos se pueden cargar con USB type-c, y uso un buen sistema de cancelación de ruido con los [Bose QC 35](https://www.amazon.es/gp/product/B01E3SNO1G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E3SNO1G&linkCode=as2&tag=soyjavi-21&linkId=b9267d2aa6a52442b60646442a618087).
+El resto de elementos intento que sean de calidad para no tener que cambiarlos con demasiada frecuencia. Por ejemplo, ya no uso memorias USB ya que estas suelen ser bastante sensibles a la humedad y altas temperaturas. Todos mis dispositivos se pueden cargar con USB type-c, por lo que ya no me preocupo de si alguno de los cargadores deja de funcionar. 
 
-Esta última inversión ha resultado sumamente útil. En lo que llevo de 2017 ya he volado más de 60 veces, y paradójicamente el avión se ha convertido en mi lugar de descanso. Mis *headphones* son una herramienta fundamental y estos son recomendables 100%.
+Una de mis últimas *inversiones* ha sido un buen sistema de cancelación de ruido con los [Bose QC 35](https://www.amazon.es/gp/product/B01E3SNO1G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E3SNO1G&linkCode=as2&tag=soyjavi-21&linkId=b9267d2aa6a52442b60646442a618087) y me ha sido ha resultado sumamente útil. En lo que llevo de 2017 ya he volado más de 60 veces, y paradójicamente el avión se ha convertido en mi lugar de descanso - y en mi oficina. Estos *headphones* son una herramienta fundamental para que no encuentre distracciones mientras me dirijo a mi nuevo destino.
 
-![](http://via.placeholder.com/640x400)
+![Minimalism Gadgets (2017)](/assets/images/posts/minimalism-2017-gadgets.jpg)
 
-+ Portatil [Macbook 12](https://www.amazon.es/gp/product/B01EYH0O0A/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01EYH0O0A&linkCode=as2&tag=soyjavi-21&linkId=417a14801988422ae96df94608fb5332) (2016)
-+ Portatil (backup) [Xiaomi Laptop 12](https://www.amazon.es/gp/product/B01KHX193G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01KHX193G&linkCode=as2&tag=soyjavi-21&linkId=e1dd2acffb389ddf08a70c5a83876935)
++ Laptop [Macbook 12](https://www.amazon.es/gp/product/B01EYH0O0A/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01EYH0O0A&linkCode=as2&tag=soyjavi-21&linkId=417a14801988422ae96df94608fb5332) (2nd gen)
++ Laptop (backup) [Xiaomi Laptop 12](https://www.amazon.es/gp/product/B01KHX193G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01KHX193G&linkCode=as2&tag=soyjavi-21&linkId=e1dd2acffb389ddf08a70c5a83876935)
 + Movil [Oneplus 5](https://www.amazon.es/gp/product/B073H8YLSW/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B073H8YLSW&linkCode=as2&tag=soyjavi-21&linkId=c12afd7c5eb8dad148be81447c0c66c7)
 + SSD Externo [Samsung T3 500gb](https://www.amazon.es/gp/product/B01AAKZRU2/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01AAKZRU2&linkCode=as2&tag=soyjavi-21&linkId=4af1cbf13a9987143c94d70a1ba6f1d2)
 + Auriculares  [Bose QC 35](https://www.amazon.es/gp/product/B01E3SNO1G/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E3SNO1G&linkCode=as2&tag=soyjavi-21&linkId=b9267d2aa6a52442b60646442a618087)
 + Auriculares in-ear [Soundpeats Q29](https://www.amazon.es/gp/product/B073RD14G5/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B073RD14G5&linkCode=as2&tag=soyjavi-21&linkId=aeb6f05cd1e7b9ca2587ed85bed0fa30)
 + Xiaomi USB Type-C hub (hdmi, usb 3.0, usb-c)
 + E-reader [Amazon Kindle](https://www.amazon.es/gp/product/B0184OCGAK/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B0184OCGAK&linkCode=as2&tag=soyjavi-21&linkId=d8a07dca845e15974fe70e5e680b5a89)
-+ Adaptador AC Multiregion [WanEway](https://www.amazon.es/gp/product/B00AQKEHHQ/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00AQKEHHQ&linkCode=as2&tag=soyjavi-21&linkId=088fc5e0930334cf8d56962dfec205e5)
++ [Chromecast](https://www.google.com/chromecast/tv/chromecast/) 
++ Adaptador AC Multi-region [WanEway](https://www.amazon.es/gp/product/B00AQKEHHQ/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00AQKEHHQ&linkCode=as2&tag=soyjavi-21&linkId=088fc5e0930334cf8d56962dfec205e5)
 + Estabilizador [Feiyu SPG Live 360°](https://www.amazon.es/gp/product/B01LYJ4VE6/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01LYJ4VE6&linkCode=as2&tag=soyjavi-21&linkId=c44cc774477feb76fb5fcf03dbff3fce)
-+ Consola [Nintento Switch](https://www.amazon.es/gp/product/B01M6ZGICT/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01M6ZGICT&linkCode=as2&tag=soyjavi-21&linkId=5dd1824068572131ef791133d0a939cf)
++ Consola [Nintendo Switch](https://www.amazon.es/gp/product/B01M6ZGICT/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01M6ZGICT&linkCode=as2&tag=soyjavi-21&linkId=5dd1824068572131ef791133d0a939cf)
 
 
 ## Deporte
-Soy un amante del deporte y por lo tanto conmigo tambien llevo algo que me permita continuar ejercitándome donde esté:
+Mis padres siempre me inculcaron desde bien pequeñito la cultura y la disciplina que el deporte ofrece. Todo mi cuerpo ha disfrutado con disciplinas tales como: Tae Kwon Do, Ciclismo, Skate, Snowboard, Surf, Montañismo, Escalada... pero muchos de estos deportes siempre necesitan de material técnico el cual no es sencillo de transportar. 
+
+Por lo tanto desde el 2014 mi deporte principal ha sido el *running* - compaginándolo con sesiones de gimnasio y entrenamiento funcional. Realmente nunca me gusto eso de correr, pero con el tiempo he podido valorar lo que este deporte ofrece. Mis objetivos han ido evolucionando y ahora me encuentro en un *pace* de 4'35" y una media de entre 60-65km. He descubierto que puedo meditar mientras hago mi salida diaria, así como Murakami divaga haciendo retrospectivas con su libro [De qué hablo cuando hablo de correr](https://www.amazon.es/gp/product/8483835932/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=8483835932&linkCode=as2&tag=soyjavi-21&linkId=9b14f50384b02c99a786260689c06797). Disfruto muchísimo de los caminos que han recorrido mis zapatillas y los que quedan por recorrer.
 
 ![](http://via.placeholder.com/640x400)
 
@@ -79,8 +82,9 @@ Soy un amante del deporte y por lo tanto conmigo tambien llevo algo que me permi
 
 
 ## Otros
-Eum et voluptates perspiciatis. Aut voluptatem ut ipsa distinctio omnis quae. Quam veniam et consequatur sit rerum velit et. Id id voluptatum qui veritatis eos qui.
-Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur quidem ut. Molestiae voluptas eaque eveniet et reiciendis exercitationem sint. Recusandae dolor beatae voluptatem eos natus. Occaecati id accusantium a et.
+Esta lista tal vez sea la mas *random* de todas, pero no por ello menos importante. Contempla que en tu viaje te pondrás enfermo, que lloverá o simplemente de que tal vez no tengas toallas en tu hotel/hostel/airbnb/sofa. **Todo, absolutamente todo puede pasar cuando estas lejos de tu area de control** y mas vale que estés preparado. Algunos de estos objetos pueden incluso tener mas de una función, en el caso del saco de seda me ayudo a protegerme de los mosquitos (con posible malaria) en una selva 🇲🇲 Birmana así como también para no *tocar* el poco higiénico colchón que utilice en 🇵🇭 Palawan. 
+
+Como podrás comprobar, no contemplo lo que yo llamo *desechables*: jabón, maquinilla de afeitar, perfume... todo eso lo compro en el lugar donde viva y siempre en unidades pequeñas - a ser posible de viaje.
 
 ![](http://via.placeholder.com/640x400)
 
@@ -88,41 +92,27 @@ Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur qu
 + Saco de seda
 + Toalla de montaña
 + Toalla de viaje
-
-
-## Medicinas
-Eum et voluptates perspiciatis. Aut voluptatem ut ipsa distinctio omnis quae. Quam veniam et consequatur sit rerum velit et. Id id voluptatum qui veritatis eos qui.
-Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur quidem ut. Molestiae voluptas eaque eveniet et reiciendis exercitationem sint. Recusandae dolor beatae voluptatem eos natus. Occaecati id accusantium a et.
-
-![](http://via.placeholder.com/640x400)
-
-+ Botiquin de viaje
-+ Algidol por un tubo
-+ Fortasec
-+ Antibiotico
++ Botiquín de viaje
++ Algidol 650mg
++ Fortasec 650mg
 + Paracetamol
-+ 
++ Ibuprofeno 1000mg
++ Antibiotico
 
 ## Equipaje
-Eum et voluptates perspiciatis. Aut voluptatem ut ipsa distinctio omnis quae. Quam veniam et consequatur sit rerum velit et. Id id voluptatum qui veritatis eos qui.
-Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur quidem ut. Molestiae voluptas eaque eveniet et reiciendis exercitationem sint. Recusandae dolor beatae voluptatem eos natus. Occaecati id accusantium a et.
+Todo lo anterior lo tenemos que *transportar* de alguna manera y es en este donde he aprendido a tener siempre dos opciones dependiendo del destino. Si voy a ir a una ciudad, quiere decir que me voy a encontrar con aceras, carreteras asfaltadas, etc.... en estos casos normalmente uso una maleta con ruedas. Si en caso contrario el destino va a tener menos asfalto - esto es 🏝, 🗻, 🌋, 🌲 - siempre voy con una mochila de alta capacidad y ligera. El truco reside en que tanto **la mochila como la maleta tengan mas o menos la misma capacidad** para que asi simplemente cambies el continente pero nunca el contenido. 
+
+Lo que siempre complementa a uno u otro caso es una mochila de día. En ella siempre llevo el *laptop* principal, el resto de *gadgets*, así como documentación oficial (pasaporte, ID card, licencia conducción...). Durante mas de 5 años mi [Thule Crossover 25L](https://www.amazon.es/gp/product/B00J082KK6/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00J082KK6&linkCode=as2&tag=soyjavi-21&linkId=0f8808c97fa5156bc4fc3e61ad94124a) me ha acompañado en mas de 200.000km a lo largo de este mundo. En este año **he descubierto la marca china [Tigernu](http://www.tigernu.net/)**, la cual me ha sorprendido muchísimo tanto por su pasmosa relación calidad/precio como por su ergonomia y funcionalidad. Si estas pensando en cambiar de mochila no dudes en echar un vistazo al [modelo T-B3164](https://www.amazon.es/gp/product/B01E8N2HGE/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E8N2HGE&linkCode=as2&tag=soyjavi-21&linkId=d13b50a64b8166dd9e052133c9ccf3b8) que es el que estoy utilizando.
 
 ![](http://via.placeholder.com/640x400)
 
-+ Trolley [American Tourister Bon Air Spinner 31.5L](https://www.amazon.es/gp/product/B00K6VQ0UM/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00K6VQ0UM&linkCode=as2&tag=soyjavi-21&linkId=39fc59ae6898c209031bde7363cd2835)
++ Maleta [American Tourister Bon Air Spinner 31.5L](https://www.amazon.es/gp/product/B00K6VQ0UM/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B00K6VQ0UM&linkCode=as2&tag=soyjavi-21&linkId=39fc59ae6898c209031bde7363cd2835)
 + Mochila [Thule Crossover 40L](https://www.amazon.com/Thule-Crossover-Liter-Duffel-Pack/dp/B002ZHCV6W/ref=sr_1_1?ie=UTF8&qid=1502519559&sr=8-1&keywords=thule+40l)
-+ Mochila de dia [Tigernu 14](https://www.amazon.es/gp/product/B01E8N2HGE/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E8N2HGE&linkCode=as2&tag=soyjavi-21&linkId=d13b50a64b8166dd9e052133c9ccf3b8)
++ Mochila de dia [Tigernu T-B3164](https://www.amazon.es/gp/product/B01E8N2HGE/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01E8N2HGE&linkCode=as2&tag=soyjavi-21&linkId=d13b50a64b8166dd9e052133c9ccf3b8)
 + Organizador de viaje [Lictin](https://www.amazon.es/gp/product/B0725RF524/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B0725RF524&linkCode=as2&tag=soyjavi-21&linkId=ba734712be896f4149c014f2265ece86)
 
 
 ## Conclusiones
-Como has podido todo esto Para el dia a dia uso una
+... y esto es todo lo que tengo, por ahora no necesito mas.
 
-![](http://via.placeholder.com/640x400)
-
-Eum et voluptates perspiciatis. Aut voluptatem ut ipsa distinctio omnis quae. Quam veniam et consequatur sit rerum velit et. Id id voluptatum qui veritatis eos qui.
-Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur quidem ut. Molestiae voluptas eaque eveniet et reiciendis exercitationem sint. Recusandae dolor beatae voluptatem eos natus. Occaecati id accusantium a et.
-
-
-Eum et voluptates perspiciatis. Aut voluptatem ut ipsa distinctio omnis quae. Quam veniam et consequatur sit rerum velit et. Id id voluptatum qui veritatis eos qui.
-Quidem doloribus amet sed. Eos saepe labore laboriosam ipsa neque consequatur quidem ut. Molestiae voluptas eaque eveniet et reiciendis exercitationem sint. Recusandae dolor beatae voluptatem eos natus. Occaecati id accusantium a et.
+Me gustaría conocer si te ha gustado este articulo y si crees que debería profundizar en alguna area. Tengo pensado escribir una serie de artículos pero toda ayuda o sugerencia me podrá a dirigir mis esfuerzos a lo que mas interese. Para cualquier cosa que necesites tienes mi [email](mailto:hello@soyjavi.com).
