@@ -135,6 +135,9 @@ $post-header-padding: $offset;
       > h2 {
         margin: $post-margin-line 0 0 0;
       }
+      em {
+        > strong { font-style: normal; }
+      }
       > ul {
         > li {
           margin: 0 0 ($offset / 4) ($unit / 2);
