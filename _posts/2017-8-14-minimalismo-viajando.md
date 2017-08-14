@@ -26,7 +26,7 @@ Cuando llevas todas tus pertenencias contigo a lo largo del mundo debes ser cons
 
 Cuando estaba de visita en 🇯🇵 Tokyo allá por el 2015, conocí la marca [Uniqlo](http://www.uniqlo.jp/) y no he vuelto a comprar ropa que no sea de esa tienda. Reúne tres puntos fundamentales para mí: **buena calidad, precio razonable y fácil de almacenar**.
 
-En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. Así como también en una marca que descubrí el año pasado llamada **[Lems](https://huckberry.com/store/lems-shoes/category/p/30557-boulder-boot?avad=177090_bf3c41f1&utm_term=www.vagabrothers.com) que hace unas botas ligerísimas, plegables e impermeables** muy recomendables para cuando el terreno mute de asfalto a barro. No uso *flip-flops*, *chanclas* o como se llamen en tu país, he vivido en varias islas con fantásticas playas y al final el patron es muy sencillo, toco area
+En cuestión de calzado confío muchísimo en la tecnología *Boost* de Adidas. Así como también en una marca que descubrí el año pasado llamada **[Lems](https://huckberry.com/store/lems-shoes/category/p/30557-boulder-boot?avad=177090_bf3c41f1&utm_term=www.vagabrothers.com) que hace unas botas ligerísimas, plegables e impermeables** muy recomendables para cuando el terreno mute de asfalto a barro. 
 
 ![Minimalism Clothing (2017)](/assets/images/posts/minimalism-2017-clothing.jpg)
 
