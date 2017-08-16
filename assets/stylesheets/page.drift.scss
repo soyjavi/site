@@ -1,0 +1,7 @@
+[data-page='landing'] #drift-widget-container > iframe {
+  margin-bottom: $unit * 1.6;
+}
+
+@media all and (max-width: 768px) {
+  #drift-widget-container { display: none; }
+}

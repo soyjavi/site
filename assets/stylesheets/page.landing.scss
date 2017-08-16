@@ -25,6 +25,7 @@
         max-width: $title-max-width;
       }
       > .navigation {
+        margin-right: $unit * 4;
         align-content: flex-end;
         justify-content: flex-end;
       }
