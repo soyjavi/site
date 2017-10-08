@@ -163,6 +163,10 @@ h3, .text-secondary {
   letter-spacing: 1px;
 }
 
+.summary {
+  margin-bottom: $offset-mobile;
+}
+
 @media all and (min-width: 769px) {
   body {
     h1 {
