@@ -43,6 +43,10 @@ body {
       background-color: $background;
       border-top-color: $background-dark;
     }
+
+    a:not(.icon) {
+      color: $accent;
+    }
   }
 
   &.night {
@@ -51,6 +55,9 @@ body {
     > footer {
       background-color: $background-contrast;
       border-top-color: $background-contrast-dark;
+    }
+    a:not(.icon) {
+      color: $accent;
     }
   }
 }
@@ -82,7 +89,6 @@ a {
   text-decoration: none;
   &:not(.icon) {
     font-style: italic;
-    color: $accent;
   }
 }
 
@@ -90,6 +96,9 @@ a {
   img {
     max-height: $offset;
     margin-bottom: ($offset / 3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 ($unit / 2.5) $accent;
+    background-color: white;
   }
   h1 {
     font-size: 3.8 * $unit;

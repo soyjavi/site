@@ -185,6 +185,9 @@ $post-header-padding: $offset;
     &, & > img {
       width: $offset;
       height: $offset;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 0 0 ($unit / 2.5) $accent;
     }
   }
   > div {
