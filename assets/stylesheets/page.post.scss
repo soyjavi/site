@@ -3,8 +3,6 @@ $post-header-height: 75vh;
 $post-header-padding: $offset;
 
 [data-page='post'] {
-  letter-spacing: -.063px;
-
   &:not(.night) {
     > section {
       > header { background-color: $background-dark; }

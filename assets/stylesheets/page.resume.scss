@@ -5,7 +5,6 @@
       margin: 0;
       > li {
         margin-bottom: ($offset / 4);
-
         &.book {
           display: flex;
           align-items: center;
@@ -24,6 +23,19 @@
   }
 }
 
+@media all and (max-width: 768px) {
+  [data-page='resume'] {
+    > section {
+      > h3 {
+        margin-top: ($offset / 2);
+        margin-bottom: ($offset / 4);
+      }
+    }
+  }
+}
+
+
+
 @media all and (min-width: 769px) {
   [data-page='resume'] {
     > section {
@@ -37,6 +49,7 @@
       }
       > h3:nth-child(n+3) {
         margin-top: ($offset / 2);
+        margin-bottom: ($offset / 4);
       }
       > .items.books {
         display: flex;
@@ -74,7 +87,7 @@
         padding-left: $offset-mobile;
         padding-right: $offset-mobile;
       }
-      > .title, > h3 {
+      > .title {
         padding-top: $offset-mobile;
         padding-bottom: 0;
       }

@@ -20,14 +20,13 @@ $dark: #3d3e41;
 $white: #fff;
 $black: #000;
 // Font
-$font-family: 'Merriweather', serif;
-$font-family-secondary: 'Lato', sans-serif;
-$font-size-tiny: 1 * $unit;
+$font-family: 'Space Mono', monospace;
+$font-size-tiny: 1.2 * $unit;
 $font-size-small: 1.4 * $unit;
 $font-size: 1.6 * $unit;
-$font-size-post: 1.9 * $unit;
-$font-weight-normal: 300;
-$font-weight-bold: 900;
+$font-size-post: 1.8 * $unit;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 $font-text-shadow: 0 ($unit / 10) ($unit / 20) rgba(0,0,0,.1);
 // Layout
 $title-fixed-width: 220px;

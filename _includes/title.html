@@ -2,16 +2,14 @@
   <a href='/'>
     <img src='/assets/images/soyjavi.png' />
   </a>
-  <h1>Javi Jimenez</h1>
-  <strong class='text-secondary'>A self-taught, in love with creating new stuff.</strong>
+  <h1>SOY<strong>JAVI</strong></h1>
+  <h3 class='text-secondary'>A self-taught, in love with creating new stuff.</h3>
   {% if page.type == "landing" %}
     <p>
-      a software engineer who travels around the world, currently head of development at <a href='https://sohobase.co' target='_blank'>Sohobase</a>
+      Currently traveling the world as head of development at <a href='https://sohobase.co' target='_blank'>Sohobase</a>
     </p>
 
   {% elsif page.type == "resume" %}
-    <p>
-      <a href='/resume' onClick='window.print();'>Download Resume</a>
-    </p>
+    <a href='/resume' class='button' onClick='window.print();'>Download Resume</a>
   {% endif %}
 </div>

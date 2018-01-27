@@ -18,9 +18,16 @@ body {
   > img {
     opacity: 0;
   }
+
   > section {
     padding-bottom: $footer-height;
+
+    > h3 {
+      color: $accent;
+      font-weight: $font-weight-bold;
+    }
   }
+
   > footer {
     position: fixed;
     bottom: 0;
@@ -62,16 +69,17 @@ body {
   }
 }
 
-
-h1, h2 {
-  margin: 0;
+h1, h2, h3, h4 {
   font-weight: $font-weight-normal;
+  margin: 0;
 }
 
-h3 {
-  margin: 0 0 ($offset / 3) 0;
-  font-weight: $font-weight-bold;
-  color: $accent;
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-size: $font-size-tiny;
 }
 
 small {
@@ -88,7 +96,9 @@ p {
 a {
   text-decoration: none;
   &:not(.icon) {
-    font-style: italic;
+    // font-style: italic;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
   }
 }
 
@@ -104,13 +114,21 @@ a {
     font-size: 3.8 * $unit;
     line-height: 1;
   }
-  strong {
-    margin: ($unit / 2) 0 ($offset / 2) 0 ;
-    opacity: .9;
+  h3 {
+    margin-bottom: $unit;
   }
   p {
     font-size: $font-size-small;
     color: $text-secondary;
+  }
+  .button:not(.icon) {
+    display: inline-block;
+    margin-bottom: $unit;
+    margin-top: $unit;
+    background-color: $accent;
+    color: $white;
+    padding: $unit;
+    font-size: $font-size-tiny;
   }
 }
 
@@ -142,14 +160,6 @@ a {
         color: $text;
       }
     }
-    .text-secondary {
-      text-decoration: none;
-      opacity: 0.75;
-      * {
-        font-style: inherit;
-        color: $text;
-      }
-    }
     > span, > a {
       font-size: $font-size-small;
     }
@@ -161,15 +171,6 @@ a {
       }
     }
   }
-}
-
-h3, .text-secondary {
-  display: block;
-  font-family: $font-family-secondary;
-  font-size: $font-size-tiny;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .summary {
