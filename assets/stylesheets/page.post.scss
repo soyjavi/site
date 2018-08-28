@@ -38,12 +38,12 @@ $post-header-padding: $offset;
     > section {
       > header { background-color: $background-contrast-dark; }
       > article {
-        a { color: $accent; }
+        a { color: $accent-night; }
 
         > blockquote > p { border-left-color: $text-secondary; }
 
         p, ul {
-          a { box-shadow: 0 1px $accent; }
+          a { box-shadow: 0 1px $accent-night; }
         }
 
         p > code {

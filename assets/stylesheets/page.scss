@@ -64,7 +64,11 @@ body {
       border-top-color: $background-contrast-dark;
     }
     a:not(.icon) {
-      color: $accent;
+      color: $accent-night;
+    }
+
+    h3 {
+      color: $accent-night;
     }
   }
 }

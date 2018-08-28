@@ -15,12 +15,13 @@ $background-contrast-dark: lighten($background-contrast, 5%);
 $text: #222;
 $text-contrast: #fafafa;
 $text-secondary: #9ca3ad;
-$accent: #2d70ff;
+$accent: #000; // #2d70ff;
+$accent-night: #fff;
 $dark: #3d3e41;
 $white: #fff;
 $black: #000;
 // Font
-$font-family: 'Space Mono', monospace;
+$font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
 $font-size-tiny: 1.2 * $unit;
 $font-size-small: 1.4 * $unit;
 $font-size: 1.6 * $unit;
