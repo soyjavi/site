@@ -107,8 +107,7 @@ a {
     max-height: $offset;
     margin-bottom: ($offset / 3);
     border-radius: 50%;
-    box-shadow: 0 0 0 ($unit / 2.5) $accent;
-    background-color: white;
+    background-color: $black;
   }
   h1 {
     font-size: 3.8 * $unit;
