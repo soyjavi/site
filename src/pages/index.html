@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <link id="favicon" rel="icon" href="/static/{{FAVICON}}" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Product+Sans:400,700|Cardo:400,700|Material+Icons&display=swap">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/index.js" defer></script>
+    {{script}}
+  </head>
+  <body data-page="{{role}}">
+    <header>
+      <div class="row wrapper">
+        <a href="/" class="clean">
+          <h1>SOYJΛVI</h1>
+        </a>
+        <nav class="row">
+          <a href="/quien-soy">QUIEN?</a>
+          <a href="/blog">BLOG</a>
+          <a class="button outlined" href="https://mailchi.mp/9fd48a423496/soyjavi-blockchain-maillist" target=_blank">Suscribete</a>
+        </nav>
+      </div>
+    </header>
+
+    {{content}}
+
+    <button class="icon" id="button-theme" onclick="eaf.on.toggleTheme()">wb_sunny</button>
+
+    <!--
+
+    -->
+
+    {{dialog}}
+  </body>
+</html>

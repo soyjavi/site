@@ -1,0 +1,98 @@
+{
+  "public": [
+    {
+      "uri": "por-que-necesitas-una-hardware-wallet",
+      "date": "2019/08/11",
+      "title": "Por qué necesitas una hardware wallet?",
+      "summary": "Hagamos un resumen rápido de las opciones para almacenar tus criptomonedas después de que haya comprado algunas.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    },
+    {
+      "uri": "la-teoria-del-batido-de-dolar",
+      "date": "2019/08/08",
+      "featured": true,
+      "title": "La teoria del batido de dólar",
+      "summary": "Conoce esta teoría por parte de Brent Johnson, CEO de Santiago Capital. Se basa en el fortalecimiento del dólar y las consecuencias que podrían tener en los mercados globales.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1475650522725-015d35677789"
+    },
+    {
+      "uri": "ha-comenzado-el-rally-del-oro",
+      "date": "2019/08/04",
+      "title": "Ha comenzado el rally del oro?",
+      "summary": "El precio del oro ha superado la barrera de los $1.450 por onza, y los inversores que han estado al margen durante el año pasado se preguntan si finalmente es hora de agregar oro a sus carteras.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1517187654069-ba29110a1d9e"
+    },
+    {
+      "uri": "iran-legaliza-la-cripto-mineria",
+      "date": "2019/07/25",
+      "title": "Irán legaliza la cripto mineria",
+      "summary": "Irán está reconociendo oficialmente las cripto-monedas como una industria dentro de sus fronteras.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1557585580-cdf0764d8393"
+    },
+    {
+      "uri": "el-origen-cyberpunk-de-bitcoin",
+      "featured": true,
+      "date": "2019/07/14",
+      "title": "El origen cyberpunk de Bitcoin",
+      "summary": "Satoshi Nakamoto fue un individuo brillante que encontró soluciones ingeniosas a las deficiencias de sus predecesores. Es importante recordar y dar crédito a aquellos que hicieron posible esta aventura.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1526913299589-f35a3ddeb7ae"
+    },
+
+    {
+      "uri": "trump-se-declara-en-contra-de-bitcoin",
+      "date": "2019/07/12",
+      "title": "Trump declara oficialmente estar en contra de Bitcoin.",
+      "summary": "Como no era de esperar Donald Trump, el presidente de los Estados Unidos, ha alterado twitter con sus opiniones sobre Bitcoin y el resto de criptomonedas.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1550531996-ff3dcede9477"
+    },
+    {
+      "uri": "que-es-el-indice-NVT-de-inversion-en-bitcoin",
+      "date": "2019/04/13",
+      "title": "Que es el indice NVT y como puede ayudarte a invertir en Bitcoin.",
+      "summary": "NVT es un indice disruptivo y especializado en la propia naturaleza de Bitcoin, alejandose de las tecnicas y metricas de trading contemporaneo.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0"
+    },
+    {
+      "uri": "el-manifiesto-cyberpunk",
+      "featured": false,
+      "date": "2017/04/10",
+      "title": "El manifiesto cyberpunk",
+      "summary": "El manifiesto cyberpunk de Christian Kirtchev, escrito en 1997 y traducido al español. Lectura obligatoria para entender mejor las raíces ideológicas de las criptomonedas y las tecnologías actuales.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0"
+    },
+    {
+      "uri": "que-es-el-dinero",
+      "date": "2019",
+      "title": "what is money?",
+      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "luigi",
+      "image": "https://images.unsplash.com/photo-1514108225820-2b602873ac36"
+    },
+    {
+      "uri": "welcome",
+      "date": "2019/06/23",
+      "title": "Bienvenidos al mundo bla bla",
+      "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "author": "soyjavi",
+      "image": "http://via.placeholder.com/1920x1080?text=placeholder"
+    },
+    {
+      "uri": "manifiesto",
+      "date": "2017/04/10",
+      "title": "Manifiesto",
+      "summary": "Debemos ayudar a cualquier individuo que quiera buscar su autonomia y libertad financiera, independientemente de su situacion, estado o ideologia.",
+      "author": "soyjavi",
+      "image": "https://images.unsplash.com/photo-1558914482-f75b0419b420"
+    }
+  ],
+  "private": []
+}
+

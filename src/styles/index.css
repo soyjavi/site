@@ -1,0 +1,43 @@
+:root {
+  --bg-color: white;
+  --bg-opacity: rgba(255,255,255,0.85);
+  --color: #333;
+  --color-lighten: #666;
+  --color-accent: #F9B92D;
+  --color-hover: blue;
+  --color-skeleton: #eee;
+
+  --font: 'Product Sans', sans-serif;
+  --font-content: 'Cardo', serif;
+  --font-size-XL: 3.2rem;
+  --font-size-L: 2.4rem;
+  --font-size: 1.2rem;
+  --font-size-S: 1.1rem;
+  --font-size-XS: 0.9rem;
+  --font-size-markdown: 1.4rem;
+
+  --unit: 1rem;
+  --space: 1.6rem;
+
+  --border-radius: 0.15rem;
+
+  --wrapper: 1220px;
+  --wrapper-post: 680px;
+  --mobile: 768px;
+  --tablet: 1024px;
+
+  --animation: 300ms ease-in-out;
+}
+
+@import './common.css';
+
+/* -- views -- */
+@import './home.css';
+@import './post.css';
+
+/* -- components -- */
+@import './header.css';
+@import './footer.css';
+/*@import './post-item.css';*/
+/*@import './dialog.css';*/
+@import './banner.css';

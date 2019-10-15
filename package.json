@@ -1,16 +1,51 @@
 {
   "name": "soyjavi",
-  "version": "1.0.2",
-  "description": "a software engineer who travels around the world, currently leading Frontend JavaScript team at minube",
-  "homepage": "http://soyjavi.com",
-  "author": {
-    "name": "Javi Jimenez",
-    "url": "http://github.com/soyjavi",
-    "mail": "hello@soyjavi.com"
+  "version": "3.0.0",
+  "description": "A SELF-TAUGHT, IN LOVE WITH CREATING NEW STUFF.",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "cron": "1.7.1",
+    "dotenv": "8.0.0",
+    "express": "4.16.3",
+    "node-cron": "2.0.3",
+    "node-fetch": "2.6.0",
+    "on-finished": "2.3.0",
+    "showdown": "1.7.1",
+    "telegraf": "3.30.1",
+    "vanilla-storage": "0.1.6"
   },
+  "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "@babel/node": "7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "7.0.0",
+    "@babel/preset-env": "7.1.5",
+    "babel-preset-env": "1.7.0",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "2.14.0",
+    "parcel-bundler": "1.12.3"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
   "scripts": {
-    "start": "bundle exec jekyll serve",
-    "release": "bundle exec jekyll build",
-    "install": "bundle install"
-  }
+    "build": "parcel build src/scripts/index.js src/styles/index.css",
+    "watch": "parcel src/scripts/index.js src/styles/index.css",
+    "server": "babel-node index.js",
+    "start": "yarn build && yarn server",
+    "start:dev": "nodemon --ignore '/dist/**' --ignore '/store/**' --exec yarn start",
+    "lint": "eslint src/**"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/elanarquistafinanciero"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "license": "MIT",
+  "keywords": []
 }

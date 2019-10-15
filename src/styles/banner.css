@@ -1,0 +1,55 @@
+.banner {
+  background-color: var(--color-skeleton);
+  border-radius: var(--border-radius);
+  margin-bottom: calc(var(--unit) * 2);
+  padding: calc(var(--unit) * 2) calc(var(--unit) * 4);
+  padding-left: calc(var(--unit) * 16);
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  transition: background var(--animation);
+  width: 100%;
+}
+
+.banner h1 { font-size: var(--font-size-L); }
+
+.banner p {
+  margin: calc(var(--unit) / 2) 0;
+  max-width: 68%;
+}
+.banner .form {
+  max-width: 45%;
+  z-index: 1;
+}
+
+/* -- Images -- */
+  .banner:before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateX(20%) translateY(15%) scale(1.25);
+    width: calc(var(--unit) * 20);
+    z-index: 0;
+  }
+
+  .banner.blockchain:before {
+    background-image: url('../../public/banner-gold.png');
+  }
+  .banner.subscribe:before {
+    background-image: url('../../public/banner-bitcoin-ballons.png');
+  }
+
+@media (max-width: 767px) {
+  .banner { padding: var(--unit); }
+}
+
+@media (max-width: 1023px) {
+  .banner h1 { font-size: var(--font-size); }
+  .banner p, .banner .form { max-width: 100%; }
+}

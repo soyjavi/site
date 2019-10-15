@@ -1,0 +1,25 @@
+#button-theme {
+  position: fixed;
+  bottom: var(--space);
+  right: var(--space);
+  height: calc(var(--unit) * 3);
+  width: calc(var(--unit) * 3);
+}
+
+body > footer {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-S);
+  margin-top: calc(var(--unit) * 4);
+  margin-bottom: calc(var(--unit) * 2);
+  align-items: center;
+}
+
+  body > footer > * { margin: calc(var(--unit) / 4) 0; }
+  body > footer a:not(:last-child) { margin-right: var(--unit); }
+
+@media (max-width: 767px) {
+  #button-theme { display: none; }
+
+  body > footer { align-items: flex-start; }
+}

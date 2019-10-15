@@ -1,0 +1,37 @@
+header {
+  background: var(--bg-color);
+  padding: var(--space);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: background var(--animation);
+  width: 100%;
+  z-index: 1;
+}
+
+  header .wrapper {
+    margin: 0 auto;
+    max-width: var(--wrapper);
+  }
+
+  header h1 {
+    font-weight: 900;
+  }
+
+  header nav {
+    /*display: flex;*/
+    /*align-items: center;*/
+  }
+
+  header nav > * {
+    margin-left: var(--space);
+  }
+
+  header h1 {
+    font-size: var(--font-size);
+  }
+
+  header nav .button:not(.solid) {
+    margin-left: calc(var(--unit) / 2);
+  }

@@ -1,0 +1,30 @@
+<main>
+  <h1>{{title}}</h1>
+  <p class="color-lighten">{{summary}}</p>
+
+  <section class="author row">
+    <img alt="{{author}}" src="{{avatar}}" />
+    <span>
+      <strong class="font-XS">{{author}}</strong>
+      <small class="font-XS">{{date}}</small>
+    </span>
+  </section>
+
+  <div class="fullwidth" style="background-image: url({{image}});"></div>
+
+  <article>
+    {{markdown}}
+  </article>
+</main>
+
+<footer>
+  <small class="row">
+    <a href="/manifiesto">Manifiesto</a>
+    <a href="mailto:{{EMAIL}}">Ayuda</a>
+    <a href="/afiliados">Afiliados</a>
+    <a href="/productos">Productos</a>
+  </small>
+  <small class="font-content font-XS">
+    ©2019 {{DOMAIN}} / Soshilabs, Ltd. v{{VERSION}}
+  </small>
+</footer>

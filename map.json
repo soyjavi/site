@@ -1,0 +1,21 @@
+{
+  "order": {
+    "method": "POST",
+    "required": ["product", "email", "fingerprint"],
+    "optional": ["telegram"]
+  },
+  "payment": {
+    "required": ["f", "ts"]
+  },
+  "subscribe": {
+    "method": "POST",
+    "required": ["email"],
+    "optional": ["fingerprint"]
+  },
+  "status": {},
+  "traderbot": {
+    "method": "POST",
+    "required": ["message"],
+    "secure": true
+  }
+}

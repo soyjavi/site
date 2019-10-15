@@ -1,4 +1,7 @@
-_site
+.cache
+.env
+dist
 node_modules
-.sass-cache
-npm-debug.log
+store/bots.json
+store/payments.json
+store/users.json
