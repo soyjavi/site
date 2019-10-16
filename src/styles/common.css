@@ -93,6 +93,9 @@ textarea, select, input, button { outline: none; }
   flex-direction: row;
   align-items: center;
 }
+  .row.reverse {
+    flex-direction: row-reverse;
+  }
 
 .font-content, .font-content * {
   font-family: var(--font-content);

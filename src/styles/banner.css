@@ -66,3 +66,16 @@
     transform: translateX(70%) translateY(10%) scale(0.75);
   }
 }
+
+/*
+@media (min-width: 768px) {
+  .banner.course {
+    padding-bottom: var(--space-XL);
+    padding-top: var(--space-XL);
+    padding-right: var(--space-XL);
+  }
+  .banner.course h2, .banner.course p {
+    max-width: 68%;
+  }
+}
+*/

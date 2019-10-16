@@ -25,7 +25,7 @@
 
   --border-radius: 0.15rem;
 
-  --wrapper: 1220px;
+  --wrapper: 1120px;
   --wrapper-post: 680px;
   --mobile: 768px;
   --tablet: 1024px;
@@ -38,10 +38,10 @@
 /* -- views -- */
 @import './home.css';
 @import './post.css';
+@import './course.css';
 
 /* -- components -- */
 @import './header.css';
 @import './footer.css';
-/*@import './post-item.css';*/
 /*@import './dialog.css';*/
 @import './banner.css';

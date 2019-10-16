@@ -7,7 +7,7 @@
   width: calc(var(--unit) * 2.8);
 }
 
-body > footer {
+footer {
   display: flex;
   flex-direction: column;
   font-size: var(--font-size-S);
@@ -15,9 +15,8 @@ body > footer {
   margin-bottom: calc(var(--unit) * 2);
   align-items: center;
 }
-
-  body > footer > * { margin: calc(var(--unit) / 4) 0; }
-  body > footer a:not(:last-child) { margin-right: var(--unit); }
+  footer > * { margin: calc(var(--unit) / 4) 0; }
+  footer a:not(:last-child) { margin-right: var(--unit); }
 
 @media (max-width: 767px) {
   #button-theme {
@@ -25,7 +24,7 @@ body > footer {
     right: var(--unit);
   }
 
-  body > footer {
+  footer {
     align-items: flex-start;
     margin: var(--unit);
   }

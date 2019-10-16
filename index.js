@@ -8,7 +8,7 @@ import http from 'http';
 import { C } from './src/common';
 import services from './src/services';
 import {
-  affiliates, blog, post, home,
+  affiliates, course, post, home,
 } from './src/pages';
 import { error, request } from './src/middlewares';
 
@@ -31,7 +31,7 @@ app.use(request);
 app.use('/api', services);
 // -- Services
 app.get('/afiliados', affiliates);
-app.get('/blog', blog);
+app.get('/curso-blockchain', course);
 app.get('/:postUri', post);
 app.get('/', home);
 // -- Error handler

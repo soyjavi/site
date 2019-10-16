@@ -1,0 +1,110 @@
+[data-page="course"] {
+  padding-top: calc(var(--space-XL) * 2);
+}
+
+[data-page="course"] main section {
+  padding: var(--space-XL);
+  justify-content: space-between;
+}
+
+[data-page="course"] .info {}
+  [data-page="course"] .info h2 {
+    font-size: var(--font-size-L);
+  }
+
+[data-page="course"] .buttons > * {
+  margin-top: var(--space);
+  margin-right: var(--space-S);
+}
+
+[data-page="course"] .picture {
+  background: transparent;
+}
+
+[data-page="course"] .keypoints {
+  flex-wrap: wrap;
+}
+  .keypoint h3 {
+    font-size: var(--font-size);
+    margin: var(--space-XS) 0;
+  }
+  .keypoint img {
+    background: transparent;
+    height: calc(var(--unit) * 3);
+  }
+  .keypoint small {
+    font-size: var(--font-size-S);
+  }
+
+
+[data-page="course"] article {
+  border-top: solid 1px var(--color-skeleton);
+  padding: var(--space-XL) 0;
+}
+  [data-page="course"] article.contrast {
+    background-color: var(--color);
+    color: white;
+  }
+  [data-page="course"] article > .wrapper {
+    max-width: var(--wrapper);
+    margin: 0 auto;
+  }
+
+[data-page="course"] .feature {
+  padding: var(--space-XL) 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+  [data-page="course"] .feature + .feature {
+    padding-top: 0;
+  }
+  [data-page="course"] .feature .info {
+    max-width: 50%;
+  }
+
+@media (max-width: 767px) {
+  [data-page="course"] main section {
+    flex-direction: column-reverse;
+    padding: var(--unit);
+  }
+  [data-page="course"] .info h1 {
+    font-size: var(--font-size-L);
+  }
+  [data-page="course"] .info p {
+    font-size: var(--font-size);
+    margin: var(--space-S) 0;
+  }
+
+  [data-page="course"] .picture {
+    max-width: 100%;
+    margin-bottom: var(--space);
+  }
+
+  [data-page="course"] .keypoint {
+    margin-bottom: var(--space-L);
+  }
+}
+
+
+@media (min-width: 768px) {
+  [data-page="course"] .info {
+    max-width: 40%;
+  }
+    [data-page="course"] .info h1 {
+      font-size: var(--font-size-XL);
+    }
+    [data-page="course"] .info p {
+      font-size: var(--font-size-markdown);
+      margin: var(--space) 0;
+    }
+
+  [data-page="course"] .picture {
+    max-width: 50%;
+    max-height: 55vh;
+  }
+
+  [data-page="course"] .keypoint {
+    max-width: 30%;
+    margin-bottom: var(--space-XL);
+  }
+}

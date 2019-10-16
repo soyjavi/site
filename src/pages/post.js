@@ -38,6 +38,7 @@ export default (req, res) => {
         markdown: converter.makeHtml(fs.readFileSync(uriFile, 'utf8')),
         bannerBlockchain: render('templates/bannerBlockchain', { type: 'post' }),
         bannerSubscribe: render('templates/bannerSubscribe', { type: 'post' }),
+        footer: render('templates/footer'),
       }),
     });
   }

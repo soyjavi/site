@@ -1,11 +1,11 @@
 import affiliates from './affiliates';
-import blog from './blog';
+import course from './course';
 import home from './home';
 import post from './post';
 
 export {
   affiliates,
-  blog,
+  course,
   home,
   post,
 };

@@ -1,6 +1,3 @@
-// import dashboard from './dashboard';
-// import { options } from './charts';
-
 const LIGHT = 0;
 const DARK = 1;
 
@@ -38,7 +35,5 @@ export default {
     root.style.setProperty('--color-lighten', colors.colorLighten);
     root.style.setProperty('--color-skeleton', colors.colorSkeleton);
     root.style.setProperty('--color-chart-line', colors.colorChartLine);
-
-    // dashboard.charts.forEach(chart => chart.applyOptions(options(colors)));
   },
 };
