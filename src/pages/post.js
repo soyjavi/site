@@ -26,8 +26,10 @@ export default (req, res) => {
     const uriFile = `posts/${post.uri}.md`;
     if (!fs.existsSync(uriFile)) throw new Error(`${uriFile} could not read correctly.`);
 
+
     html = render('index', {
-      role: 'post',
+      page: 'post',
+      context: 'blog',
       content: render('post', {
         ...post,
         image: `${post.image}${UNSPLASH_PROPS}&w=1366`,

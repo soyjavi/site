@@ -1,9 +1,10 @@
 #button-theme {
-  position: fixed;
   bottom: var(--space);
+  height: calc(var(--unit) * 2.8);
+  padding: 0;
+  position: fixed;
   right: var(--space);
-  height: calc(var(--unit) * 3);
-  width: calc(var(--unit) * 3);
+  width: calc(var(--unit) * 2.8);
 }
 
 body > footer {
@@ -19,7 +20,13 @@ body > footer {
   body > footer a:not(:last-child) { margin-right: var(--unit); }
 
 @media (max-width: 767px) {
-  #button-theme { display: none; }
+  #button-theme {
+    bottom: var(--unit);
+    right: var(--unit);
+  }
 
-  body > footer { align-items: flex-start; }
+  body > footer {
+    align-items: flex-start;
+    margin: var(--unit);
+  }
 }

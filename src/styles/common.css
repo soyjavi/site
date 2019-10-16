@@ -34,8 +34,7 @@ button, .button {
   font-weight: bold;
   font-size: var(--font-size-XS);
   outline: 0;
-  padding: calc(var(--unit) / 1.75) calc(var(--unit) / 1.25);
-  /*text-transform: uppercase;*/
+  padding: var(--space-XS) var(--space-S);
   text-decoration: none;
   transition: background var(--animation);
 }
@@ -49,14 +48,9 @@ button, .button {
     color: black;
   }
 
-  button.outlined, .button.outlined, button.solid, .button.solid {
+  button.outlined, .button.outlined {
     background-color: transparent;
     color: var(--color);
-  }
-
-  button.solid, .button.solid {
-    text-transform: inherit;
-    font-weight: inherit;
   }
 
   button.outlined, .button.outlined {
@@ -65,7 +59,7 @@ button, .button {
 
   button.large, .button.large {
     font-size: var(--font-size-S);
-    padding: calc(var(--unit) / 1.25) calc(var(--unit) * 1.5);
+    padding: var(--space-S) var(--space);
   }
 
 form, .form { margin: var(--unit) 0; }

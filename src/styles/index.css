@@ -10,14 +10,18 @@
   --font: 'Product Sans', sans-serif;
   --font-content: 'Cardo', serif;
   --font-size-XL: 3.2rem;
-  --font-size-L: 2.4rem;
+  --font-size-L: 2.0rem;
   --font-size: 1.2rem;
-  --font-size-S: 1.1rem;
-  --font-size-XS: 0.9rem;
+  --font-size-S: 1.0rem;
+  --font-size-XS: 0.85rem;
   --font-size-markdown: 1.4rem;
 
   --unit: 1rem;
+  --space-XL: 4rem;
+  --space-L: 2rem;
   --space: 1.6rem;
+  --space-S: 0.8rem;
+  --space-XS: 0.6rem;
 
   --border-radius: 0.15rem;
 

@@ -2,7 +2,6 @@
   padding-top: calc(var(--unit) * 9);
   text-align: justify;
 }
-
   [data-page="post"] main > :not(.fullwidth) {
     max-width: var(--wrapper-post);
     margin: 0 auto;
@@ -19,10 +18,11 @@
 
   [data-page="post"] main h1 {
     font-size: var(--font-size-XL);
+    text-align: left;
   }
     [data-page="post"] main h1, [data-page="post"] > h1 > * { text-align: left; }
     [data-page="post"] main h1 + p {
-      font-size: var(--font-size);
+      font-size: var(--font-size-markdown);
       padding: var(--unit) 0;
     }
 
@@ -42,7 +42,7 @@
 
     [data-page="post"] .author strong { display: block; }
 
-  [data-page="post"] article h2, [data-page="post"] article h3 {
+  [data-page="post"] article > h2, [data-page="post"] article > h3 {
     margin: calc(var(--unit) * 2) 0 var(--unit) 0;
   }
 
@@ -89,14 +89,12 @@
   }
 
   [data-page="post"] article .banner { margin-top: calc(var(--unit) * 2); }
-    [data-page="post"] article .banner > h1 { font-size: var(--font-size); }
-    [data-page="post"] article .banner > p { font-size: var(--font-size-XS); }
-    [data-page="post"] article .banner > * { min-width: 100%; }
 
 
 @media (max-width: 767px) {
-  [data-page="post"] h1 { font-size: var(--font-size-L); }
-  [data-page="post"] h1 + p { font-size: var(--font-size-S); }
+  [data-page="post"] main { margin: 0 var(--unit); }
+  [data-page="post"] main h1 { font-size: var(--font-size-L); }
+  [data-page="post"] main h1 + p { font-size: var(--font-size-S); }
   [data-page="post"] .fullwidth { height: 38vh; }
 
   [data-page="post"] article blockquote {

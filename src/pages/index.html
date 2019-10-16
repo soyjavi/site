@@ -14,16 +14,16 @@
     <script src="/index.js" defer></script>
     {{script}}
   </head>
-  <body data-page="{{role}}">
+  <body data-page="{{page}}">
     <header>
       <div class="row wrapper">
         <a href="/" class="clean">
-          <h1>SOYJΛVI</h1>
+          <h1>SOYJΛVI<small>{{context}}</small></h1>
         </a>
         <nav class="row">
-          <a href="/quien-soy">QUIEN?</a>
-          <a href="/blog">BLOG</a>
-          <a class="button outlined" href="https://mailchi.mp/9fd48a423496/soyjavi-blockchain-maillist" target=_blank">Suscribete</a>
+          <a class="clean" href="/quien-soy">QUIEN</a>
+          <a class="clean" href="/afiliados">AFILIADOS</a>
+          <a class="button outlined" href="https://mailchi.mp/9fd48a423496/soyjavi-blockchain-maillist" target=_blank">Suscríbete</a>
         </nav>
       </div>
     </header>
@@ -31,10 +31,6 @@
     {{content}}
 
     <button class="icon" id="button-theme" onclick="eaf.on.toggleTheme()">wb_sunny</button>
-
-    <!--
-
-    -->
 
     {{dialog}}
   </body>
