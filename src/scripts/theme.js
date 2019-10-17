@@ -17,16 +17,14 @@ export default {
         bgOpacity: 'rgba(16,16,16,0.85)',
         color: 'white',
         colorLighten: '#999',
-        colorChartLine: '#555',
         colorSkeleton: '#222',
       }
       : {
         bg: 'white',
         bgOpacity: 'rgba(255,255,255,0.85)',
-        color: 'black',
-        colorLighten: '#555',
-        colorChartLine: '#aaa',
-        colorSkeleton: '#ddd',
+        color: '#333',
+        colorLighten: '#666',
+        colorSkeleton: '#edf1f5',
       };
 
     root.style.setProperty('--bg-color', colors.bg);
