@@ -1,6 +1,10 @@
 import theme, { LIGHT, DARK } from './theme';
 
 export default {
+  scroll(callback) {
+    document.onscroll = () => callback(window.scrollY);
+  },
+
   toggleTheme() {
     theme.render(theme.current === LIGHT ? DARK : LIGHT);
   },
