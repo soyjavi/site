@@ -5,7 +5,7 @@
   --color-lighten: #666;
   --color-accent: #F9B92D;
   --color-hover: blue;
-  --color-skeleton: #eee;
+  --color-skeleton: #edf1f5;
 
   --font: 'Product Sans', sans-serif;
   --font-content: 'Cardo', serif;
@@ -23,9 +23,10 @@
   --space-S: 0.8rem;
   --space-XS: 0.6rem;
 
-  --border-radius: 0.15rem;
+  --border-radius: 0.2rem;
 
   --wrapper: 1120px;
+  --wrapper-content: 1024px;
   --wrapper-post: 680px;
   --mobile: 768px;
   --tablet: 1024px;
@@ -43,5 +44,5 @@
 /* -- components -- */
 @import './header.css';
 @import './footer.css';
-/*@import './dialog.css';*/
 @import './banner.css';
+@import './dialog.css';

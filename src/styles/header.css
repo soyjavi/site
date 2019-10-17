@@ -10,7 +10,7 @@ header {
   z-index: 1;
 }
   header.shadow {
-    border-bottom: 1px solid #edf1f5;
+    border-bottom: 1px solid var(--color-skeleton);
     box-shadow: 0 4px 20px rgba(16,19,20,.04);
   }
 
@@ -25,11 +25,10 @@ header {
     flex: 1;
   }
 
-  header h1 {
+  header strong {
     font-size: var(--font-size);
   }
-
-    header h1 > small {
+    header strong > small {
       background-color: var(--color-accent);
       border-radius: var(--border-radius);
       bottom: 0.1rem;
@@ -40,8 +39,7 @@ header {
       position: relative;
       text-transform: uppercase;
     }
-
-    [data-page="home"] header h1 > small {
+    [data-page="home"] header strong > small {
       display: none;
     }
 
@@ -63,5 +61,9 @@ header {
     justify-content: flex-end;
     align-self: flex-start;
     flex: 1;
+  }
+
+  header nav > *:not(.button) {
+    display: none;
   }
 }
