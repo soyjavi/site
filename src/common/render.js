@@ -6,7 +6,8 @@ import cache from './cache';
 import C from './constants';
 
 const {
-  DOMAIN, EMAIL, TITLE, DESCRIPTION, FAVICON,
+  COPYRIGHT, DOMAIN, TITLE, DESCRIPTION, ICON, IMAGE,
+  EMAIL, TWITTER,
 } = C;
 const folder = path.resolve('.', 'src/pages');
 const bindingRegexp = new RegExp(/{{.*}}/, 'g');
@@ -23,9 +24,27 @@ export default (filename = 'index', values = {}, forceCache = true) => {
     cache.set(cacheKey, view);
   }
 
-  const dataSource = Object.assign({}, values, {
-    DOMAIN, EMAIL, TITLE, DESCRIPTION, FAVICON, VERSION: PKG.version,
-  });
+  const {
+    title,
+    description = DESCRIPTION,
+    image = IMAGE,
+    url,
+  } = values;
+
+  const dataSource = {
+    COPYRIGHT,
+    EMAIL,
+    ICON: `${DOMAIN}${ICON}`,
+    VERSION: PKG.version,
+    TWITTER,
+
+    ...values,
+    title: title ? `${title} - ${TITLE}` : TITLE,
+    description,
+    image: `${DOMAIN}${image}`,
+    url: url ? `${DOMAIN}${url}` : DOMAIN,
+
+  };
 
   Object.keys(dataSource).forEach((key) => {
     view = view.replace(new RegExp(`{{${key}}}`, 'g'), dataSource[key]);

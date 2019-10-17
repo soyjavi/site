@@ -30,6 +30,11 @@ export default (req, res) => {
     html = render('index', {
       page: 'post',
       context: 'blog',
+      title: post.title,
+      description: post.summary,
+      image: `${post.image}${UNSPLASH_PROPS}&w=1200&h=900`,
+      url: req.originalUrl,
+
       content: render('post', {
         ...post,
         image: `${post.image}${UNSPLASH_PROPS}&w=1366`,
