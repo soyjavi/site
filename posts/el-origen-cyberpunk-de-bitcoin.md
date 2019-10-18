@@ -1,3 +1,11 @@
+title:      El origen cyberpunk de Bitcoin
+summary:    Satoshi Nakamoto fue un individuo brillante que encontró soluciones ingeniosas a las deficiencias de sus predecesores. Es importante recordar y dar crédito a aquellos que hicieron posible esta aventura.
+date:       2017-8-14
+image:      https://images.unsplash.com/photo-1526913299589-f35a3ddeb7ae
+published:  true
+
+---
+
 Nosotros, los *bitconers*, tendemos a ser filósofos *rousseaunianos* que creen de manera nativa que la naturaleza humana es buena en su mayoría (y es principalmente la sociedad la que nos corrompe). En consecuencia, la malevolencia y la mala fe son la excepción a la regla, y no la regla en sí misma. Esta forma de pensar libero clásica, se opone a la suposición impulsada por la *Ley Patriota* posterior al 11 de septiembre en la que cualquier persona puede ser un terrorista y debería ser sometida a una vigilancia masiva por un bien mayor.
 
 En su influyente trabajo "The Cyphernomicon: Cypherpunks FAQ and More", OC (Cypherpunk original) describe una fuerte división entre la privacidad y el cumplimiento de las leyes. Según él:

@@ -6,7 +6,7 @@ const {
   COPYRIGHT, DOMAIN, TITLE, DESCRIPTION, ICON, IMAGE,
   ADDRESS_BTC,
   COURSE_AMOUNT_FIAT, COURSE_AMOUNT_BTC,
-  EMAIL, TWITTER,
+  EMAIL, TWITTER, NAME, AVATAR,
 } = process.env;
 
 export default {
@@ -25,6 +25,8 @@ export default {
   // -- SOCIAL
   EMAIL,
   TWITTER,
+  NAME,
+  AVATAR,
 
   // -- WALLETS
   ADDRESS_BTC,

@@ -27,7 +27,7 @@ export default (filename = 'index', values = {}, forceCache = true) => {
   const {
     title,
     description = DESCRIPTION,
-    image = IMAGE,
+    image,
     url,
   } = values;
 
@@ -39,11 +39,10 @@ export default (filename = 'index', values = {}, forceCache = true) => {
     TWITTER,
 
     ...values,
-    title: title ? `${title} - ${TITLE}` : TITLE,
+    title: title || TITLE,
     description,
-    image: `${DOMAIN}${image}`,
+    image: image || `${DOMAIN}${IMAGE}`,
     url: url ? `${DOMAIN}${url}` : DOMAIN,
-
   };
 
   Object.keys(dataSource).forEach((key) => {

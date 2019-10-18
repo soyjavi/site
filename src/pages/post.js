@@ -1,10 +1,10 @@
 import fs from 'fs';
+import path from 'path';
 import showdown from 'showdown';
-import Storage from 'vanilla-storage';
 
 import { C, cache, render } from '../common';
 
-const { STORE, UNSPLASH_PROPS } = C;
+const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
 
 export default (req, res) => {
@@ -13,19 +13,17 @@ export default (req, res) => {
   let html = cache.get(keyCache);
 
   if (!html) {
-    const posts = new Storage(STORE.POSTS);
-    posts.get('public');
+    const file = path.resolve('.', `posts/${postUri}.md`);
 
-    const post = posts.findOne({ uri: postUri });
-    if (!post) throw new Error(`/${postUri} is not a valid url.`);
+    if (!fs.existsSync(file)) throw new Error(`/${postUri} is not a valid url.`);
+    const markdown = fs.readFileSync(file, 'utf8');
 
-    const users = new Storage(STORE.USERS);
-    users.get('admins');
-    const author = users.findOne({ id: post.author });
-
-    const uriFile = `posts/${post.uri}.md`;
-    if (!fs.existsSync(uriFile)) throw new Error(`${uriFile} could not read correctly.`);
-
+    const [info, content] = markdown.split('---');
+    const post = {};
+    info.split('\n').forEach((row) => {
+      const [field, value] = row.split(': ');
+      if (field.trim().length > 0) post[field.trim()] = value.trim();
+    });
 
     html = render('index', {
       page: 'post',
@@ -38,9 +36,9 @@ export default (req, res) => {
       content: render('post', {
         ...post,
         image: `${post.image}${UNSPLASH_PROPS}&w=1366`,
-        author: author.name,
-        avatar: author.avatar || '',
-        markdown: converter.makeHtml(fs.readFileSync(uriFile, 'utf8')),
+        author: NAME,
+        avatar: AVATAR,
+        markdown: converter.makeHtml(content),
         bannerBlockchain: render('templates/bannerBlockchain', { type: 'post' }),
         bannerSubscribe: render('templates/bannerSubscribe', { type: 'post' }),
         footer: render('templates/footer'),
