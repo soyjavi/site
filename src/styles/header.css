@@ -28,18 +28,7 @@ header {
   header strong {
     font-size: var(--font-size);
   }
-    header strong > small {
-      background-color: var(--color-accent);
-      border-radius: var(--border-radius);
-      bottom: 0.1rem;
-      color: #222;
-      font-size: var(--font-size-XS);
-      margin-left: 0.5rem;
-      padding: 0.15rem 0.3rem;
-      position: relative;
-      text-transform: uppercase;
-    }
-    [data-page="home"] header strong > small {
+    [data-page="home"] header strong > .tag {
       display: none;
     }
 

@@ -17,9 +17,7 @@
   margin-right: var(--space-S);
 }
 
-[data-page="course"] .picture { background: transparent; }
-
-[data-page="course"] .keypoint img { background: transparent; height: calc(var(--unit) * 3); }
+[data-page="course"] .keypoint img { height: calc(var(--unit) * 3); }
 [data-page="course"] .keypoint small { font-size: var(--font-size-S); }
 
 [data-page="course"] article .info { align-self: flex-start; }

@@ -36,6 +36,7 @@ button, .button {
   outline: 0;
   padding: var(--space-XS) var(--space-S);
   text-decoration: none;
+  text-align: center;
   transition: background var(--animation);
 }
   button.accent, .button.accent {
@@ -62,19 +63,32 @@ button, .button {
     padding: var(--space-S) var(--space);
   }
 
-form, .form { margin: var(--unit) 0; }
+  button[disabled], .button.disabled {
+    pointer-events: none;
+    background-color: var(--color-skeleton);
+    color: var(--color-lighten);
+  }
+  button.busy:before, .button.busy:before {
+    display: inline-block;
+    content: '⠋';
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+    margin-right: calc(var(--unit) / 2);
+  }
 
-img, .img {
-  background-color: var(--color-skeleton);
-  border: 0;
+img { border: 0; }
+
+form, form > * {
+  width: 100%;
 }
 
 input {
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px var(--color-lighten);
+  border-bottom: solid 1px var(--color-skeleton);
   color: var(--color);
-  font-size: var(--font-size-S);
+  font-size: var(--font-size);
+  padding: var(--space-XS) 0;
   width: 100%;
 }
 
@@ -118,6 +132,11 @@ textarea, select, input, button { outline: none; }
   padding: var(--unit) 0;
 }
 
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -133,6 +152,18 @@ textarea, select, input, button { outline: none; }
   animation: spin 1s linear infinite;
   vertical-align: middle;
   margin-right: calc(var(--unit) / 2);
+}
+
+.tag {
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  bottom: 0.1rem;
+  color: #222;
+  font-size: var(--font-size-XS);
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .icon {

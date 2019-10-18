@@ -1,7 +1,7 @@
 import on from './on';
 import theme, { LIGHT, DARK } from './theme';
 
-window.eaf = {
+window.soyjavi = {
   on,
   theme,
 };

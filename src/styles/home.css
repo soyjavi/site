@@ -25,7 +25,6 @@
 }
 
 [data-page="home"] .background {
-  background-color: transparent;
   position: absolute;
   height: 68vh;
   max-width: 640px;

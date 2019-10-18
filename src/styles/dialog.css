@@ -1,0 +1,72 @@
+.dialog {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  transition: background-color var(--animation);
+  width: 100vw;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.dialog.visible {
+  pointer-events: all;
+  background-color: rgba(0, 0, 0, 0.78);
+}
+
+.dialog > div {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  flex: 0;
+  transition: transform var(--animation);
+  transform: translateY(110vh);
+}
+  .dialog.visible > div { transform: translateY(0); }
+  .dialog > div > * { padding: var(--space); }
+
+.dialog .header { background-color: black; color: white; }
+  .dialog .header .row { justify-content: space-between; }
+  .dialog .header .row strong { font-size: var(--font-size); }
+
+.dialog .amounts {
+  align-items: flex-end;
+  margin-top: var(--space-S);
+}
+  .dialog .amounts h1 { font-size: var(--font-size-XL); line-height: var(--font-size-XL); }
+    .dialog .amounts h1 span { font-size: 68%; line-height: 68%; }
+  .dialog .amounts strong { font-size: var(--font-size); }
+
+.dialog .content p { margin: 0; }
+.dialog .content .address { align-items: center; margin: var(--space-S); }
+  .dialog .content .address .qr { width: 50%; }
+  .dialog .content .address small { margin-top: var(--space-XS); }
+
+.dialog button, .dialog .button {
+  margin-top: var(--space-S);
+}
+
+.dialog input { text-align: center; }
+
+.dialog .footer {
+  padding-top: var(--space-S);
+  border-top: solid 1px var(--color-skeleton);
+}
+
+@media (max-width: 767px) {
+  .dialog { align-items: flex-end; }
+  .dialog > div { min-width: 100vw; }
+    .dialog > div > * { padding: var(--unit); }
+  .dialog .amounts .amount { font-size: var(--font-size-L); line-height: var(--font-size-L); }
+  .dialog .content p { font-size: var(--font-size-XS); }
+}
+
+@media (min-width: 768px) {
+  .dialog .amounts .amount { font-size: var(--font-size-XL); line-height: var(--font-size-XL); }
+  .dialog .content { width: 400px; }
+  .dialog .content p { font-size: var(--font-size-S); }
+}

@@ -1,0 +1,42 @@
+<div class="dialog checkout">
+  <div>
+    <div class="header">
+      <div class="row">
+        <strong>SOYJΛVI<small class="tag lighten">{{context}}</small></strong>
+        <small class="color-lighten">1 BTC = {{exchangeRate}} €</small>
+      </div>
+      <div class="columns amounts">
+        <h1 class="amount">
+          {{amountBTC}}<span>BTC</span>
+        </h1>
+        <strong class="color-lighten">{{amountFIAT}}<span>€</span></strong>
+      </div>
+    </div>
+
+    <div class="columns content">
+      <p>
+        Simplemente envia <strong>{{amountBTC}}BTC</strong> a la siguiente address y adjunta tu email. Una vez la transaccion tenga 3 confirmaciones en la red te enviare el acceso al curso.
+      </p>
+
+      <div class="columns address">
+        <img class="qr" src="https://chart.googleapis.com/chart?cht=qr&chs=256x256&chld=H|0&chl=bitcoin:{{address}}?amount={{amountBTC}}" />
+        <small>{{address}}</small>
+      </div>
+
+      <form>
+        <input id="email" type="email" placeholder="Email..." />
+        <input id="address" type="hidden" value={{address}} />
+        <button data-role="submit" disabled class="large accent" onclick="soyjavi.on.paymentBTC(this)">
+          He realizado el pago
+        </button>
+      </form>
+    </div>
+
+    <nav class="footer columns">
+      <a href="{{externalUrl}}" class="button large" target="_blank">
+        Pagar en Udemy por {{amountFIAT}}€
+      </a>
+      <button class="button large outlined" onclick="soyjavi.on.dialogHide()">cancelar</button>
+    </nav>
+  </div>
+</div>

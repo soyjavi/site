@@ -4,6 +4,8 @@ dotenv.config();
 const {
   PRODUCTION,
   COPYRIGHT, DOMAIN, TITLE, DESCRIPTION, ICON, IMAGE,
+  ADDRESS_BTC,
+  COURSE_AMOUNT_FIAT, COURSE_AMOUNT_BTC,
   EMAIL, TWITTER,
 } = process.env;
 
@@ -23,6 +25,13 @@ export default {
   // -- SOCIAL
   EMAIL,
   TWITTER,
+
+  // -- WALLETS
+  ADDRESS_BTC,
+
+  // -- PRODUCTS
+  COURSE_AMOUNT_FIAT,
+  COURSE_AMOUNT_BTC,
 
   // -- API
   API: {
