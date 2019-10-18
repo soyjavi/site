@@ -1,9 +1,4 @@
-import Storage from 'vanilla-storage';
-
 import MAP from '../../map.json';
-import { C } from '../common';
-
-const { STORE } = C;
 
 export default (req, res, next) => {
   const url = req.originalUrl.split('/')[2].split('?')[0];
@@ -27,17 +22,6 @@ export default (req, res, next) => {
       if (requiredParameters.length > 0) error = `Required parameters: ${requiredParameters.join(', ')}`;
     }
 
-    const authorization = req.authorization || req.headers.authorization;
-    let session;
-
-    if (route.secure && !authorization) error = 'Acceso no permitido';
-    else if (route.secure) {
-      const users = new Storage(STORE.USERS);
-      session = users.get('admins').findOne({ fingerprint: authorization });
-      if (!session) error = 'Acceso no permitido';
-    }
-
-    req.session = session;
     req.props = props;
   }
 

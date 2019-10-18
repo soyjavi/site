@@ -11,6 +11,7 @@
     "express": "4.16.3",
     "node-cron": "2.0.3",
     "node-fetch": "2.6.0",
+    "nodemailer": "6.3.0",
     "on-finished": "2.3.0",
     "showdown": "1.7.1",
     "telegraf": "3.30.1",
