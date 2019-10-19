@@ -1,5 +1,4 @@
 [data-page="post"] {
-  padding-top: calc(var(--unit) * 9);
   text-align: justify;
 }
   [data-page="post"] main > :not(.img) {
@@ -17,7 +16,6 @@
     background-color: var(--color-skeleton);
     height: 50vh;
     width: 100%;
-    margin: var(--space-XL) 0;
   }
 
   [data-page="post"] main h1 {
@@ -27,7 +25,7 @@
     [data-page="post"] main h1, [data-page="post"] > h1 > * { text-align: left; }
     [data-page="post"] main h1 + p {
       font-size: var(--font-size-markdown);
-      padding: var(--unit) 0;
+      padding: var(--space-S) 0;
     }
 
   [data-page="post"] .author {
@@ -46,14 +44,12 @@
 
     [data-page="post"] .author strong { display: block; }
 
-  [data-page="post"] article > h2, [data-page="post"] article > h3 {
-    margin: calc(var(--unit) * 2) 0 var(--unit) 0;
-  }
+  [data-page="post"] article > h2,
+  [data-page="post"] article > h3 { margin: var(--space) 0 var(--space-S) 0; }
 
   [data-page="post"] article blockquote {
-    margin-bottom: var(--unit);
-    padding: calc(var(--unit) * 2);
     background-color: var(--color-skeleton);
+    padding: var(--space);
     width: 100%;
   }
     [data-page="post"] article blockquote * {
@@ -68,57 +64,79 @@
       margin-top: calc(var(--unit) / 2);
     }
 
-  [data-page="post"] article > p, [data-page="post"] li {
-    margin-bottom: var(--unit);
-  }
-
   [data-page="post"] article > p,
   [data-page="post"] article > p *,
   [data-page="post"] article li,
   [data-page="post"] article li * {
     font-family: var(--font-content);
-    font-size: var(--font-size-markdown);
-    line-height: 138%;
+    line-height: 150%;
   }
 
-  [data-page="post"] article ul, [data-page="post"] article ol {
-    padding-left: calc(var(--unit) * 2);
-    padding-right: var(--unit);
+  [data-page="post"] article ul,
+  [data-page="post"] article ol {
+    padding-left: var(--space);
+    padding-right: var(--space);
+  }
+
+  [data-page="post"] article > p,
+  [data-page="post"] article img,
+  [data-page="post"] article blockquote,
+  [data-page="post"] article li,
+  [data-page="post"] article .banner {
+    margin-bottom: var(--space);
+  }
+
+  [data-page="post"] article .twitter-tweet {
+    margin: 0 auto var(--space) 0 !important;
   }
 
   [data-page="post"] article img {
-    border-radius: var(--border-radius);
     display: block;
     width: 100%;
   }
 
-  [data-page="post"] article img,
-  [data-page="post"] article .twitter-tweet {
-    margin: var(--space) auto !important;
-    align-self: center;
+@media (max-width: 767px) {
+  [data-page="post"] {
+    padding-top: calc(var(--space) + var(--space-XL));
   }
 
-  [data-page="post"] article .banner { margin-top: calc(var(--unit) * 2); }
-
-
-@media (max-width: 767px) {
   [data-page="post"] main { margin: 0 var(--unit); }
   [data-page="post"] main h1 { font-size: var(--font-size-L); }
-  [data-page="post"] main h1 + p { font-size: var(--font-size-S); }
-  [data-page="post"] main .img { height: 38vh; }
+  [data-page="post"] main h1 + p { font-size: var(--font-size); }
+  [data-page="post"] main .img {
+    height: 38vh;
+    margin: var(--space) 0;
+  }
 
   [data-page="post"] article blockquote {
     padding: calc(var(--unit) * 1);
   }
-
-  [data-page="post"] article blockquote p strong {
-    font-size: var(--font-size-XS);
-    margin-top: calc(var(--unit) / 2);
-  }
+    [data-page="post"] article blockquote p strong {
+      font-size: var(--font-size-XS);
+      margin-top: calc(var(--unit) / 2);
+    }
 
   [data-page="post"] article > p,
   [data-page="post"] article > p *,
-  [data-page="post"] article li {
-    font-size: var(--font-size-S);
+  [data-page="post"] article li,
+  [data-page="post"] article li * {
+    font-size: var(--font-size);
   }
+}
+
+@media (min-width: 767px) {
+  [data-page="post"] {
+    padding-top: calc(var(--space-XL) * 2);
+  }
+  [data-page="post"] main .img {
+    margin: var(--space-XL) 0;
+  }
+  [data-page="post"] article > p,
+  [data-page="post"] article > p *,
+  [data-page="post"] article li,
+  [data-page="post"] article li * {
+    font-size: var(--font-size-markdown);
+  }
+
+  [data-page="post"] article > h2 { margin-top: var(--space-L); }
 }
