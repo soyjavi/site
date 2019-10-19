@@ -40,6 +40,7 @@
 @import './home.css';
 @import './post.css';
 @import './course.css';
+@import './error.css';
 
 /* -- components -- */
 @import './header.css';
