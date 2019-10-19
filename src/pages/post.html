@@ -2,21 +2,23 @@
   <h1>{{title}}</h1>
   <p class="color-lighten">{{summary}}</p>
 
-  <section class="author row">
-    <img alt="{{author}}" src="{{avatar}}" />
-    <span>
-      <strong class="font-XS">{{author}}</strong>
-      <small class="font-XS">{{date}}</small>
-    </span>
+  <section>
+    <a href="https://twitter.com/soyjavi" class="author row clean" target="_blank">
+      <img alt="{{author}}" src="{{avatar}}" />
+      <span>
+        <strong class="font-S">{{author}}</strong>
+        <small class="color-lighten font-XS">{{date}}</small>
+      </span>
+    </a>
   </section>
 
-  <div class="fullwidth" style="background-image: url({{image}});"></div>
+  <div class="img" style="background-image: url({{image}});"></div>
 
   <article>
     {{markdown}}
+    {{subscribe}}
   </article>
 </main>
-
 
 <button class="icon" id="button-theme" onclick="soyjavi.on.toggleTheme()">wb_sunny</button>
 

@@ -25,5 +25,3 @@ Al igual que la imprenta alteró y redujo el poder de los gremios medievales y l
 - Buscamos la reputación y no la confianza de un intermediario.
 - Nos protegemos del control del estado sin incumplir ninguna ley.
 - Somos dueños de lo que poseemos, por lo tanto decidimos como, cuando y por que.
-
-{{bannerSubscribe}}

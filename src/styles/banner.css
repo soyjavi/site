@@ -35,9 +35,12 @@
     pointer-events: none;
     position: absolute;
     top: 0;
-    transform: translateX(20%) translateY(15%) scale(1.25);
     width: calc(var(--unit) * 20);
     z-index: 0;
+  }
+
+  .banner.product:before {
+    border-radius: var(--border-radius);
   }
 
   .banner.blockchain:before {
@@ -46,35 +49,47 @@
   .banner.subscribe:before {
     background-image: url('../../public/banner-bitcoin-ballons.png');
   }
+  .banner.dashlane:before {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.talkandroid.com%2Fuploads%2F2016%2F01%2FDashlane-Logo.png&f=1&nofb=1');
+  }
+  .banner.ledger:before {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bankingtech.com%2Ffiles%2F2018%2F01%2FLedger-logo.jpg&f=1&nofb=1');
+  }
+  .banner.coinbase:before {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthemerkle.com%2Fwp-content%2Fuploads%2F2015%2F12%2FCoinbase-Logo.png&f=1&nofb=1');
+  }
+  .banner.trezor:before {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.localcoinatm.com%2Fimages%2Fwp-content%2Fuploads%2F2019%2F04%2F18160308%2Ftrezor_logo-01.png&f=1&nofb=1');
+  }
 
 @media (max-width: 767px) {
   .banner { padding: var(--unit); }
-  .banner h2 {
-    font-size: var(--font-size);
-    max-width: 90%;
-  }
-  .banner p {
-    font-size: var(--font-size-XS);
-    max-width: 78%;
-    text-align: justify;
-  }
-  .banner:before {
-    z-index: 0;
+  .banner h2 { font-size: var(--font-size); }
+  .banner p { font-size: var(--font-size-XS); text-align: justify; }
+  .banner:not(.product):before {
     left: none;
     right: 0;
     transform: translateX(70%) translateY(10%) scale(0.75);
   }
+    .banner:not(.product) h2 { max-width: 90%; }
+    .banner:not(.product) p { max-width: 78%; }
+
+  .banner.product:before {
+    position: relative;
+    width: var(--space-XL);
+    height: var(--space-XL);
+    margin: var(--space-XS) auto var(--space-S) auto;
+  }
+  .banner.product .button { width: 100%; }
 }
 
-/*
+
 @media (min-width: 768px) {
-  .banner.course {
-    padding-bottom: var(--space-XL);
-    padding-top: var(--space-XL);
-    padding-right: var(--space-XL);
+  .banner:before {
+    transform: translateX(20%) translateY(15%) scale(1.25);
   }
-  .banner.course h2, .banner.course p {
-    max-width: 68%;
+  .banner.product:before {
+    transform: translateX(-6.8%) translateY(0%) scale(0.68);
+    border-radius: var(--border-radius);
   }
 }
-*/

@@ -24,7 +24,7 @@ export default {
         bgOpacity: 'rgba(255,255,255,0.85)',
         color: '#333',
         colorLighten: '#666',
-        colorSkeleton: '#edf1f5',
+        colorSkeleton: '#eee',
       };
 
     root.style.setProperty('--bg-color', colors.bg);

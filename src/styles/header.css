@@ -32,9 +32,7 @@ header {
       display: none;
     }
 
-  header nav {
-    margin-left: var(--space);
-  }
+  header nav { margin-left: var(--space); }
     header nav > *:not(.button) {
       font-weight: bold;
       font-size: var(--font-size-XS);
@@ -51,8 +49,8 @@ header {
     align-self: flex-start;
     flex: 1;
   }
+}
 
-  header nav > *:not(.button) {
-    display: none;
-  }
+@media (min-width: 768px) {
+
 }

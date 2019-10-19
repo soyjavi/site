@@ -39,10 +39,11 @@ export default (req, res) => {
         author: NAME,
         avatar: AVATAR,
         markdown: converter.makeHtml(content),
-        bannerBlockchain: render('templates/bannerBlockchain', { type: 'post' }),
-        bannerSubscribe: render('templates/bannerSubscribe', { type: 'post' }),
+        banner: render('banners/course-blockchain'),
+        subscribe: render('banners/subscribe'),
         footer: render('templates/footer'),
       }),
+
     });
   }
 

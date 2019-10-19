@@ -101,50 +101,26 @@ textarea, select, input, button { outline: none; }
 /* -- Browser spec -- */
 ::-webkit-scrollbar { display: none; }
 
-/* -- Browser spec -- */
+/* -- Custom classes -- */
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-  .row.reverse {
-    flex-direction: row-reverse;
-  }
-  .row.wrap {
-    flex-wrap: wrap;
-  }
+  .row.reverse { flex-direction: row-reverse; }
+  .row.wrap { flex-wrap: wrap; }
 
-.font-content, .font-content * {
-  font-family: var(--font-content);
-}
+.font-content, .font-content * { font-family: var(--font-content); }
+.font-XS { font-size: var(--font-size-XS); }
 
-.font-XS {
-  font-size: var(--font-size-XS);
-}
-
-.color-lighten {
-  color: var(--color-lighten);
-}
-
-.underline {
-  border-bottom: 1px solid var(--color-skeleton);
-  margin-bottom: var(--unit);
-  padding: var(--unit) 0;
-}
+.color-lighten { color: var(--color-lighten); }
 
 .columns {
   display: flex;
   flex-direction: column;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.skeleton {
-  background-color: var(--color-skeleton);
-}
+.skeleton { background-color: var(--color-skeleton); }
 
 .spinner:before {
   display: inline-block;
@@ -185,7 +161,6 @@ textarea, select, input, button { outline: none; }
   font-feature-settings: 'liga';
 }
 
-.icon-S { font-size: 16px; }
 
 @keyframes spin {
    0% { content: '⠋' }
@@ -198,4 +173,9 @@ textarea, select, input, button { outline: none; }
   70% { content: '⠧' }
   80% { content: '⠇' }
   90% { content: '⠏' }
+}
+
+
+@media (max-width: 767px) {
+  .hide-mobile { display: none; }
 }

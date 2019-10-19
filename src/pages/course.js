@@ -16,7 +16,7 @@ export default (req, res) => {
     image: IMAGE,
     content: render('course', {
       image: IMAGE,
-      bannerSubscribe: render('templates/bannerSubscribe', { type: 'course' }),
+      subscribe: render('banners/subscribe'),
       dialog: render('templates/dialogCheckout', {
         address,
         amountBTC: COURSE_AMOUNT_BTC,

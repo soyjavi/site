@@ -94,5 +94,3 @@ published:  true
 
 > ¡Unidos! Luchemos por nuestros derechosSomos las mentes electronicas, un grupo de rebeldes de pensamientos libres. Cyberpunks. Vivimos en el Ciberespacio, estamos en todos lugares, no tenemos límites. Este es nuestro manifiesto.
 > **EL MANIFIESTO CYBERPUNK, 14 de Febrero de 1997**
-
-{{bannerSubscribe}}

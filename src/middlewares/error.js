@@ -10,8 +10,7 @@ export default (error, req, res, next) => {
       content: render('error', {
         code,
         message: error.message,
-        bannerSubscribe: render('templates/bannerSubscribe', { type: 'post' }),
-
+        subscribe: render('banners/subscribe'),
       }),
     });
 

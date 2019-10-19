@@ -6,11 +6,13 @@
     <meta name="description" content="{{description}}">
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="{{url}}">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:url" content="{{url}}">
+    <meta property="og:image" content="{{image}}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="{{description}}">
-    <meta name="twitter:title" content="{{title}}">
     <meta name="twitter:site" content="@{{TWITTER}}">
-    <meta name="twitter:image" content="{{image}}">
     <meta name="twitter:creator" content="@{{TWITTER}}">
     <meta name="referrer" content="always">
     <link rel="icon" href="{{ICON}}" sizes="192x192">
@@ -23,6 +25,9 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Product+Sans:400,700|Cardo:400,700|Material+Icons&display=swap">
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/scripts/index.js" defer></script>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
     {{script}}
   </head>
   <body data-page="{{page}}">
@@ -32,7 +37,9 @@
           <strong>SOYJΛVI<small class="tag">{{context}}</small></strong>
         </a>
         <nav class="row">
-          <!-- <a class="clean" href="/afiliados">AFILIADOS</a> -->
+          <a class="clean hide-mobile" href="/manifiesto">MANIFIESTO</a>
+          <a class="clean hide-mobile" href="/afiliados">AFILIADOS</a>
+          <a class="clean hide-mobile" href="mailto:{{EMAIL}}">CONTACTA</a>
           <a class="button outlined" href="https://mailchi.mp/9fd48a423496/soyjavi-blockchain-maillist" target="_blank">
             SUSCRIBETE
           </a>

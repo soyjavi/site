@@ -23,7 +23,7 @@ El almacenamiento sin conexión significa que una hardware wallet no puede ser i
 
 Tal vez hayas escuchado esto antes, pero es tan importante que lo repetiremos: **ni tus llaves, ni tus monedas**.
 
-{{bannerBlockchain}}
+{{banner}}
 
 Si mantienes tus criptomonedas en una online wallet, un *exchange* o cualquier otro sistema que requiera que mantenga tus claves privadas en un servidor de un tercero, entonces puede asumir que esas claves están comprometidas y su cripto está en riesgo.
 
@@ -36,5 +36,3 @@ Si no puede usar su wallet cuando y donde quiera, entonces todo lo que puede hac
 
 ## ¿Convencido?
 Las hardware wallets son el camino a seguir si estás buscando la máxima seguridad para sus criptomonedas. Si estás buscando una hardware wallet que combine todas las ventajas disponibles, conveniencia y seguridad, te podemos recomendar dos: Nano Ledger o Trezor.
-
-{{bannerSubscribe}}

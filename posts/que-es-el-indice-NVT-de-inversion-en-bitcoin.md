@@ -40,7 +40,7 @@ En la primera epoca, la red estaba dominada por la minería. Las monedas se mina
 
 El 5 de octubre de 2009, un sitio web llamado New Liberty Standard comenzó a tasar bitcoins usando el precio de la electricidad que consumió para extraerlos. Esta fue la primera vez que Bitcoin tenía un precio diario.
 
-{{bannerBlockchain}}
+{{banner}}
 
 Para el 16 de enero de 2010, New Liberty Standard comenzó a fijar precios de acuerdo con la demanda de compra y venta, y el precio subió 19 veces de 0.07 centavos a 1.3 centavos.
 
@@ -66,5 +66,3 @@ Ahora podemos pasar a NVT y ver las acciones que tomó el mercado en su historia
 4. **Nace MtGox**. Con la llegada de MtGox que se hizo popular de inmediato, vemos más unidades de volumen en blockchain (como porcentaje del suministro) a la zona normal que normalmente vemos en la era de inversión de Bitcoin.
 
 5. **La inversión domina la minería**. Desde abril de 2011, los flujos de inversión maduran en el mismo tipo de coeficientes que vemos hoy. NVT entra en la banda normal que hemos visto en los últimos 8 años.
-
-{{bannerSubscribe}}

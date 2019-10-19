@@ -21,7 +21,7 @@ Szabo recuerda a todos que los *middlemen* (terceros, entindades reguladoras...)
 
 No podemos terminar este resumen de las creencias fundamentales del *bitcoiner* sin hablar de David Chaum y su investigación de por vida en el campo de la privacidad. Gracias a su teoría sobre la mezcla, Bitcoin se beneficia de las implementaciones de CoumJoin "Chaumian" como Wasabi, Samourai Dojo y JoinMarket. Su preocupación por un sistema de vigilancia orwelliano se remonta a 1985, cuando escribió "Seguridad sin identificación: sistemas de transacción para hacer obsoleto al gran hermano", y es en gran parte gracias a él que poseemos el vocabulario y los medios para entender cómo y por qué la privacidad es importante. la era digital.
 
-{{bannerBlockchain}}
+{{banner}}
 
 Por último, pero no menos importante, debemos tener en cuenta la primera forma de efectivo electrónico, cuya principal característica y prioridad era mejorar la privacidad de las transacciones financieras. Ecash es el ambicioso antepasado de Bitcoin, cuyo fracaso comercial le ha enseñado a Satoshi importantes lecciones sobre la descentralización y la confianza en terceros confiables. Hubiera sido mucho mejor si nuestros pagos con tarjeta de crédito de Internet utilizaran ecash para la máxima privacidad, pero ahora tenemos BTC para resolver algunos de los problemas y dar a los reguladores de todo el mundo un gran dolor de cabeza.
 
@@ -30,5 +30,3 @@ En pocas palabras, estas son las ideas principales que construyen la narrativa d
 Sin los ideólogos que dieron forma a nuestra percepción de lo que implica la anarquía digital, estaríamos viendo sistemas que los gobiernos y las corporaciones transnacionales decidieron mantener para sí mismos mientras nos dejaban sin idea y atrapados en nuestra ignorancia mundana. Y en ausencia de pioneros para publicar públicamente sus experimentos en Internet, Satoshi podría haberse sentido desanimado de intentar publicar algo.
 
 Cuando pensamos en el creador de Bitcoin, es importante tener una mayor comprensión de los fenómenos e invenciones que precedieron a su aparición. Satoshi no era un dios, un viajero del tiempo o algún tipo de inteligencia artificial. Satoshi Nakamoto fue un individuo brillante que tomó invenciones anteriores, las juntó y encontró soluciones ingeniosas a las deficiencias de sus predecesores. Su diseño original para Bitcoin estuvo lejos de ser perfecto, fue el resultado de una larga serie de intentos de crear dinero digital no censurable, y está en un proceso constante de mejora y refinamiento. Por lo tanto, es importante recordar y dar crédito a aquellos que hicieron posible esta aventura.
-
-{{bannerSubscribe}}
