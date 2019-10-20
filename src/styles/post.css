@@ -87,7 +87,7 @@
   }
 
   [data-page="post"] article .twitter-tweet {
-    margin: 0 auto var(--space) 0 !important;
+    margin: 0 auto var(--space) auto !important;
   }
 
   [data-page="post"] article img {

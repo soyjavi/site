@@ -40,6 +40,7 @@ export default (req, res) => {
         avatar: AVATAR,
         markdown: converter.makeHtml(content),
         banner: render('banners/course-blockchain'),
+        bannerCoinbase: render('banners/coinbase'),
         subscribe: render('banners/subscribe'),
         footer: render('templates/footer'),
       }),
