@@ -1,4 +1,4 @@
-title:      Estrategias de acumulación Bitcoin
+title:      Estrategias de acumulación con Bitcoin
 summary:    Conoce las estrategias que utilizo desde hace años para obtener nuevos Bitcoins y multiplicar los que ya tengo.
 date:       2019-10-20
 image:      https://images.unsplash.com/photo-1524673450801-b5aa9b621b76
