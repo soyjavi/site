@@ -12,7 +12,7 @@ Desde hace ya varios años llevo re-formulando mi forma de entender la economía
 
 No te voy a dar una clase sobre economía, sigo siendo un orgulloso *nerd developer* que viaja por el mundo. Simplemente antes de que conozcas mis estrategias para acumular Bitcoin, debes entender que yo ya no confió en el dinero FIAT, o dinero fiduciario. He tenido que buscar alternativas para almacenar mis reservas de valor. **La vida promedio de una moneda FIAT es de 30 años**. Si esto es así el Euro (€) ya ha cumplido el 66% de su vida útil estimada. Por lo que llega el momento de abrir tu mente, entender y aceptar otras alternativas, como por ejemplo que en mi caso particular más del 90% de mis pasivos están almacenados en Bitcoin.
 
-> Acepta que Bitcoin es extremadamente volátil y que te llevará por una montana rusa de emociones.
+> Acepta que Bitcoin es extremadamente volátil y que te llevará por una montaña rusa de emociones.
 
 Una vez que tienes esto interiorizado, veamos como puedes adquirir *satoshis* (la unidad mínima de Bitcoin) sin que ello te lleve a estar pegado a una extraña gráfica con cientos de indicadores con nombres aun más extraños como pueden ser: RSIs, SMAs, TAs, Ichimokus...
 
