@@ -45,7 +45,15 @@
     [data-page="post"] .author strong { display: block; }
 
   [data-page="post"] article > h2,
-  [data-page="post"] article > h3 { margin: var(--space) 0 var(--space-S) 0; }
+  [data-page="post"] article > h3 {
+    margin: var(--space) 0 var(--space-S) 0;
+  }
+
+  [data-page="post"] article > h2,
+  [data-page="post"] article > h3,
+  [data-page="post"] article li {
+    text-align: left;
+  }
 
   [data-page="post"] article blockquote {
     background-color: var(--color-skeleton);
@@ -81,9 +89,13 @@
   [data-page="post"] article > p,
   [data-page="post"] article img,
   [data-page="post"] article blockquote,
-  [data-page="post"] article li,
+  [data-page="post"] article ul,
   [data-page="post"] article .banner {
     margin-bottom: var(--space);
+  }
+
+  [data-page="post"] article li {
+    margin-bottom: var(--space-XS);
   }
 
   [data-page="post"] article .twitter-tweet {
@@ -117,10 +129,12 @@
     }
 
   [data-page="post"] article > p,
-  [data-page="post"] article > p *,
+  [data-page="post"] article > p * {
+    font-size: var(--font-size);
+  }
   [data-page="post"] article li,
   [data-page="post"] article li * {
-    font-size: var(--font-size);
+    font-size: calc(var(--font-size) * 0.9);
   }
 }
 
