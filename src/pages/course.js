@@ -1,6 +1,8 @@
 import { C, render } from '../common';
 
-const { ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_AMOUNT_BTC } = C;
+const {
+  ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_AMOUNT_BTC, DOMAIN,
+} = C;
 
 const addresses = ADDRESS_BTC.split(',');
 const description = 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!';
@@ -13,7 +15,7 @@ export default (req, res) => {
     context: 'CURSOS',
     title: 'Curso Blockchain',
     description,
-    image: '/static/banner-course.png',
+    image: `${DOMAIN}/static/banner-course.png`,
     content: render('course', {
       description,
       subscribe: render('banners/subscribe'),
