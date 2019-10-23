@@ -1,9 +1,9 @@
 import { C, render } from '../common';
 
 const { ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_AMOUNT_BTC } = C;
-const IMAGE = '/static/course-blockchain-main.gif';
 
 const addresses = ADDRESS_BTC.split(',');
+const description = 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!';
 
 export default (req, res) => {
   const address = addresses[Math.floor(Math.random() * addresses.length)];
@@ -12,10 +12,10 @@ export default (req, res) => {
     page: 'course',
     context: 'CURSOS',
     title: 'Curso Blockchain',
-    description: 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!',
-    image: IMAGE,
+    description,
+    image: '/static/banner-course.png',
     content: render('course', {
-      image: IMAGE,
+      description,
       subscribe: render('banners/subscribe'),
       dialog: render('templates/dialogCheckout', {
         address,
