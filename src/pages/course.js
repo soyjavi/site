@@ -1,14 +1,21 @@
 import { C, rateBTC, render } from '../common';
 
 const {
-  ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_DISCOUNT_FIAT, DOMAIN,
+  ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_DISCOUNT_FIAT,
 } = C;
 
 const addresses = ADDRESS_BTC.split(',');
 const description = 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!';
 
+const IMAGES = [
+  'https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=80',
+  'https://images.unsplash.com/photo-1563986768817-257bf91c5753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=80',
+  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=80',
+];
+
 export default async (req, res) => {
   const address = addresses[Math.floor(Math.random() * addresses.length)];
+  const image = IMAGES[Math.floor(Math.random() * IMAGES.length)];
 
   const amountBTC = await rateBTC(COURSE_DISCOUNT_FIAT);
   const exchangeRate = (COURSE_DISCOUNT_FIAT / amountBTC).toFixed(2);
@@ -16,9 +23,9 @@ export default async (req, res) => {
   res.send(render('index', {
     page: 'course',
     context: 'CURSOS',
-    title: 'Curso Blockchain',
+    title: 'Aprende Blockchain y conviértete en un CryptoDeveloper!',
     description,
-    image: `${DOMAIN}/static/banner-course.png`,
+    image,
     content: render('course', {
       description,
       subscribe: render('banners/subscribe'),
