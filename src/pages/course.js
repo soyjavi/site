@@ -13,9 +13,15 @@ const IMAGES = [
   'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=80',
 ];
 
+const TITLES = [
+  '¡Aprende Blockchain hoy mismo y conviértete en un CryptoDeveloper!',
+  '¡Descubre Blockchain hoy y conviértete en el developer del futuro!',
+];
+
 export default async (req, res) => {
   const address = addresses[Math.floor(Math.random() * addresses.length)];
   const image = IMAGES[Math.floor(Math.random() * IMAGES.length)];
+  const title = TITLES[Math.floor(Math.random() * TITLES.length)];
 
   const amountBTC = await rateBTC(COURSE_DISCOUNT_FIAT);
   const exchangeRate = (COURSE_DISCOUNT_FIAT / amountBTC).toFixed(2);
@@ -23,7 +29,7 @@ export default async (req, res) => {
   res.send(render('index', {
     page: 'course',
     context: 'CURSOS',
-    title: 'Aprende Blockchain y conviértete en un CryptoDeveloper!',
+    title,
     description,
     image,
     content: render('course', {
