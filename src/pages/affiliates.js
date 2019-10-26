@@ -2,7 +2,8 @@ import { render } from '../common';
 
 const title = 'Mis afiliados';
 const description = `
-Estos son algunos de los productos que suelo utilizar en mi día a día. Sino los utilizaría muy probablemente no te los recomendaría.
+Estos son algunos de los productos y servicios que me acompañan en mi día a día. Sino los utilizaría ten por seguro que no te los podría recomendar. Aprovecha los descuentos especiales y así me ayudas a mantener este sitio.
+
 `;
 
 export default (req, res) => {
@@ -20,9 +21,8 @@ export default (req, res) => {
       ledger: render('banners/ledger'),
       trezor: render('banners/trezor'),
 
+      course: render('banners/course-blockchain'),
       subscribe: render('banners/subscribe'),
-
-      // dashlane: render('banners/dashlane'),
     }),
   }));
 };

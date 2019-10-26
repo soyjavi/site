@@ -1,6 +1,4 @@
-[data-page="post"] {
-  text-align: justify;
-}
+[data-page="post"] {}
   [data-page="post"] main > :not(.img) {
     max-width: var(--wrapper-post);
     margin: 0 auto;
@@ -44,6 +42,7 @@
 
     [data-page="post"] .author strong { display: block; }
 
+  [data-page="post"] article { text-align: justify; }
   [data-page="post"] article > h2,
   [data-page="post"] article > h3 {
     margin: var(--space) 0 var(--space-S) 0;
