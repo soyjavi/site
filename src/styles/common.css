@@ -38,31 +38,21 @@ button, .button {
   padding: var(--space-XS) var(--space-S);
   text-decoration: none;
   text-align: center;
-  transition: background var(--animation);
+  transition: opacity var(--animation);
+  opacity: 0.9;
 }
-  button.accent, .button.accent {
-    background-color: var(--color-accent);
-    color: var(--color);
-  }
+  button:hover, .button:hover { opacity: 1; }
 
-  button:hover, .button:hover {
-    background-color: var(--color-accent);
-    color: black;
-  }
+  button.accent, .button.accent { background-color: var(--color-accent); color: var(--color); }
+    button.accent:hover, .button.accent:hover { color: white; }
 
   button.outlined, .button.outlined {
     background-color: transparent;
+    border: solid 1px var(--color-lighten);
     color: var(--color);
   }
 
-  button.outlined, .button.outlined {
-    border: solid 1px var(--color);
-  }
-
-  button.large, .button.large {
-    font-size: var(--font-size-S);
-    padding: var(--space-S) var(--space);
-  }
+  button.large, .button.large { font-size: var(--font-size-S); padding: var(--space-S) var(--space); }
 
   button[disabled], .button.disabled {
     pointer-events: none;

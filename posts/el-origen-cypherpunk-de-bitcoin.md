@@ -1,4 +1,4 @@
-title:      El origen cyberpunk de Bitcoin
+title:      El origen Cypherpunk de Bitcoin
 summary:    Satoshi Nakamoto fue un individuo brillante que encontró soluciones ingeniosas a las deficiencias de sus predecesores. Es importante recordar y dar crédito a aquellos que hicieron posible esta aventura.
 date:       2017-8-14
 image:      https://images.unsplash.com/photo-1526913299589-f35a3ddeb7ae

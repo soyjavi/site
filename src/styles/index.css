@@ -7,6 +7,12 @@
   --color-hover: blue;
   --color-skeleton: #eee;
 
+  --color-ledger: #272526;
+  --color-coinbase: rgb(22, 82, 240);
+  --color-trezor: #01B757;
+  --color-dashlane: #007c97;
+  --color-bullionstar: #dc8500;
+
   --font: 'Product Sans', sans-serif;
   --font-content: 'Cardo', serif;
   --font-size-XL: 3.2rem;

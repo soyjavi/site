@@ -3,11 +3,12 @@ import path from 'path';
 import showdown from 'showdown';
 
 import { C, cache, render } from '../common';
+import renderDialogCheckout from './modules/renderDialogCheckout';
 
 const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
 
-export default (req, res) => {
+export default async (req, res) => {
   const { params: { postUri } } = req;
   const keyCache = `post:${postUri}`;
   let html = cache.get(keyCache);
@@ -42,6 +43,7 @@ export default (req, res) => {
         banner: render('banners/course-blockchain'),
         bannerCoinbase: render('banners/coinbase'),
         subscribe: render('banners/subscribe'),
+        dialog: await renderDialogCheckout(),
         footer: render('templates/footer'),
       }),
 

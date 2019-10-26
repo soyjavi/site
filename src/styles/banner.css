@@ -1,95 +1,106 @@
 .banner {
-  background-color: var(--color-skeleton);
   border-radius: var(--border-radius);
-  margin-bottom: calc(var(--unit) * 2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: var(--space);
-  padding-left: calc(var(--space-XL) * 3.5);
+  margin-bottom: var(--space);
   overflow: hidden;
   position: relative;
   text-align: left;
   transition: background var(--animation);
 }
 
-.banner h2 {
-  font-size: var(--font-size-L);
-  line-height: 115%;
+.banner nav {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.banner p {
-  margin: var(--space-S) 0;
-  font-size: var(--font-size-S);
+.banner > nav {
+  font-size: var(--font-size-XS);
+}
+.banner > nav > * {
+  margin-left: var(--space-XS);
+  color: var(--color-lighten);
+}
+
+.banner h2, .banner p {
+  font-family: var(--font-content);
+}
+
+.banner h2 {
+  font-size: var(--font-size-L);
 }
 
 .banner .button {
   display: inline-block;
 }
 
-/* -- Images -- */
-  .banner:before {
-    background-repeat: no-repeat;
-    background-size: contain;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: calc(var(--unit) * 20);
-    z-index: 0;
-  }
+.banner:before {
+  background-color: var(--color-lighten);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
 
-  .banner.product:before {
-    border-radius: var(--border-radius);
-  }
-
-  .banner.blockchain:before {
-    background-image: url('../../public/banner-gold.png');
-  }
-  .banner.subscribe:before {
-    background-image: url('../../public/banner-bitcoin-ballons.png');
-  }
-  .banner.dashlane:before {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.talkandroid.com%2Fuploads%2F2016%2F01%2FDashlane-Logo.png&f=1&nofb=1');
-  }
-  .banner.ledger:before {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bankingtech.com%2Ffiles%2F2018%2F01%2FLedger-logo.jpg&f=1&nofb=1');
-  }
-  .banner.coinbase:before {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthemerkle.com%2Fwp-content%2Fuploads%2F2015%2F12%2FCoinbase-Logo.png&f=1&nofb=1');
-  }
-  .banner.trezor:before {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.localcoinatm.com%2Fimages%2Fwp-content%2Fuploads%2F2019%2F04%2F18160308%2Ftrezor_logo-01.png&f=1&nofb=1');
-  }
+.banner.coinbase:before, .banner.coinbase .button:not(.outlined) {
+  background-color: var(--color-coinbase);
+}
+.banner.trezor:before, .banner.trezor .button:not(.outlined) {
+  background-color: var(--color-trezor);
+}
+.banner.dashlane:before, .banner.dashlane .button:not(.outlined) {
+  background-color: var(--color-dashlane);
+}
+.banner.ledger:before, .banner.ledger .button:not(.outlined) {
+  background-color: var(--color-ledger);
+}
+.banner.blockchain:before {
+  background-color: var(--color-accent);
+}
+.banner.bullionstar:before, ._banner.bullionstar .button:not(.outlined) {
+  background-color: var(--color-bullionstar);
+}
 
 @media (max-width: 767px) {
-  .banner { padding: var(--unit); }
-  .banner h2 { font-size: var(--font-size); }
-  .banner p { font-size: var(--font-size-XS); text-align: justify; }
-  .banner:not(.product):before {
-    left: none;
-    right: 0;
-    transform: translateX(70%) translateY(10%) scale(0.75);
+  .banner {
+    padding: var(--unit);
+    flex-direction: column;
   }
-    .banner:not(.product) h2 { max-width: 90%; }
-    .banner:not(.product) p { max-width: 78%; }
-
-  .banner.product:before {
-    position: relative;
-    width: var(--space-XL);
-    height: var(--space-XL);
-    margin: var(--space-XS) auto var(--space-S) auto;
+  .banner > nav {
+    margin-top: var(--space);
   }
-  .banner.product .button { width: 100%; }
+  .banner h2 { font-size: var(--font-size-markdown); }
+  .banner p {
+    font-size: var(--font-size);
+    margin: var(--space-XS) 0;
+  }
+  .banner .button, .banner button {
+    margin-top: var(--space-XS);
+    width: 100%;
+  }
 }
 
 
 @media (min-width: 768px) {
-  .banner:before {
-    transform: translateX(20%) translateY(15%) scale(1.25);
+  .banner > div:first-child {
+    width: 68%;
+    max-width: 600px;
+    margin-right: calc(var(--space) / 2);
   }
-  .banner.product:before {
-    transform: translateX(-6.8%) translateY(0%) scale(0.68);
-    border-radius: var(--border-radius);
+
+  .banner p {
+    margin: var(--space-S) 0 var(--space) 0;
+    font-size: var(--font-size-markdown);
   }
+
+  .banner .button { margin-right: calc(var(--space) / 2); }
 }

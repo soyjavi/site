@@ -1,10 +1,7 @@
-import { C, rateBTC, render } from '../common';
+import { render } from '../common';
 
-const {
-  ADDRESS_BTC, COURSE_AMOUNT_FIAT, COURSE_DISCOUNT_FIAT,
-} = C;
+import renderDialogCheckout from './modules/renderDialogCheckout';
 
-const addresses = ADDRESS_BTC.split(',');
 const description = 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!';
 
 const IMAGES = [
@@ -19,12 +16,8 @@ const TITLES = [
 ];
 
 export default async (req, res) => {
-  const address = addresses[Math.floor(Math.random() * addresses.length)];
   const image = IMAGES[Math.floor(Math.random() * IMAGES.length)];
   const title = TITLES[Math.floor(Math.random() * TITLES.length)];
-
-  const amountBTC = await rateBTC(COURSE_DISCOUNT_FIAT);
-  const exchangeRate = (COURSE_DISCOUNT_FIAT / amountBTC).toFixed(2);
 
   res.send(render('index', {
     page: 'course',
@@ -35,15 +28,7 @@ export default async (req, res) => {
     content: render('course', {
       description,
       subscribe: render('banners/subscribe'),
-      dialog: render('templates/dialogCheckout', {
-        address,
-        amountBTC,
-        amountFIAT: COURSE_AMOUNT_FIAT,
-        discountFIAT: COURSE_DISCOUNT_FIAT,
-        externalUrl: 'https://www.udemy.com/course/aprende-blockchain/?couponCode=4FCED12CC5DBA7C6F7B6',
-        context: 'CHECKOUT',
-        exchangeRate,
-      }),
+      dialog: await renderDialogCheckout(),
       footer: render('templates/footer'),
     }),
   }));
