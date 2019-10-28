@@ -1,7 +1,8 @@
-import { render } from '../common';
+import { C, render } from '../common';
 
 import renderDialogCheckout from './modules/renderDialogCheckout';
 
+const { COURSE_DISCOUNT_FIAT } = C;
 const description = 'Construye desde cero una Blockchain y Criptomoneda. ¡Descubre las ideas de ingeniería detrás de tecnologías como Bitcoin y Ethereum!';
 
 const IMAGES = [
@@ -13,6 +14,7 @@ const IMAGES = [
 const TITLES = [
   '¡Aprende Blockchain hoy mismo y conviértete en un CryptoDeveloper!',
   '¡Descubre Blockchain hoy y conviértete en el developer del futuro!',
+  '¡Aprende Blockchain hoy y transforma tu futuro!',
 ];
 
 export default async (req, res) => {
@@ -27,6 +29,7 @@ export default async (req, res) => {
     image,
     content: render('course', {
       description,
+      offerPrice: COURSE_DISCOUNT_FIAT,
       subscribe: render('banners/subscribe'),
       dialog: await renderDialogCheckout(),
       footer: render('templates/footer'),

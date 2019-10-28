@@ -1,12 +1,14 @@
 :root {
+  --animation: 250ms ease-in-out;
+
   --bg-color: white;
   --bg-opacity: rgba(255,255,255,0.85);
+  --border-radius: 0.25rem;
+
   --color: #333;
   --color-lighten: #666;
   --color-accent: #F9B92D;
-  --color-hover: blue;
   --color-skeleton: #eee;
-
   --color-ledger: #272526;
   --color-coinbase: rgb(22, 82, 240);
   --color-trezor: #01B757;
@@ -22,22 +24,21 @@
   --font-size-XS: 0.85rem;
   --font-size-markdown: 1.4rem;
 
-  --unit: 1rem;
+  /*--mobile: 768px;*/
+
   --space-XL: 4rem;
   --space-L: 2.4rem;
   --space: 1.6rem;
   --space-S: 0.8rem;
   --space-XS: 0.6rem;
 
-  --border-radius: 0.2rem;
+  /*--tablet: 1024px;*/
+
+  --unit: 1rem;
 
   --wrapper: 1120px;
   --wrapper-content: 1024px;
   --wrapper-post: 680px;
-  --mobile: 768px;
-  --tablet: 1024px;
-
-  --animation: 300ms ease-in-out;
 }
 
 @import './common.css';

@@ -1,17 +1,13 @@
+import countdown from './countdown';
 import on from './on';
-import theme, { LIGHT, DARK } from './theme';
+import theme from './theme';
 
 window.soyjavi = {
   on,
   theme,
 };
 
-// -- auto-config
-// const { location: { protocol, href } } = window;
-// if (protocol !== 'https:') window.location.href = `https:${href.substring(protocol.length)}`;
-
-// const currentHour = new Date().getHours();
-// theme.render((currentHour >= 19 || currentHour <= 6) ? DARK : LIGHT);
+countdown('Oct 30, 2019 08:00:00');
 
 on.scroll((height) => {
   const el = document.querySelector('header');

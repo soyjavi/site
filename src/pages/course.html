@@ -3,11 +3,34 @@
     <div class="info">
       <h1>Crea tu propia Blockchain y conviértete en CryptoDeveloper.</h1>
       <p>{{description}}</p>
-      <div class="row buttons">
+      <div class="checkout-button">
         <button class="large accent" onclick="soyjavi.on.dialogShow('checkout')">
-          Reservar ahora
+          Reservalo ahora por {{offerPrice}}€
         </button>
-        <a class="button large outlined" href="mailto:{{EMAIL}}" />Contacta</a>
+        <div class="countdown row">
+          <small class="color-lighten">esta oferta caduca en:</small>
+          <div>
+            <strong id="countdown-days">99</strong>
+            <span>dias</span>
+          </div>
+          <strong>:</strong>
+          <div>
+            <strong id="countdown-hours">99</strong>
+            <span>horas</span>
+          </div>
+          <strong>:</strong>
+          <div>
+            <strong id="countdown-minutes">99</strong>
+            <span>minutos</span>
+          </div>
+          <strong>:</strong>
+          <div>
+            <strong id="countdown-seconds">99</strong>
+            <span>segundos</span>
+          </div>
+        </div>
+      </div>
+
       </div>
     </div>
     <img class="picture" src="/static/course-blockchain-main.gif" />
@@ -242,7 +265,11 @@
         </ul>
       </div>
 
-      <button class="large accent" onclick="soyjavi.on.dialogShow('checkout')">Reservar ahora</button>
+      <button class="large accent" onclick="soyjavi.on.dialogShow('checkout')">
+        Reservar por solo {{offerPrice}}€
+      </button>
+      <a class="button large outlined" href="mailto:{{EMAIL}}" />Contacta</a>
+
     </div>
   </section>
   {{footer}}
