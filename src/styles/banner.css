@@ -70,7 +70,7 @@
 .banner.blockchain:before {
   background-color: var(--color-accent);
 }
-.banner.bullionstar:before, ._banner.bullionstar .button:not(.outlined) {
+.banner.bullionstar:before, .banner.bullionstar .button:not(.outlined) {
   background-color: var(--color-bullionstar);
 }
 

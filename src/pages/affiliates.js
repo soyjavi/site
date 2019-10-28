@@ -20,6 +20,7 @@ export default (req, res) => {
       dashlane: render('banners/dashlane'),
       ledger: render('banners/ledger'),
       trezor: render('banners/trezor'),
+      bullionstar: render('banners/bullionstar'),
 
       course: render('banners/course-blockchain'),
       subscribe: render('banners/subscribe'),
