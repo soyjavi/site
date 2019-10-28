@@ -7,7 +7,7 @@ window.soyjavi = {
   theme,
 };
 
-countdown('Oct 30, 2019 08:00:00');
+countdown('Nov 1, 2019 08:00:00');
 
 on.scroll((height) => {
   const el = document.querySelector('header');

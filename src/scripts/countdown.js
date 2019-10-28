@@ -20,12 +20,9 @@ const ticker = (targetTime) => {
 };
 
 export default (target) => {
-  console.log({ target });
-
   if (!target) return;
 
   const targetTime = new Date(target).getTime();
-
   ticker(targetTime);
   setInterval(() => ticker(targetTime), 1000);
 };

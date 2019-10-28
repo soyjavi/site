@@ -8,7 +8,7 @@ import renderDialogCheckout from './modules/renderDialogCheckout';
 const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
 
-export default async (req, res) => {
+export default (req, res) => {
   const { params: { postUri } } = req;
   const keyCache = `post:${postUri}`;
   let html = cache.get(keyCache);
@@ -43,7 +43,7 @@ export default async (req, res) => {
         banner: render('banners/course-blockchain'),
         bannerCoinbase: render('banners/coinbase'),
         subscribe: render('banners/subscribe'),
-        dialog: await renderDialogCheckout(),
+        dialog: (async () => await renderDialogCheckout()),
         footer: render('templates/footer'),
       }),
 
