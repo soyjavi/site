@@ -38,6 +38,10 @@
   display: inline-block;
 }
 
+.banner img {
+  z-index: -1;
+}
+
 .banner:before {
   background-color: var(--color-lighten);
   position: absolute;
@@ -87,6 +91,13 @@
     margin-top: var(--space-XS);
     width: 100%;
   }
+
+  .banner img {
+    order: -1;
+    align-self: center;
+    margin-top: var(--space);
+    max-width: 50%;
+  }
 }
 
 
@@ -100,6 +111,13 @@
   .banner p {
     margin: var(--space-S) 0 var(--space) 0;
     font-size: var(--font-size-markdown);
+  }
+
+  .banner img {
+    bottom: var(--space);
+    max-width: 33%;
+    position: absolute;
+    right: 0;
   }
 
   .banner .button { margin-right: calc(var(--space) / 2); }

@@ -8,7 +8,7 @@ import renderDialogCheckout from './modules/renderDialogCheckout';
 const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
 
-export default (req, res) => {
+export default async (req, res) => {
   const { params: { postUri } } = req;
   const keyCache = `post:${postUri}`;
   let html = cache.get(keyCache);
@@ -16,7 +16,7 @@ export default (req, res) => {
   if (!html) {
     const file = path.resolve('.', `posts/${postUri}.md`);
 
-    if (!fs.existsSync(file)) throw new Error(`/${postUri} is not a valid url.`);
+    if (!fs.existsSync(file)) res.redirect('/error');
     const markdown = fs.readFileSync(file, 'utf8');
 
     const [info, content] = markdown.split('---');
@@ -43,7 +43,7 @@ export default (req, res) => {
         banner: render('banners/course-blockchain'),
         bannerCoinbase: render('banners/coinbase'),
         subscribe: render('banners/subscribe'),
-        dialog: (async () => await renderDialogCheckout()),
+        dialog: await renderDialogCheckout(),
         footer: render('templates/footer'),
       }),
 

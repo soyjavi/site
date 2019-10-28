@@ -32,6 +32,7 @@ app.use('/api', services);
 // -- Services
 app.get('/afiliados', affiliates);
 app.get('/curso-blockchain', course);
+app.get('/error', (req, res) => error({ code: 404, message: 'Not found' }, req, res));
 app.get('/:postUri', post);
 app.get('/', home);
 // -- Error handler

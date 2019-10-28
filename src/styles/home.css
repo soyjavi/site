@@ -1,5 +1,4 @@
 [data-page="home"] {
-  background: url("../../public/clouds.jpg") repeat 0/auto;
   overflow: hidden;
 }
 
@@ -26,7 +25,7 @@
 
 [data-page="home"] .image {
   position: absolute;
-  height: 68vh;
+  /*height: 68vh;*/
   max-width: 640px;
   bottom: var(--space-XL);
   right: var(--space-XL);
