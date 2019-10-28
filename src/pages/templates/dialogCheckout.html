@@ -1,4 +1,4 @@
-<div class="dialog checkout">
+<div class="dialog checkout visible">
   <div>
     <div class="header">
       <div class="row">
@@ -30,13 +30,10 @@
           He realizado el pago
         </button>
       </form>
-    </div>
-
-    <nav class="footer columns">
-      <a href="{{externalUrl}}" class="button large" target="_blank">
-        Pagar en Udemy por {{amountFIAT}}€
-      </a>
       <button class="button large outlined" onclick="soyjavi.on.dialogHide()">Cerrar</button>
-    </nav>
+      <a href="{{externalUrl}}" class="clean color-lighten link" target="_blank">
+        Tambien puedes realizar el pago en Udemy por {{amountFIAT}}€
+      </a>
+    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 {
   "name": "soyjavi",
-  "version": "3.0.22",
+  "version": "3.0.23",
   "description": "A SELF-TAUGHT, IN LOVE WITH CREATING NEW STUFF.",
   "dependencies": {
     "body-parser": "1.19.0",

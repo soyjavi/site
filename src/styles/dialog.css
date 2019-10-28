@@ -52,9 +52,10 @@
 
 .dialog input { text-align: center; }
 
-.dialog .footer {
-  padding-top: var(--space-S);
-  border-top: solid 1px var(--color-skeleton);
+.dialog .link {
+  padding: var(--space-XS) 0;
+  align-self: center;
+  font-size: var(--font-size-XS);
 }
 
 @media (max-width: 767px) {

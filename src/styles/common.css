@@ -41,6 +41,9 @@ button, .button {
   transition: opacity var(--animation);
   opacity: 0.9;
 }
+  button > *, .button > * {
+    justify-content: center;
+  }
   button:hover, .button:hover { opacity: 1; }
 
   button.accent, .button.accent { background-color: var(--color-accent); color: var(--color); }
