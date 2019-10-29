@@ -1,8 +1,9 @@
-import { render } from '../common';
+import { cache, render } from '../common';
 
-export default (req, res) => {
-  res.send(render('index', {
-    page: 'home',
-    content: render('home'),
-  }));
-};
+export default ({ originalUrl }, res) => res.send(
+  cache.set(originalUrl,
+    render('index', {
+      page: 'home',
+      content: render('home'),
+    })),
+);

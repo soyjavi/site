@@ -1,4 +1,4 @@
-import { render } from '../common';
+import { cache, render } from '../common';
 
 const title = 'Mis afiliados';
 const description = `
@@ -6,24 +6,25 @@ Estos son algunos de los productos y servicios que me acompañan en mi día a d�
 
 `;
 
-export default (req, res) => {
-  res.send(render('index', {
-    page: 'post',
-    context: 'afiliados',
-    title,
-    description,
-    content: render('affiliates', {
+export default ({ originalUrl }, res) => res.send(
+  cache.set(originalUrl,
+    render('index', {
+      page: 'post',
+      context: 'afiliados',
       title,
       description,
+      content: render('affiliates', {
+        title,
+        description,
 
-      coinbase: render('banners/coinbase'),
-      dashlane: render('banners/dashlane'),
-      ledger: render('banners/ledger'),
-      trezor: render('banners/trezor'),
-      bullionstar: render('banners/bullionstar'),
+        coinbase: render('banners/coinbase'),
+        dashlane: render('banners/dashlane'),
+        ledger: render('banners/ledger'),
+        trezor: render('banners/trezor'),
+        bullionstar: render('banners/bullionstar'),
 
-      course: render('banners/course-blockchain'),
-      subscribe: render('banners/subscribe'),
-    }),
-  }));
-};
+        course: render('banners/course-blockchain'),
+        subscribe: render('banners/subscribe'),
+      }),
+    })),
+);

@@ -10,7 +10,9 @@ import services from './src/services';
 import {
   affiliates, course, post, home,
 } from './src/pages';
-import { error, request } from './src/middlewares';
+import {
+  cacheHtml, error, existsPost, request,
+} from './src/middlewares';
 
 dotenv.config();
 const { PORT = 3000 } = process.env;
@@ -30,11 +32,10 @@ app.use(request);
 // -- API
 app.use('/api', services);
 // -- Services
-app.get('/afiliados', affiliates);
-app.get('/curso-blockchain', course);
-app.get('/error', (req, res) => error({ code: 404, message: 'Not found' }, req, res));
-app.get('/:postUri', post);
-app.get('/', home);
+app.get('/afiliados', cacheHtml, affiliates);
+app.get('/curso-blockchain', cacheHtml, course);
+app.get('/:postUri', cacheHtml, existsPost, post);
+app.get('/', cacheHtml, home);
 // -- Error handler
 app.use(error);
 

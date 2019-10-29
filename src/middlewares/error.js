@@ -3,7 +3,7 @@ import { render } from '../common';
 export default (error, req, res, next) => {
   if (res.headersSent) next(error);
   else {
-    const { code = 400 } = error;
+    const { code = res.statusCode || 400 } = error;
     const html = render('index', {
       page: 'error',
       context: 'error',

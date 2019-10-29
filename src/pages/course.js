@@ -1,4 +1,4 @@
-import { C, render } from '../common';
+import { C, cache, render } from '../common';
 
 import renderDialogCheckout from './modules/renderDialogCheckout';
 
@@ -17,22 +17,23 @@ const TITLES = [
   '¡Aprende Blockchain hoy y transforma tu futuro!',
 ];
 
-export default async (req, res) => {
+export default async ({ originalUrl }, res) => {
   const image = IMAGES[Math.floor(Math.random() * IMAGES.length)];
   const title = TITLES[Math.floor(Math.random() * TITLES.length)];
 
-  res.send(render('index', {
-    page: 'course',
-    context: 'CURSOS',
-    title,
-    description,
-    image,
-    content: render('course', {
+  res.send(cache.set(originalUrl,
+    render('index', {
+      page: 'course',
+      context: 'CURSOS',
+      title,
       description,
-      offerPrice: COURSE_DISCOUNT_FIAT,
-      subscribe: render('banners/subscribe'),
-      dialog: await renderDialogCheckout(),
-      footer: render('templates/footer'),
-    }),
-  }));
+      image,
+      content: render('course', {
+        description,
+        offerPrice: COURSE_DISCOUNT_FIAT,
+        subscribe: render('banners/subscribe'),
+        dialog: await renderDialogCheckout(),
+        footer: render('templates/footer'),
+      }),
+    })));
 };
