@@ -1,6 +1,6 @@
 title:      Que es el indice NVT y como puede ayudarte a invertir en Bitcoin
 summary:    NVT es un indice disruptivo y especializado en la propia naturaleza de Bitcoin, alejandose de las tecnicas y metricas de trading contemporaneo.
-date:       2017-8-14
+date:       2019-8-14
 image:      https://images.unsplash.com/photo-1518186285589-2f7649de83e0
 published:  true
 
@@ -21,6 +21,8 @@ Todas las transacciones en la red consisten en fragmentos de valor BTC (llamados
 
 En este ejemplo, se envió un fragmento de 0.75BTC a un destinatario y, lo que es más importante, hubo un nuevo fragmento de 0.25BTC que regresó al remitente como el cambio de la transacción. En este ejemplo común, la transacción tenía dos fragmentos de salida.
 
+{{bannerRandom}}
+
 Cuando enviamos a otros, generalmente vemos 2 o más salidas debido a que la salida de cambio regresa. (A veces hay una multitud de resultados, especialmente si los pagos se realizan a muchos destinatarios en la misma transacción, a los *exchanges* de Bitcoin les gusta hacer esto por eficiencia).
 
 Otra cosa común que hacemos es limpiar una *wallet* y enviar todas las monedas a una nueva. Este es un ejemplo común de una transacción de salida única.
@@ -33,6 +35,7 @@ Esta transacción no tiene entradas, y solo una salida. Esto sucede cuando una n
 
 Genial, después de esa cartilla podemos revisar Bitcoin, en sus primeros años ...
 
+
 ## La primera fase del mercado de inversion
 En la primera epoca, la red estaba dominada por la minería. Las monedas se minaron directamente en las billeteras y se hicieron *hodl*, o se movieron de una billetera a otra. Podemos ver esto porque las salidas promedio se mantuvieron alrededor de 1.
 
@@ -40,11 +43,11 @@ En la primera epoca, la red estaba dominada por la minería. Las monedas se mina
 
 El 5 de octubre de 2009, un sitio web llamado New Liberty Standard comenzó a tasar bitcoins usando el precio de la electricidad que consumió para extraerlos. Esta fue la primera vez que Bitcoin tenía un precio diario.
 
-{{banner}}
-
 Para el 16 de enero de 2010, New Liberty Standard comenzó a fijar precios de acuerdo con la demanda de compra y venta, y el precio subió 19 veces de 0.07 centavos a 1.3 centavos.
 
 El 25 de mayo de 2010, se abrió un segundo *exchange* llamado Bitcoin Market. También cotizaba según demanda y compra demanda. (Su primer día de operaciones tuvo un precio cercano de 0.3 centavos con un volumen de 1000 BTC, que es $3 del volumen de operaciones).
+
+{{banner}}
 
 El tercer *exchange* que se abrió fue el infame MtGox, que se lanzó un mes más tarde, en julio de 2010. Es aquí donde vemos nuevamente el salto de precios y el promedio de producción por transacción comienza a subir a 2, aquí es donde el mercado de inversión inicial comienza a desarrollarse. La producción promedio que se elevó a 2 fue el signo revelador de que las transacciones entre inversores superaban en número a las de la minería.
 

@@ -1,6 +1,6 @@
 {
   "name": "soyjavi",
-  "version": "3.0.26",
+  "version": "3.0.27",
   "description": "A SELF-TAUGHT, IN LOVE WITH CREATING NEW STUFF.",
   "dependencies": {
     "body-parser": "1.19.0",
@@ -24,7 +24,7 @@
     "@babel/preset-env": "7.1.5",
     "babel-preset-env": "1.7.0",
     "eslint": "5.9.0",
-    "eslint-config-airbnb": "latest",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "2.14.0",
     "parcel-bundler": "1.12.3"
   },

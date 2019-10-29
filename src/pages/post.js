@@ -7,9 +7,9 @@ import renderDialogCheckout from './modules/renderDialogCheckout';
 
 const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
+const BANNERS = ['bullionstar', 'coinbase', 'dashlane', 'ledger', 'trezor'];
 
-export default async (req, res) => {
-  const { originalUrl, params: { postUri } } = req;
+export default async ({ originalUrl, params: { postUri } }, res) => {
   const file = path.resolve('.', `posts/${postUri}.md`);
 
   const markdown = fs.readFileSync(file, 'utf8');
@@ -26,7 +26,7 @@ export default async (req, res) => {
     title: post.title,
     description: post.summary,
     image: `${post.image}${UNSPLASH_PROPS}&w=1200&h=900`,
-    url: req.originalUrl,
+    url: originalUrl,
 
     content: render('post', {
       ...post,
@@ -36,6 +36,7 @@ export default async (req, res) => {
       markdown: converter.makeHtml(content),
       banner: render('banners/course-blockchain'),
       bannerCoinbase: render('banners/coinbase'),
+      bannerRandom: render(`banners/${BANNERS[Math.floor(Math.random() * BANNERS.length)]}`),
       subscribe: render('banners/subscribe'),
       dialog: await renderDialogCheckout(),
       footer: render('templates/footer'),
