@@ -73,6 +73,9 @@
 .banner.bullionstar:before, .banner.bullionstar .button:not(.outlined) {
   background-color: var(--color-bullionstar);
 }
+.banner.binance:before, .banner.binance .button:not(.outlined) {
+  background-color: var(--color-binance);
+}
 
 @media (max-width: 767px) {
   .banner {

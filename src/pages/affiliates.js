@@ -17,6 +17,7 @@ export default ({ originalUrl }, res) => res.send(
         title,
         description,
 
+        binance: render('banners/binance'),
         coinbase: render('banners/coinbase'),
         dashlane: render('banners/dashlane'),
         ledger: render('banners/ledger'),
