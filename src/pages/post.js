@@ -7,7 +7,7 @@ import renderDialogCheckout from './modules/renderDialogCheckout';
 
 const { AVATAR, NAME, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
-const BANNERS = ['bullionstar', 'coinbase', 'dashlane', 'ledger', 'trezor'];
+const BANNERS = ['bullionstar', 'binance', 'coinbase', 'dashlane', 'ledger', 'trezor'];
 
 export default async ({ originalUrl, params: { postUri } }, res) => {
   const file = path.resolve('.', `posts/${postUri}.md`);
