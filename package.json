@@ -10,7 +10,7 @@
     "dotenv": "8.0.0",
     "express": "4.16.3",
     "node-cron": "2.0.3",
-    "node-fetch": "2.6.0",
+    "node-fetch": "2.6.1",
     "nodemailer": "6.3.0",
     "on-finished": "2.3.0",
     "showdown": "1.7.1"
